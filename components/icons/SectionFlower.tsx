@@ -12,3 +12,4 @@ import React from 'react';
 import type { SVGProps } from 'react';
 interface SVGRProps {
     title?: string;
+}
