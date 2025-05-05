@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#1a1a1a"/>
+    
+    <!-- Microphone Icon -->
+    <g transform="translate(300, 150)">
+        <path d="M100,0 C100,55.2 55.2,100 0,100 L0,200 C110.5,200 200,110.5 200,0 L100,0 Z" fill="#4a9eff"/>
+        <rect x="90" y="200" width="20" height="100" fill="#4a9eff"/>
+        <rect x="60" y="300" width="80" height="20" rx="10" fill="#4a9eff"/>
+    </g>
+    
+    <!-- Sound Waves -->
+    <g transform="translate(400, 300)">
+        <path d="M0,0 Q50,-50 100,0 T200,0" stroke="#4a9eff" stroke-width="4" fill="none"/>
+        <path d="M0,20 Q50,-30 100,20 T200,20" stroke="#4a9eff" stroke-width="4" fill="none"/>
+        <path d="M0,40 Q50,-10 100,40 T200,40" stroke="#4a9eff" stroke-width="4" fill="none"/>
+    </g>
+    
+    <!-- Analysis Graph -->
+    <g transform="translate(500, 200)">
+        <polyline points="0,100 50,80 100,90 150,60 200,70" 
+                  stroke="#4a9eff" 
+                  stroke-width="4" 
+                  fill="none"/>
+        <circle cx="0" cy="100" r="5" fill="#4a9eff"/>
+        <circle cx="50" cy="80" r="5" fill="#4a9eff"/>
+        <circle cx="100" cy="90" r="5" fill="#4a9eff"/>
+        <circle cx="150" cy="60" r="5" fill="#4a9eff"/>
+        <circle cx="200" cy="70" r="5" fill="#4a9eff"/>
+    </g>
+</svg> 
