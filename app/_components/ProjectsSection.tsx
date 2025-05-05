@@ -34,7 +34,7 @@ const ProjectsSection = () => {
 
     const renderProjects = () => (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-            {projects.map((project, idx) => (
+            {projects.map((project) => (
                 <a
                     key={project.title}
                     href={`/projects/${project.slug}`}

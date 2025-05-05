@@ -3,7 +3,6 @@ import React from 'react';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
-import gsap from 'gsap';
 import { projects } from '../../data/projects';
 
 interface Project {

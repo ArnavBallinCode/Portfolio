@@ -108,7 +108,7 @@ const Skills = () => {
                     My Stack
                 </h2>
                 <div className="space-y-12 w-full">
-                    {stack.map((cat, idx) => (
+                    {stack.map((cat) => (
                         <div
                             key={cat.category}
                             className="stack-row flex items-center gap-12 py-10 border-b-2 border-primary/20 last:border-b-0 transition-all bg-background/80 hover:bg-primary/5 rounded-2xl"

@@ -8,7 +8,6 @@
  * For permissions, contact: arnav.angarkar20@gmail.com
  */
 
-import { GENERAL_INFO } from '@/lib/data';
 import React from 'react';
 
 export default function StickyEmail() {

@@ -9,11 +9,9 @@
  */
 
 'use client';
-import { cn } from '@/lib/utils';
 import { useState } from 'react';
-import { MoveUpRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
+import Link from 'next/link';
 
 const MENU_LINKS = [
     {
@@ -63,9 +61,9 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-primary/10">
             <div className="container mx-auto px-4 py-4">
                 <div className="flex justify-between items-center">
-                    <a href="/" className="text-2xl font-bold text-primary">
+                    <Link href="/" className="text-2xl font-bold text-primary">
                         Arnav Angarkar
-                    </a>
+                    </Link>
                     <div className="hidden md:flex space-x-8 items-center">
                         {MENU_LINKS.map((link) => (
                             <a
@@ -129,52 +127,8 @@ const Navbar = () => {
                             ? 'opacity-100'
                             : 'opacity-0 pointer-events-none'
                     }`}
-                    onClick={() => setIsMenuOpen(false)}
-                />
-                {/* Slide-in Panel */}
-                <div
-                    className={`absolute top-0 right-0 h-full w-3/4 max-w-xs bg-background shadow-lg flex flex-col p-8 space-y-6 transform transition-transform duration-300 ${
-                        isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-                    }`}
                 >
-                    <button
-                        className="self-end mb-8 text-gray-400 hover:text-primary"
-                        onClick={() => setIsMenuOpen(false)}
-                        aria-label="Close menu"
-                    >
-                        <svg
-                            className="w-7 h-7"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
-                    </button>
-                    {MENU_LINKS.map((link) => (
-                        <a
-                            key={link.name}
-                            href={link.url}
-                            className="block text-2xl text-gray-300 hover:text-primary font-semibold transition-colors"
-                            onClick={(e) => handleNavClick(e, link.url)}
-                        >
-                            {link.name}
-                        </a>
-                    ))}
-                    <a
-                        href="/Arnav_Angarkar_Resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-xl mt-4 px-4 py-2 rounded-lg bg-primary text-background font-bold shadow hover:bg-primary/80 transition-colors border border-primary text-center"
-                        onClick={() => setIsMenuOpen(false)}
-                    >
-                        Download Resume
-                    </a>
+                    {/* Rest of the component content */}
                 </div>
             </div>
         </nav>

@@ -8,4 +8,4 @@
  * For permissions, contact: arnav.angarkar20@gmail.com
  */
 
-export * from './SectionFlower';
+export { default as SectionFlower } from './SectionFlower';

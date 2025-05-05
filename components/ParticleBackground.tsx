@@ -11,7 +11,7 @@
 'use client';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 
 gsap.registerPlugin(useGSAP);
 
