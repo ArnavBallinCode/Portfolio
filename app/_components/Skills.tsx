@@ -103,33 +103,33 @@ const Skills = () => {
 
     return (
         <section id="skills" ref={container} className="py-24 bg-background">
-            <div className="container max-w-5xl mx-auto flex flex-col items-center">
+            <div className="container max-w-6xl mx-auto flex flex-col items-center px-4 md:px-6">
                 <h2 className="text-4xl md:text-6xl font-extrabold mb-12 text-primary text-center">
                     My Stack
                 </h2>
-                <div className="space-y-12 w-full">
+                <div className="space-y-8 w-full">
                     {stack.map((cat) => (
                         <div
                             key={cat.category}
-                            className="stack-row flex items-center gap-12 py-10 border-b-2 border-primary/20 last:border-b-0 transition-all bg-background/80 hover:bg-primary/5 rounded-2xl"
+                            className="stack-row flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12 py-8 lg:py-10 border-b-2 border-primary/20 last:border-b-0 transition-all bg-background/80 hover:bg-primary/5 rounded-2xl px-4 lg:px-6"
                         >
-                            <div className="w-56 min-w-[180px] pr-12 flex flex-col items-end">
-                                <span className="block text-3xl md:text-5xl font-extrabold text-gray-300 tracking-wider mb-3">
+                            <div className="w-full lg:w-64 lg:min-w-[200px] lg:pr-8 flex flex-col lg:items-end">
+                                <span className="block text-xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold text-gray-300 tracking-wide mb-3 text-left lg:text-right">
                                     {cat.category.toUpperCase()}
                                 </span>
                                 <div
-                                    className="h-full w-1 bg-primary/30 mt-2"
+                                    className="hidden lg:block h-full w-1 bg-primary/30 mt-2"
                                     style={{ minHeight: 60 }}
                                 />
                             </div>
-                            <div className="flex flex-wrap gap-x-12 gap-y-8 pl-12 border-l-2 border-primary/20">
+                            <div className="flex flex-wrap gap-x-6 gap-y-4 lg:gap-x-12 lg:gap-y-8 lg:pl-8 lg:border-l-2 lg:border-primary/20 w-full">
                                 {cat.items.map((item) => (
                                     <div
                                         key={item.name}
-                                        className="flex items-center gap-3 text-2xl md:text-3xl text-gray-100 font-bold"
+                                        className="flex items-center gap-2 lg:gap-3 text-lg md:text-xl lg:text-2xl text-gray-100 font-bold"
                                     >
                                         {item.icon && (
-                                            <span className="text-4xl md:text-5xl">
+                                            <span className="text-2xl md:text-3xl lg:text-4xl">
                                                 {item.icon}
                                             </span>
                                         )}

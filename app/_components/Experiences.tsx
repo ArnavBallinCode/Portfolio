@@ -9,54 +9,90 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const experiences = [
     {
+        company: 'QWorld',
+        location: 'Remote',
+        title: 'Quantum Intern | Project Lead',
+        period: 'June 2025 – Present',
+        details: [
+            'Leading a QWorld project (PAQ) to build an interactive, game-based learning platform for quantum computing.',
+            'Designing modules on Bell states, CHSH inequality, quantum tunneling, decoherence, and quantum foundations.',
+            'Managing a cross-functional team of 5 to integrate storytelling, quantum logic, and game mechanics.',
+        ],
+    },
+    {
+        company: 'CampusDabba',
+        location: 'Remote',
+        title: 'Founder & CEO',
+        period: 'January 2025 – Present',
+        link: 'https://campusdabba0.netlify.app',
+        details: [
+            'Founded and leading CampusDabba, a dynamic campus marketplace for students to buy, sell, and exchange goods/services.',
+            'Built the entire platform from concept to deployment using Node.js, TypeScript, Express.js, MongoDB, React, and Next.js.',
+            'Implemented secure user authentication, real-time chat functionality using WebSockets, and optimized backend APIs.',
+            'Successfully launched the platform and managing business operations, user acquisition, and product development.',
+        ],
+    },
+    {
+        company: 'IISc (Indian Institute of Science) – RIMM Lab',
+        location: 'Bangalore',
+        title: 'ML/AI Intern | Smart Mirror Project',
+        period: 'March 2025 – Present',
+        details: [
+            'Developing a Virtual Try-On system using real-time body landmark detection and computer vision.',
+            'Implemented garment overlay using webcam input, with segmentation-based garment alignment.',
+            'Built lightweight multimodal AI pipelines optimized for edge devices with privacy-first design.',
+        ],
+    },
+    {
         company: 'ISRO Grand Challenge',
         location: 'India',
         title: 'Project Manager | Drone Automation & Integration',
-        period: '2025',
+        period: 'January 2025 – Present',
         details: [
-            'Part of a team in the ISRO Grand Challenge, securing a top 170 rank out of 2000+ teams.',
-            'Developed scripts for object detection for safe landing using OpenCV, YOLO, and PyTorch.',
-            'Developed MAVLink-based communication, automated flight operations, and built a software mission planner for UAVs.',
-            'Created real-time telemetry dashboards, integrated AI-based obstacle avoidance, and deployed automation servers.',
-            'Managed hardware assembly, sensor integration, and project execution to deliver a fully functional autonomous drone.',
+            'Developing a fully autonomous drone solution—Top 28 of 2000+ teams nationally.',
+            'Built object detection systems using OpenCV, YOLOv5, and PyTorch for safe landing.',
+            'Designed MAVLink-based GCS, real-time telemetry dashboards, and 3D flight visualizations.',
+            'Integrated Jetson Nano, Pixhawk, LiDAR, Depth Camera for AI navigation, SLAM, and obstacle avoidance.',
         ],
     },
     {
-        company: 'IISc (Indian Institute of Science)',
+        company: 'IISc – CPDMed TBI (Aarnaq Project)',
         location: 'Bangalore',
         title: 'ML/AI Intern',
-        period: 'Dec 2024 - Present',
+        period: 'December 2024 – March 2025',
         details: [
-            'Working on a GoK DULT project awarded to Aarnaq, CPDMed TBI, IISc, Bangalore, enhancing and fine-tuning Machine Learning models and algorithms for better image processing and object detection.',
-        ],
-    },
-    {
-        company: 'Vocab.AI',
-        location: 'Dharwad',
-        title: 'ASR Cloud Intern',
-        period: 'Jan 2025 - Present',
-        details: [
-            'Learning and working on Automatic Speech Recognition (ASR) models and deployment on GCP.',
+            'Contributed to a GoK-DULT funded urban mobility project using advanced ML-based object detection.',
+            'Optimized CV pipelines and trained detection models for enhanced visual processing.',
         ],
     },
     {
         company: 'Brahmand - Vishwakosha',
         location: 'Pune',
         title: 'Research Intern',
-        period: 'Nov 2024 - Apr 2025',
+        period: 'November 2024 – April 2025',
         details: [
-            'Re-developed the Vishwakosha website (https://www.brahmandexploration.com/)—a digital guide to the wonders of the universe.',
-            'Enhanced website design and functionality to improve user experience and accessibility.',
+            'Revamped https://www.brahmandexploration.com/ to create a dynamic digital encyclopedia of the cosmos.',
+            'Improved user experience, content accessibility, and site performance.',
         ],
     },
     {
         company: 'Brahmand - YantraSoft',
         location: 'Pune',
         title: 'AI Chatbot Developer',
-        period: 'Winter 2024 - Apr 2025',
+        period: 'Winter 2024 – April 2025',
         details: [
-            'Developing an AI-based chatbot to streamline the satellite development process by automating common queries and tasks.',
-            'Enhancing chatbot accuracy and responsiveness.',
+            'Designed and implemented an AI chatbot to streamline the satellite development knowledge base.',
+            'Improved NLP response accuracy and user engagement through iterative model refinement.',
+        ],
+    },
+    {
+        company: 'Vocab.AI',
+        location: 'Dharwad',
+        title: 'ASR Cloud Intern',
+        period: 'January 2025',
+        details: [
+            'Worked on Automatic Speech Recognition (ASR) models and explored deployment workflows on Google Cloud Platform.',
+            'Gained experience in acoustic modeling and cloud-native ML practices.',
         ],
     },
 ];
@@ -124,6 +160,19 @@ const Experiences = () => {
                                         <p className="text-xl text-gray-400 font-mono">
                                             {exp.location}
                                         </p>
+                                        {exp.link && (
+                                            <a
+                                                href={exp.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-primary hover:text-primary/80 transition-colors text-lg font-medium underline"
+                                            >
+                                                {exp.link.replace(
+                                                    'https://',
+                                                    '',
+                                                )}
+                                            </a>
+                                        )}
                                     </div>
                                     <span className="text-xl text-primary font-mono font-semibold">
                                         {exp.period}

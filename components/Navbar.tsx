@@ -20,15 +20,19 @@ const MENU_LINKS = [
     },
     {
         name: 'About Me',
-        url: '/#about-me',
+        url: '/#about',
+    },
+    {
+        name: 'Skills',
+        url: '/#skills',
     },
     {
         name: 'Experience',
-        url: '/#my-experience',
+        url: '/#experience',
     },
     {
         name: 'Projects',
-        url: '/#selected-projects',
+        url: '/#projects',
     },
 ];
 
@@ -58,7 +62,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-primary/10">
+        <nav className="fixed top-0 left-0 right-0 z-[100] bg-background/80 backdrop-blur-md border-b border-primary/10">
             <div className="container mx-auto px-4 py-4">
                 <div className="flex justify-between items-center">
                     <Link href="/" className="text-2xl font-bold text-primary">
@@ -116,7 +120,7 @@ const Navbar = () => {
             </div>
             {/* Mobile Slide-in Menu */}
             <div
-                className={`fixed inset-0 z-50 transition-all duration-300 ${
+                className={`fixed inset-0 z-[200] transition-all duration-300 ${
                     isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'
                 }`}
             >
@@ -127,8 +131,64 @@ const Navbar = () => {
                             ? 'opacity-100'
                             : 'opacity-0 pointer-events-none'
                     }`}
+                    onClick={() => setIsMenuOpen(false)}
+                />
+
+                {/* Slide Menu */}
+                <div
+                    className={`absolute top-0 right-0 h-full w-80 bg-background border-l border-primary/10 transform transition-transform duration-300 ${
+                        isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+                    }`}
                 >
-                    {/* Rest of the component content */}
+                    <div className="p-6">
+                        <div className="flex justify-between items-center mb-8">
+                            <h2 className="text-xl font-bold text-primary">
+                                Menu
+                            </h2>
+                            <button
+                                onClick={() => setIsMenuOpen(false)}
+                                className="text-gray-300 hover:text-primary transition-colors"
+                                aria-label="Close menu"
+                            >
+                                <svg
+                                    className="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <nav className="space-y-6">
+                            {MENU_LINKS.map((link) => (
+                                <a
+                                    key={link.name}
+                                    href={link.url}
+                                    className="block text-lg text-gray-300 hover:text-primary transition-colors"
+                                    onClick={(e) => handleNavClick(e, link.url)}
+                                >
+                                    {link.name}
+                                </a>
+                            ))}
+                            <div className="pt-4 border-t border-primary/10">
+                                <a
+                                    href="/Arnav_Angarkar_Resume.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block px-4 py-3 rounded-lg bg-primary text-background font-bold text-center shadow hover:bg-primary/80 transition-colors border border-primary"
+                                >
+                                    Download Resume
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </nav>

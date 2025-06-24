@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Anton } from 'next/font/google';
 import { ReactLenis } from 'lenis/react';
 
 import 'lenis/dist/lenis.css';
@@ -16,6 +16,11 @@ import StickyContactRight from './_components/StickyContactRight';
 import Navbar from '@/components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
+const anton = Anton({
+    subsets: ['latin'],
+    weight: '400',
+    variable: '--font-anton',
+});
 
 export const metadata: Metadata = {
     title: 'Arnav Angarkar - Full Stack Developer',
@@ -68,7 +73,7 @@ export default function RootLayout({
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
             </Script>
-            <body className={inter.className}>
+            <body className={`${inter.className} ${anton.variable}`}>
                 <ReactLenis
                     root
                     options={{

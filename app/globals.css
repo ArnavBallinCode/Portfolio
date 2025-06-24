@@ -57,6 +57,20 @@
         @apply bg-background text-foreground font-roboto-flex;
         scrollbar-color: hsl(var(--primary)) hsl(var(--background));
         scrollbar-width: thin;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
     }
 }
 

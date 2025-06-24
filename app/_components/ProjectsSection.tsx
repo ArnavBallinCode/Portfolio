@@ -35,20 +35,28 @@ const ProjectsSection = () => {
     const renderProjects = () => (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
             {projects.map((project) => (
-                <a
+                <div
                     key={project.title}
-                    href={`/projects/${project.slug}`}
-                    className="project-row block bg-background/95 border-2 border-primary/20 p-6 rounded-2xl shadow-lg backdrop-blur-sm hover:bg-primary/10 transition-all opacity-100 cursor-pointer h-full"
-                    style={{ textDecoration: 'none' }}
+                    className="project-row bg-background/95 border-2 border-primary/20 p-6 rounded-2xl shadow-lg backdrop-blur-sm hover:bg-primary/10 transition-all opacity-100 h-full"
                 >
                     <div className="flex flex-col h-full justify-between">
                         <div>
                             <h3 className="text-2xl font-extrabold text-primary mb-2">
                                 {project.title}
                             </h3>
-                            <span className="text-sm text-gray-400 font-mono font-semibold block mb-4">
+                            <span className="text-sm text-gray-400 font-mono font-semibold block mb-2">
                                 {project.period}
                             </span>
+                            {project.link && (
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-primary hover:text-primary/80 transition-colors text-sm font-medium underline block mb-4"
+                                >
+                                    🌐 {project.link.replace('https://', '')}
+                                </a>
+                            )}
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {project.tech.slice(0, 3).map((tech) => (
                                     <span
@@ -72,13 +80,26 @@ const ProjectsSection = () => {
                                     ))}
                             </ul>
                         </div>
-                        <div className="flex justify-end mt-2">
-                            <span className="text-primary text-lg font-extrabold">
-                                View →
-                            </span>
+                        <div className="flex justify-between items-center mt-2">
+                            {project.link && (
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm text-primary hover:text-primary/80 transition-colors font-bold"
+                                >
+                                    Live Demo →
+                                </a>
+                            )}
+                            <a
+                                href={`/projects/${project.slug}`}
+                                className="text-primary text-lg font-extrabold hover:text-primary/80 transition-colors"
+                            >
+                                View Details →
+                            </a>
                         </div>
                     </div>
-                </a>
+                </div>
             ))}
         </div>
     );
