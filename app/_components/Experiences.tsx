@@ -9,6 +9,17 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const experiences = [
     {
+        company: 'Poonawalla Fincorp',
+        location: 'On-site',
+        title: 'ML/AI Intern',
+        period: 'June 2025 – Aug 2025',
+        details: [
+            'Engineered a cutting-edge machine learning pipeline that revolutionized operational workflows, achieving breakthrough improvements in automation and data processing efficiency.',
+            'Developed and deployed a model that delivered an annual business cost savings of over ₹2 Crore + by driving process optimization and resource allocation.',
+            'Collaborated closely with interdisciplinary teams to integrate AI-driven solutions that enhanced both accuracy and scalability across key business operations.',
+        ],
+    },
+    {
         company: 'QWorld',
         location: 'Remote',
         title: 'Quantum Intern | Project Lead',
