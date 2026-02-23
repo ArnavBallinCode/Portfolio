@@ -8,7 +8,6 @@ import Footer from '@/components/Footer';
 // import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
 import ParticleBackground from '@/components/ParticleBackground';
 import CustomCursor from '@/components/CustomCursor';
-import Preloader from '../components/Preloader';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
 import StickyEmailLeft from './_components/StickyEmailLeft';
@@ -88,7 +87,6 @@ export default function RootLayout({
                     <Footer />
 
                     <CustomCursor />
-                    <Preloader />
                     {/* <ScrollProgressIndicator /> */}
                     <ParticleBackground />
                 </ReactLenis>
