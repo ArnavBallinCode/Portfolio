@@ -106,6 +106,17 @@ const experiences = [
             'Gained experience in acoustic modeling and cloud-native ML practices.',
         ],
     },
+    {
+        company: 'Bug Bounty Programs',
+        location: 'Remote',
+        title: 'Security Researcher',
+        period: '2022 – 2025',
+        details: [
+            'Active contributor to the Netflix, Cursor, 1Password, Udemy, and Google Bug Bounty programs, successfully identifying and reporting security vulnerabilities.',
+            'Discovered and responsibly disclosed vulnerabilities across web applications, APIs, and authentication flows, earning acknowledgements from security teams.',
+            'Developed deep expertise in OWASP Top 10 attack vectors including XSS, IDOR, CSRF, and authentication bypass techniques.',
+        ],
+    },
 ];
 
 const Experiences = () => {
