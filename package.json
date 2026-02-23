@@ -5,6 +5,8 @@
     "scripts": {
         "dev": "next dev --turbopack",
         "build": "next build",
+        "export": "next export",
+        "build:export": "next build && next export",
         "start": "next start",
         "lint": "next lint",
         "svgr:icons": "svgr --title-prop --no-dimensions --typescript -d components/icons -- components/icons/svgs"
