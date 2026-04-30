@@ -11,6 +11,7 @@
 import AboutMe from './_components/AboutMe';
 import Achievements from './_components/Achievements';
 import Banner from './_components/Banner';
+import Education from './_components/Education';
 import Experiences from './_components/Experiences';
 import ProjectsSection from './_components/ProjectsSection';
 import Skills from './_components/Skills';
@@ -20,6 +21,7 @@ export default function Home() {
         <>
             <Banner />
             <AboutMe />
+            <Education />
             <Skills />
             <Experiences />
             <Achievements />
