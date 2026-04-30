@@ -119,7 +119,7 @@ const experiences = [
         company: 'Bug Bounty Programs',
         location: 'Remote',
         title: 'Security Researcher',
-        period: '2022 – 2025',
+        period: '2022 – Present',
         details: [
             'Active contributor to the Netflix, Cursor, 1Password, Udemy, and Google Bug Bounty programs, successfully identifying and reporting security vulnerabilities.',
             'Discovered and responsibly disclosed vulnerabilities across web applications, APIs, and authentication flows, earning acknowledgements from security teams.',
