@@ -130,36 +130,60 @@ const experiences = [
 
 const Experiences = () => {
     const containerRef = useRef<HTMLDivElement>(null);
+    const timelineRef = useRef<HTMLDivElement>(null);
+    const progressRef = useRef<HTMLDivElement>(null);
 
     useGSAP(
         () => {
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    toggleActions: 'play none none reverse',
-                },
-            });
+            if (!containerRef.current) return;
 
-            // Animate each experience item with different effects
+            // Draw the timeline progress line as you scroll
+            if (progressRef.current && timelineRef.current) {
+                gsap.fromTo(
+                    progressRef.current,
+                    { scaleY: 0 },
+                    {
+                        scaleY: 1,
+                        ease: 'none',
+                        scrollTrigger: {
+                            trigger: timelineRef.current,
+                            start: 'top 60%',
+                            end: 'bottom 40%',
+                            scrub: 0.3,
+                        },
+                    },
+                );
+            }
+
+            // Animate each card + dot individually
             experiences.forEach((_, index) => {
-                tl.from(`.experience-item-${index}`, {
-                    y: 100,
+                const isLeft = index % 2 === 0;
+                const card = `.exp-card-${index}`;
+                const dot = `.exp-dot-${index}`;
+
+                // Card slides in from the side
+                gsap.from(card, {
+                    x: isLeft ? -80 : 80,
                     opacity: 0,
                     duration: 0.8,
-                    stagger: 0.2,
-                    ease: 'power2.out',
-                }).to(`.experience-item-${index}`, {
+                    ease: 'power3.out',
                     scrollTrigger: {
-                        trigger: `.experience-item-${index}`,
-                        start: 'top 80%',
-                        end: 'top 20%',
-                        scrub: true,
+                        trigger: card,
+                        start: 'top 85%',
+                        toggleActions: 'play none none reverse',
                     },
-                    opacity: 1,
-                    y: 0,
-                    duration: 1,
+                });
+
+                // Dot scales up + glows
+                gsap.from(dot, {
+                    scale: 0,
+                    duration: 0.4,
+                    ease: 'back.out(3)',
+                    scrollTrigger: {
+                        trigger: dot,
+                        start: 'top 75%',
+                        toggleActions: 'play none none reverse',
+                    },
                 });
             });
         },
@@ -169,62 +193,107 @@ const Experiences = () => {
     return (
         <section className="py-32 bg-background" id="experience">
             <div
-                className="container max-w-5xl mx-auto flex flex-col items-center"
+                className="container max-w-6xl mx-auto px-4"
                 ref={containerRef}
             >
-                <h2 className="text-5xl md:text-7xl font-extrabold mb-16 text-primary text-center tracking-tight">
+                <h2 className="text-5xl md:text-7xl font-extrabold mb-20 text-primary text-center tracking-tight">
                     Work Experience
                 </h2>
-                <div className="space-y-16 w-full">
-                    {experiences.map((exp, index) => (
-                        <div
-                            key={index}
-                            className={`experience-item-${index} relative group`}
-                        >
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl transform group-hover:scale-[1.02] transition-transform duration-300" />
-                            <div className="relative bg-background/30 backdrop-blur-sm p-8 rounded-xl border border-primary/10 group-hover:border-primary/25 transition-colors duration-300">
-                                <div className="flex flex-wrap justify-between items-start mb-6">
-                                    <div>
-                                        <h3 className="text-2xl md:text-3xl font-extrabold text-primary mb-1 tracking-tight">
-                                            {exp.company}
-                                        </h3>
-                                        <p className="text-base text-gray-500 font-mono tracking-wide uppercase">
-                                            {exp.location}
-                                        </p>
-                                        {exp.link && (
-                                            <a
-                                                href={exp.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-primary hover:text-primary/80 transition-colors text-lg font-medium underline"
-                                            >
-                                                {exp.link.replace(
-                                                    'https://',
-                                                    '',
-                                                )}
-                                            </a>
-                                        )}
+
+                {/* Timeline wrapper */}
+                <div className="relative" ref={timelineRef}>
+                    {/* Background track */}
+                    <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-[2px] bg-primary/10" />
+                    {/* Animated progress fill */}
+                    <div
+                        ref={progressRef}
+                        className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-[2px] bg-primary origin-top"
+                    />
+
+                    <div className="space-y-12 md:space-y-16">
+                        {experiences.map((exp, index) => {
+                            const isLeft = index % 2 === 0;
+                            return (
+                                <div
+                                    key={index}
+                                    className="relative flex items-start md:items-center"
+                                >
+                                    {/* Timeline dot */}
+                                    <div
+                                        className={`exp-dot-${index} absolute left-4 md:left-1/2 -translate-x-1/2 z-10 flex items-center justify-center`}
+                                    >
+                                        <span className="w-4 h-4 rounded-full bg-primary shadow-[0_0_12px_rgba(74,222,128,0.4)]" />
+                                        <span className="absolute w-8 h-8 rounded-full bg-primary/20 animate-ping" />
                                     </div>
-                                    <span className="text-sm text-primary/80 font-mono font-semibold tracking-wide">
-                                        {exp.period}
-                                    </span>
+
+                                    {/* Card - alternating sides on desktop, always right on mobile */}
+                                    <div
+                                        className={`exp-card-${index} ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${
+                                            isLeft
+                                                ? 'md:mr-auto md:pr-8'
+                                                : 'md:ml-auto md:pl-8'
+                                        }`}
+                                    >
+                                        {/* Period pill */}
+                                        <span className="inline-block text-xs font-mono font-semibold tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full mb-3">
+                                            {exp.period}
+                                        </span>
+
+                                        <div className="group relative bg-background/50 backdrop-blur-sm p-6 rounded-xl border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(74,222,128,0.06)]">
+                                            {/* Connector line from dot to card (desktop only) */}
+                                            <div
+                                                className={`hidden md:block absolute top-8 w-8 h-[2px] bg-primary/20 group-hover:bg-primary/40 transition-colors ${
+                                                    isLeft
+                                                        ? 'right-0 translate-x-full'
+                                                        : 'left-0 -translate-x-full'
+                                                }`}
+                                            />
+
+                                            <div className="flex flex-wrap items-baseline gap-x-3 mb-1">
+                                                <h3 className="text-xl md:text-2xl font-extrabold text-primary tracking-tight">
+                                                    {exp.company}
+                                                </h3>
+                                                <span className="text-xs text-gray-500 font-mono uppercase tracking-widest">
+                                                    {exp.location}
+                                                </span>
+                                            </div>
+
+                                            {exp.link && (
+                                                <a
+                                                    href={exp.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-primary/70 hover:text-primary transition-colors text-sm font-mono underline underline-offset-2"
+                                                >
+                                                    {exp.link.replace(
+                                                        'https://',
+                                                        '',
+                                                    )}
+                                                </a>
+                                            )}
+
+                                            <h4 className="text-lg md:text-xl font-bold text-gray-200 mt-2 mb-4 tracking-tight">
+                                                {exp.title}
+                                            </h4>
+
+                                            <ul className="space-y-2">
+                                                {exp.details.map(
+                                                    (detail, i) => (
+                                                        <li
+                                                            key={i}
+                                                            className="text-sm md:text-base text-gray-400 leading-relaxed pl-4 border-l border-primary/15 hover:border-primary/40 transition-colors"
+                                                        >
+                                                            {detail}
+                                                        </li>
+                                                    ),
+                                                )}
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h4 className="text-xl md:text-2xl font-bold text-gray-200 mb-4 tracking-tight">
-                                    {exp.title}
-                                </h4>
-                                <ul className="space-y-3">
-                                    {exp.details.map((detail, i) => (
-                                        <li
-                                            key={i}
-                                            className="text-base md:text-lg text-gray-400 leading-relaxed pl-4 border-l-2 border-primary/20"
-                                        >
-                                            {detail}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    ))}
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </section>
