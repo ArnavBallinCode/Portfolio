@@ -72,7 +72,7 @@ const Banner = () => {
                         ref={text2}
                         className="text-2xl md:text-4xl lg:text-5xl text-gray-300 mb-6 font-medium text-left tracking-tight"
                     >
-                        Full Stack Developer & AI/ML Engineer
+                        GSoC &apos;26 @ FOSSASIA · Speaker · 4x Hackathon Winner
                     </h2>
                 </div>
 
@@ -81,10 +81,9 @@ const Banner = () => {
                         ref={text3}
                         className="text-lg md:text-xl lg:text-2xl max-w-2xl text-gray-400 text-left leading-relaxed font-light"
                     >
-                        I build innovative solutions at the intersection of web
-                        development and artificial intelligence. From dynamic
-                        web applications to ML-powered systems, I bring ideas to
-                        life with clean code and cutting-edge technology.
+                        Full-stack engineer and ML researcher. I ship
+                        production open source, build autonomous systems, and
+                        deploy models that replace million-dollar solutions.
                     </p>
                 </div>
 

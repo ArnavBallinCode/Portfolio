@@ -105,23 +105,14 @@ const experiences = [
         ],
     },
     {
-        company: 'Brahmand - Vishwakosha',
+        company: 'Brahmand Exploration',
         location: 'Pune',
-        title: 'Research Intern',
+        title: 'Research Intern & AI Developer',
         period: 'November 2024 – April 2025',
         details: [
-            'Revamped https://www.brahmandexploration.com/ to create a dynamic digital encyclopedia of the cosmos.',
-            'Improved user experience, content accessibility, and site performance.',
-        ],
-    },
-    {
-        company: 'Brahmand - YantraSoft',
-        location: 'Pune',
-        title: 'AI Chatbot Developer',
-        period: 'Winter 2024 – April 2025',
-        details: [
-            'Designed and implemented an AI chatbot to streamline the satellite development knowledge base.',
-            'Improved NLP response accuracy and user engagement through iterative model refinement.',
+            'Built and deployed an AI-powered conversational bot using NLP for automated customer query resolution on the company website.',
+            'Developed predictive models for internal workflows and contributed to front-end/back-end development with performance optimization.',
+            'Revamped brahmandexploration.com into a dynamic digital encyclopedia with improved UX, content accessibility, and site performance.',
         ],
     },
     {

@@ -10,10 +10,26 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const achievements = [
     {
+        title: 'FOSSASIA Summit 2026',
+        place: 'Speaker',
+        description:
+            'Invited speaker at one of Asia\'s largest open-source tech conferences. Presented on architecting real-time multilingual streaming infrastructure.',
+        image: '/images/achievements/fossasia-summit.svg',
+        link: null,
+    },
+    {
+        title: 'ISRO IROC Grand Challenge',
+        place: 'AIR 3',
+        description:
+            'All India Rank 3 in ISRO\'s national autonomous UAV challenge. Led team through 10-month initiative competing against 2000+ teams.',
+        image: '/images/achievements/isro.svg',
+        link: null,
+    },
+    {
         title: 'HACKMAZE \'26 — Telemetry Power Governor RTL',
         place: '1st Place',
         description:
-            'Telemetry-driven Power Governor RTL IP for dynamic power management in SoCs. Monitors workload activity, computes utilization, and transitions between power states using a hardware FSM.',
+            'Telemetry-driven Power Governor RTL IP for dynamic power management in SoCs. Hardware FSM for adaptive power state transitions.',
         image: '/images/achievements/hackmaze.svg',
         link: 'https://github.com/ArnavBallinCode/telemetry-power-governor-rtl',
     },
@@ -26,12 +42,20 @@ const achievements = [
         link: 'https://campusdabba0.netlify.app',
     },
     {
-        title: 'HAL — RagVault',
+        title: 'HAL Aerothon — RagVault',
         place: '3rd Place',
         description:
-            'Fully offline, privacy-focused RAG system for secure enterprise knowledge management. Process and query documents without internet or external APIs.',
+            'Fully offline, privacy-focused RAG system for secure enterprise knowledge management. Zero external API dependencies.',
         image: '/images/achievements/hal-ragvault.svg',
         link: 'https://github.com/ArnavBallinCode/RagVault',
+    },
+    {
+        title: 'Hack2Future \'25',
+        place: 'Finalist',
+        description:
+            'Only freshman team to qualify for the final round out of 400+ applicants. Received special mention.',
+        image: '/images/achievements/hack2future.svg',
+        link: null,
     },
 ];
 
@@ -65,9 +89,9 @@ const Achievements = () => {
                 ref={containerRef}
             >
                 <h2 className="text-5xl md:text-7xl font-extrabold mb-16 text-primary text-center tracking-tight">
-                    Hackathon Wins
+                    Achievements
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
                     {achievements.map((item) => (
                         <div
                             key={item.title}

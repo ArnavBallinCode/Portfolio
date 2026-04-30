@@ -44,15 +44,16 @@ const AboutMe = () => {
                         About Me
                     </h2>
                     <p className="text-2xl md:text-3xl mb-8 text-gray-200 text-left leading-snug">
-                        <b>Arnav Angarkar</b> — CS undergrad at IIIT Dharwad.
-                        Google Summer of Code &apos;26 at FOSSASIA. Quantum Computing Enthusiast.
+                        <b>Arnav Angarkar</b> &mdash; CS undergrad at IIIT Dharwad.
+                        GSoC &apos;26 at FOSSASIA. ISRO IROC AIR 3. Linux
+                        Foundation Scholar. 4x hackathon winner. Published
+                        researcher in quantum error correction.
                     </p>
                     <p className="text-xl md:text-2xl mb-8 text-gray-400 text-left leading-snug">
-                        I build full-stack platforms, train ML models, and ship
-                        production code. Currently working on real-time
-                        multilingual audio streaming for live events, autonomous
-                        drone systems for ISRO, and computer vision research at
-                        IISc.
+                        100+ PRs merged in production open source. Speaker at
+                        FOSSASIA Summit 2026. I build full-stack platforms,
+                        deploy ML models that replace commercial solutions, and
+                        architect real-time streaming infrastructure.
                     </p>
                 </div>
                 <div className="w-full md:w-1/3 h-72 md:h-full max-h-[600px] flex-shrink-0 overflow-hidden shadow-lg border border-primary/20 bg-background rounded-xl flex items-center justify-center">
