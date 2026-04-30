@@ -41,18 +41,20 @@ const Education = () => {
     useGSAP(
         () => {
             if (!containerRef.current) return;
-            gsap.from('.edu-card', {
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    toggleActions: 'play none none reverse',
-                },
-                y: 50,
-                opacity: 0,
-                duration: 0.7,
-                stagger: 0.15,
-                ease: 'power2.out',
+
+            const cards = containerRef.current.querySelectorAll('.edu-card');
+            cards.forEach((card) => {
+                gsap.from(card, {
+                    y: 40,
+                    opacity: 0,
+                    duration: 0.7,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: card,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none',
+                    },
+                });
             });
         },
         { scope: containerRef },
