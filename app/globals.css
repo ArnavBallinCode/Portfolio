@@ -51,7 +51,14 @@
         background: hsl(var(--background));
     }
     * {
-        @apply border-border !cursor-none;
+        @apply border-border;
+    }
+    @media (pointer: fine) and (min-width: 768px) {
+        *,
+        *::before,
+        *::after {
+            cursor: none !important;
+        }
     }
     body {
         @apply bg-background text-foreground font-roboto-flex;
