@@ -172,14 +172,14 @@ const Skills = () => {
     return (
         <section id="skills" ref={container} className="py-24 bg-background">
             <div className="container max-w-6xl mx-auto flex flex-col items-center px-4 md:px-6">
-                <h2 className="text-4xl md:text-6xl font-extrabold mb-12 text-primary text-center">
+                <h2 className="text-4xl md:text-6xl font-extrabold mb-12 text-primary text-center tracking-tight">
                     My Stack
                 </h2>
                 <div className="space-y-8 w-full">
                     {stack.map((cat) => (
                         <div
                             key={cat.category}
-                            className="stack-row flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12 py-8 lg:py-10 border-b-2 border-primary/20 last:border-b-0 transition-all bg-background/80 hover:bg-primary/5 rounded-2xl px-4 lg:px-6"
+                            className="stack-row flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12 py-8 lg:py-10 border-b border-primary/10 last:border-b-0 transition-all bg-background/80 hover:bg-primary/5 rounded-xl px-4 lg:px-6"
                         >
                             <div className="w-full lg:w-64 lg:min-w-[200px] lg:pr-8 flex flex-col lg:items-end">
                                 <span className="block text-xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold text-gray-300 tracking-wide mb-3 text-left lg:text-right">

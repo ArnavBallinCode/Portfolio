@@ -69,6 +69,11 @@
         text-rendering: optimizeLegibility;
     }
 
+    ::selection {
+        background: hsl(var(--primary) / 0.25);
+        color: hsl(var(--foreground));
+    }
+
     h1,
     h2,
     h3,

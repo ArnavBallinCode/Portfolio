@@ -15,8 +15,10 @@ const experiences = [
         period: 'May 2026 – Present',
         link: 'https://github.com/fossasia/eventyay',
         details: [
-            'Selected as a Google Summer of Code contributor with FOSSASIA, working on the Eventyay open-source event management platform (Django + Vue.js).',
-            'Shipped features across ticketing, speaker management, schedule editor, and event settings — 100+ PRs merged with production impact.',
+            'Selected as a Google Summer of Code contributor with FOSSASIA, building real-time interpreter audio streaming and synchronized multilingual playback for the Eventyay live streaming platform.',
+            'Developing a browser-based interpreter console using WebRTC and Jitsi infrastructure for low-latency translated speech streaming during live events.',
+            'Building a multi-language audio player for viewers with automatic and user-adjustable timing offsets to maintain synchronization with YouTube video streams.',
+            'Integrating interpretation settings (languages, streams, sync offsets) into the Eventyay admin system and processing interpreter input into scalable HLS streams.',
         ],
     },
     {
@@ -186,23 +188,23 @@ const Experiences = () => {
                 className="container max-w-5xl mx-auto flex flex-col items-center"
                 ref={containerRef}
             >
-                <h2 className="text-5xl md:text-7xl font-extrabold mb-16 text-primary text-center">
+                <h2 className="text-5xl md:text-7xl font-extrabold mb-16 text-primary text-center tracking-tight">
                     Work Experience
                 </h2>
-                <div className="space-y-24 w-full">
+                <div className="space-y-16 w-full">
                     {experiences.map((exp, index) => (
                         <div
                             key={index}
                             className={`experience-item-${index} relative group`}
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-2xl transform group-hover:scale-105 transition-transform duration-500" />
-                            <div className="relative bg-background/20 backdrop-blur-sm p-8 rounded-2xl">
+                            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl transform group-hover:scale-[1.02] transition-transform duration-300" />
+                            <div className="relative bg-background/30 backdrop-blur-sm p-8 rounded-xl border border-primary/10 group-hover:border-primary/25 transition-colors duration-300">
                                 <div className="flex flex-wrap justify-between items-start mb-6">
                                     <div>
-                                        <h3 className="text-3xl md:text-4xl font-extrabold text-primary mb-2">
+                                        <h3 className="text-2xl md:text-3xl font-extrabold text-primary mb-1 tracking-tight">
                                             {exp.company}
                                         </h3>
-                                        <p className="text-xl text-gray-400 font-mono">
+                                        <p className="text-base text-gray-500 font-mono tracking-wide uppercase">
                                             {exp.location}
                                         </p>
                                         {exp.link && (
@@ -219,18 +221,18 @@ const Experiences = () => {
                                             </a>
                                         )}
                                     </div>
-                                    <span className="text-xl text-primary font-mono font-semibold">
+                                    <span className="text-sm text-primary/80 font-mono font-semibold tracking-wide">
                                         {exp.period}
                                     </span>
                                 </div>
-                                <h4 className="text-2xl md:text-3xl font-bold text-gray-200 mb-6">
+                                <h4 className="text-xl md:text-2xl font-bold text-gray-200 mb-4 tracking-tight">
                                     {exp.title}
                                 </h4>
-                                <ul className="space-y-4">
+                                <ul className="space-y-3">
                                     {exp.details.map((detail, i) => (
                                         <li
                                             key={i}
-                                            className="text-lg md:text-xl text-gray-300 leading-relaxed"
+                                            className="text-base md:text-lg text-gray-400 leading-relaxed pl-4 border-l-2 border-primary/20"
                                         >
                                             {detail}
                                         </li>

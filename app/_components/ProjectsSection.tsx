@@ -37,7 +37,7 @@ const ProjectsSection = () => {
             {projects.map((project) => (
                 <div
                     key={project.title}
-                    className="project-row bg-background/95 border-2 border-primary/20 p-6 rounded-2xl shadow-lg backdrop-blur-sm hover:bg-primary/10 transition-all opacity-100 h-full"
+                    className="project-row bg-background/95 border border-primary/15 p-6 rounded-xl shadow-sm backdrop-blur-sm hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 opacity-100 h-full"
                 >
                     <div className="flex flex-col h-full justify-between">
                         <div>
@@ -111,7 +111,7 @@ const ProjectsSection = () => {
             id="projects"
         >
             <div className="container max-w-5xl mx-auto flex flex-col items-center px-4">
-                <h2 className="text-5xl md:text-7xl font-extrabold mb-16 text-primary text-center">
+                <h2 className="text-5xl md:text-7xl font-extrabold mb-16 text-primary text-center tracking-tight">
                     Projects
                 </h2>
                 {renderProjects()}
