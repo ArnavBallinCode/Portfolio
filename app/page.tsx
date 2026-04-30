@@ -9,6 +9,7 @@
  */
 
 import AboutMe from './_components/AboutMe';
+import Achievements from './_components/Achievements';
 import Banner from './_components/Banner';
 import Experiences from './_components/Experiences';
 import ProjectsSection from './_components/ProjectsSection';
@@ -21,6 +22,7 @@ export default function Home() {
             <AboutMe />
             <Skills />
             <Experiences />
+            <Achievements />
             <ProjectsSection />
         </>
     );

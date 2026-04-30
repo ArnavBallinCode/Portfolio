@@ -31,6 +31,10 @@ const MENU_LINKS = [
         url: '/#experience',
     },
     {
+        name: 'Achievements',
+        url: '/#achievements',
+    },
+    {
         name: 'Projects',
         url: '/#projects',
     },
