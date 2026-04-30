@@ -52,6 +52,26 @@ export const projects = [
         ],
     },
     {
+        title: 'IIIT Dharwad Official Website',
+        slug: 'iiitdwd-website',
+        link: 'https://iiitdwd.ac.in',
+        period: '2025 – Present',
+        tech: [
+            'Next.js',
+            'TypeScript',
+            'Angular',
+            'Django',
+            'Python',
+            'Streamlit',
+            'Tailwind CSS',
+        ],
+        description: [
+            'Member of the official IIIT Dharwad Website Team — contributing to development and maintenance of the institute\'s public-facing website.',
+            'Building and improving pages across academics, campus life, and information sections using modern front-end and back-end frameworks.',
+            'Collaborating with a team of developers on feature implementation, performance optimization, and responsive design.',
+        ],
+    },
+    {
         title: 'RagVault – Offline AI-Powered RAG Knowledge Portal',
         slug: 'ragvault',
         github: '#',

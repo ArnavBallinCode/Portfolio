@@ -8,7 +8,8 @@ import { projects } from '../../data/projects';
 interface Project {
     title: string;
     slug: string;
-    github: string;
+    github?: string;
+    link?: string;
     period: string;
     tech: string[];
     description: string[];
@@ -54,15 +55,30 @@ export default function ProjectPage() {
                     <li key={i}>{desc}</li>
                 ))}
             </ul>
-            <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group h-14 px-10 inline-flex justify-center items-center gap-3 text-2xl uppercase font-anton tracking-widest outline-none transition-colors relative overflow-hidden bg-primary text-primary-foreground hover:bg-primary/80 rounded-xl shadow-lg"
-            >
-                <FaGithub className="text-3xl" />
-                <span className="z-[1]">View on GitHub</span>
-            </a>
+            <div className="flex flex-wrap gap-4 justify-center">
+                {project.github && (
+                    <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group h-14 px-10 inline-flex justify-center items-center gap-3 text-2xl uppercase font-anton tracking-widest outline-none transition-colors relative overflow-hidden bg-primary text-primary-foreground hover:bg-primary/80 rounded-xl shadow-lg"
+                    >
+                        <FaGithub className="text-3xl" />
+                        <span className="z-[1]">View on GitHub</span>
+                    </a>
+                )}
+                {project.link && (
+                    <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group h-14 px-10 inline-flex justify-center items-center gap-3 text-2xl uppercase font-anton tracking-widest outline-none transition-colors relative overflow-hidden border border-primary text-primary hover:bg-primary/10 rounded-xl"
+                    >
+                        <span className="z-[1]">Visit Live</span>
+                        <span className="z-[1] text-xl">→</span>
+                    </a>
+                )}
+            </div>
         </section>
     );
 }
