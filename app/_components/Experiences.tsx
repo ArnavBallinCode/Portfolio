@@ -15,6 +15,7 @@ const experiences = [
         period: 'May 2026 – Present',
         link: 'https://github.com/fossasia/eventyay',
         details: [
+            'Invited speaker at FOSSASIA Summit 2026 — delivered a talk on architecting real-time multilingual streaming infrastructure for open-source event platforms.',
             'Selected as a Google Summer of Code contributor with FOSSASIA, building real-time interpreter audio streaming and synchronized multilingual playback for the Eventyay live streaming platform.',
             'Developing a browser-based interpreter console using WebRTC and Jitsi infrastructure for low-latency translated speech streaming during live events.',
             'Building a multi-language audio player for viewers with automatic and user-adjustable timing offsets to maintain synchronization with YouTube video streams.',
