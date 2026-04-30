@@ -10,12 +10,12 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const achievements = [
     {
-        title: 'HACKMAZE \'26',
+        title: 'HACKMAZE \'26 — Telemetry Power Governor RTL',
         place: '1st Place',
         description:
-            'National hackathon — won first place competing against teams from across India.',
+            'Telemetry-driven Power Governor RTL IP for dynamic power management in SoCs. Monitors workload activity, computes utilization, and transitions between power states using a hardware FSM.',
         image: '/images/achievements/hackmaze.svg',
-        link: null,
+        link: 'https://github.com/ArnavBallinCode/telemetry-power-governor-rtl',
     },
     {
         title: 'DevHack \'25 — CampusDabba',
@@ -32,14 +32,6 @@ const achievements = [
             'Fully offline, privacy-focused RAG system for secure enterprise knowledge management. Process and query documents without internet or external APIs.',
         image: '/images/achievements/hal-ragvault.svg',
         link: 'https://github.com/ArnavBallinCode/RagVault',
-    },
-    {
-        title: 'HAL — Telemetry Power Governor RTL',
-        place: '3rd Place',
-        description:
-            'Telemetry-driven Power Governor RTL IP for dynamic power management in SoCs. Monitors workload activity, computes utilization, and transitions between power states using a hardware FSM.',
-        image: '/images/achievements/hal-power-governor.svg',
-        link: 'https://github.com/ArnavBallinCode/telemetry-power-governor-rtl',
     },
 ];
 
