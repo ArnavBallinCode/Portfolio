@@ -36,13 +36,13 @@ const experiences = [
     },
     {
         company: 'Poonawalla Fincorp',
-        location: 'On-site',
+        location: 'Pune, On-site',
         title: 'ML/AI Intern',
-        period: 'June 2025 – Aug 2025',
+        period: 'June 2025 – July 2025',
         details: [
-            'Engineered a cutting-edge machine learning pipeline that revolutionized operational workflows, achieving breakthrough improvements in automation and data processing efficiency.',
-            'Developed and deployed a model that delivered an annual business cost savings of over ₹2 Crore + by driving process optimization and resource allocation.',
-            'Collaborated closely with interdisciplinary teams to integrate AI-driven solutions that enhanced both accuracy and scalability across key business operations.',
+            'Deployed an ML-powered identity verification system integrated into fraud prevention workflows, replacing a commercial solution valued at ~Rs. 2 Cr/year.',
+            'Built custom self-hosted data infrastructure for high-speed vector operations and streamlined identity verification.',
+            'Optimized algorithmic performance for decision accuracy and inference efficiency at enterprise scale.',
         ],
     },
     {
@@ -58,26 +58,27 @@ const experiences = [
     },
     {
         company: 'CampusDabba',
-        location: 'Remote',
+        location: 'Dharwad',
         title: 'Founder & CEO',
-        period: 'January 2025 – Present',
+        period: 'February 2025 – December 2025',
         link: 'https://campusdabba0.netlify.app',
         details: [
-            'Founded and leading CampusDabba, a dynamic campus marketplace for students to buy, sell, and exchange goods/services.',
-            'Built the entire platform from concept to deployment using Node.js, TypeScript, Express.js, MongoDB, React, and Next.js.',
-            'Implemented secure user authentication, real-time chat functionality using WebSockets, and optimized backend APIs.',
-            'Successfully launched the platform and managing business operations, user acquisition, and product development.',
+            'Founded and scaled a pre-incubated campus marketplace startup for students to buy, sell, and exchange goods and services.',
+            'Built the full platform end-to-end — Node.js, TypeScript, Next.js, MongoDB, WebSockets — from first commit to production deployment.',
+            'Managed business operations, user acquisition, and product roadmap while leading technical architecture decisions.',
+            'Won 1st Place at DevHack \'25 (IIT Dharwad) competing against 500+ applicants across all years.',
         ],
     },
     {
         company: 'IISc (Indian Institute of Science) – RIMM Lab',
         location: 'Bangalore',
         title: 'ML/AI Intern | Smart Mirror Project',
-        period: 'March 2025 – Present',
+        period: 'June 2025 – December 2025',
         details: [
-            'Developing a Virtual Try-On system using real-time body landmark detection and computer vision.',
-            'Implemented garment overlay using webcam input, with segmentation-based garment alignment.',
-            'Built lightweight multimodal AI pipelines optimized for edge devices with privacy-first design.',
+            'Engineered a hybrid virtual try-on pipeline integrating multiple deep learning models for full-body outfit previews with high photorealism.',
+            'Built real-time CV pipelines with MediaPipe and body landmark detection for live webcam-based garment overlay.',
+            'Explored Neural Anthropometry for 3D body rendering and adaptive garment fitting for personalized digital fashion.',
+            'Designed modular ML APIs and GPU-based inference setups for scalable, high-performance try-on experiences.',
         ],
     },
     {
@@ -98,8 +99,9 @@ const experiences = [
         title: 'ML/AI Intern',
         period: 'December 2024 – March 2025',
         details: [
-            'Contributed to a GoK-DULT funded urban mobility project using advanced ML-based object detection.',
-            'Optimized CV pipelines and trained detection models for enhanced visual processing.',
+            'Fine-tuned YOLOv8 for Automatic Number Plate Recognition on a GoK-DULT funded urban mobility project.',
+            'Built reproducible training pipelines with data versioning, augmentation strategies, and hyperparameter sweeps.',
+            'Optimized inference for edge deployment — ONNX export, FP16 quantization, TensorRT acceleration.',
         ],
     },
     {
