@@ -43,26 +43,16 @@ const AboutMe = () => {
                     <h2 className="text-6xl md:text-8xl font-extrabold mb-14 text-primary text-left leading-[1.05] tracking-tight">
                         About Me
                     </h2>
-                    <p className="text-2xl md:text-3xl mb-10 text-gray-200 text-left leading-snug">
-                        Hi! I&apos;m <b>Arnav Amit Angarkar</b>, a passionate
-                        Computer Science undergrad at IIIT Dharwad. I love
-                        building things that matter—whether it&apos;s automating
-                        drones for ISRO, deploying ML models at IISc, or
-                        creating web apps for students. I thrive at the
-                        intersection of AI, software engineering, and real-world
-                        impact.
+                    <p className="text-2xl md:text-3xl mb-8 text-gray-200 text-left leading-snug">
+                        <b>Arnav Angarkar</b> — CS undergrad at IIIT Dharwad.
+                        Google Summer of Code &apos;26 at FOSSASIA. Quantum Computing Enthusiast.
                     </p>
-                    <p className="text-xl md:text-2xl mb-10 text-gray-400 text-left leading-snug">
-                        My journey has taken me from hackathons and open-source
-                        bug bounties to research internships and startup
-                        projects. I enjoy working on challenging problems,
-                        collaborating with diverse teams, and learning new
-                        technologies every day.
-                    </p>
-                    <p className="text-xl md:text-2xl mb-10 text-gray-400 text-left leading-snug">
-                        When I&apos;m not coding, you&apos;ll find me leading on
-                        the basketball court, organizing events, or exploring
-                        the latest in AI and cloud tech.
+                    <p className="text-xl md:text-2xl mb-8 text-gray-400 text-left leading-snug">
+                        I build full-stack platforms, train ML models, and ship
+                        production code. Currently working on real-time
+                        multilingual audio streaming for live events, autonomous
+                        drone systems for ISRO, and computer vision research at
+                        IISc.
                     </p>
                 </div>
                 <div className="w-full md:w-1/3 h-72 md:h-full max-h-[600px] flex-shrink-0 overflow-hidden shadow-lg border border-primary/20 bg-background rounded-xl flex items-center justify-center">

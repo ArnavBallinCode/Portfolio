@@ -122,16 +122,6 @@ const experiences = [
         ],
     },
     {
-        company: 'Vocab.AI',
-        location: 'Dharwad',
-        title: 'ASR Cloud Intern',
-        period: 'January 2025',
-        details: [
-            'Worked on Automatic Speech Recognition (ASR) models and explored deployment workflows on Google Cloud Platform.',
-            'Gained experience in acoustic modeling and cloud-native ML practices.',
-        ],
-    },
-    {
         company: 'Bug Bounty Programs',
         location: 'Remote',
         title: 'Security Researcher',
