@@ -9,6 +9,29 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const experiences = [
     {
+        company: 'FOSSASIA – Google Summer of Code',
+        location: 'Remote',
+        title: 'GSoC 2026 Intern | Eventyay',
+        period: 'May 2026 – Present',
+        link: 'https://github.com/fossasia/eventyay',
+        details: [
+            'Selected as a Google Summer of Code contributor with FOSSASIA, working on the Eventyay open-source event management platform (Django + Vue.js).',
+            'Shipped features across ticketing, speaker management, schedule editor, and event settings — 100+ PRs merged with production impact.',
+        ],
+    },
+    {
+        company: 'FOSSASIA',
+        location: 'Remote',
+        title: 'Open Source Contributor | Eventyay',
+        period: 'November 2024 – May 2025',
+        link: 'https://github.com/fossasia/eventyay',
+        details: [
+            'Contributed to the Eventyay event management platform across ticketing flows, talks/schedule pages, event dashboards, and payment workflows.',
+            'Resolved critical bugs and implemented features for real events at scale.',
+            'Collaborated with global maintainers through code reviews and iterative feedback, following clean commit and backward-compatibility practices.',
+        ],
+    },
+    {
         company: 'Poonawalla Fincorp',
         location: 'On-site',
         title: 'ML/AI Intern',
@@ -55,15 +78,15 @@ const experiences = [
         ],
     },
     {
-        company: 'ISRO Grand Challenge',
+        company: 'ISRO Grand Challenge – All India Rank 3',
         location: 'India',
-        title: 'Project Manager | Drone Automation & Integration',
-        period: 'January 2025 – Present',
+        title: 'Project Manager | Command & Control Systems Engineer',
+        period: 'November 2024 – Aug 2025',
         details: [
-            'Developing a fully autonomous drone solution—Top 28 of 2000+ teams nationally.',
-            'Built object detection systems using OpenCV, YOLOv5, and PyTorch for safe landing.',
-            'Designed MAVLink-based GCS, real-time telemetry dashboards, and 3D flight visualizations.',
-            'Integrated Jetson Nano, Pixhawk, LiDAR, Depth Camera for AI navigation, SLAM, and obstacle avoidance.',
+            'Led a team in a 10-month deep-tech initiative to design and deploy a fully autonomous UAV Drone—selected among Top 3 teams from 2000+ nationwide.',
+            'Built a custom MAVLink-based GCS with real-time telemetry dashboards, state-aware mission mode transitions, and 3D flight visualizations using WebSockets and Three.js.',
+            'Integrated edge-AI hardware (Jetson Nano), Pixhawk, LiDAR, and depth cameras for SLAM-based navigation, dynamic path planning, and autonomous obstacle avoidance.',
+            'Developed computer vision pipelines using YOLOv5, Depth Anything, DINOv2, and PyTorch for safe landing zone detection and multi-modal perception.',
         ],
     },
     {
