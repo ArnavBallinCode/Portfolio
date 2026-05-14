@@ -13,7 +13,7 @@ importers:
         version: 2.1.1
       '@next/third-parties':
         specifier: ^16.2.6
-        version: 16.2.6(next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)
+        version: 16.2.6(next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6))(react@19.2.6)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -25,25 +25,25 @@ importers:
         version: 3.15.0
       html-react-parser:
         specifier: ^6.1.0
-        version: 6.1.0(@types/react@18.3.12)(react@19.2.4)
+        version: 6.1.0(@types/react@19.2.14)(react@19.2.6)
       lenis:
         specifier: ^1.3.23
-        version: 1.3.23(react@19.2.4)
+        version: 1.3.23(react@19.2.6)
       lucide-react:
         specifier: ^0.460.0
-        version: 0.460.0(react@19.2.4)
+        version: 0.460.0(react@19.2.6)
       next:
         specifier: 16.2.6
-        version: 16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6)
       react:
-        specifier: 19.2.4
-        version: 19.2.4
+        specifier: 19.2.6
+        version: 19.2.6
       react-dom:
         specifier: 19.2.4
-        version: 19.2.4(react@19.2.4)
+        version: 19.2.4(react@19.2.6)
       react-icons:
         specifier: ^5.5.0
-        version: 5.5.0(react@19.2.4)
+        version: 5.5.0(react@19.2.6)
       tailwind-merge:
         specifier: ^2.5.4
         version: 2.5.4
@@ -58,8 +58,8 @@ importers:
         specifier: ^25
         version: 25.7.0
       '@types/react':
-        specifier: ^18
-        version: 18.3.12
+        specifier: ^19
+        version: 19.2.14
       '@types/react-dom':
         specifier: ^18
         version: 18.3.1
@@ -535,14 +535,11 @@ packages:
   '@types/node@25.7.0':
     resolution: {integrity: sha512-z+pdZyxE+RTQE9AcboAZCb4otwcrvgHD+GlBpPgn0emDVt0ohrTMhAwlr2Wd9nZ+nihhYFxO2pThz3C5qSu2Eg==}
 
-  '@types/prop-types@15.7.13':
-    resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
-
   '@types/react-dom@18.3.1':
     resolution: {integrity: sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==}
 
-  '@types/react@18.3.12':
-    resolution: {integrity: sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==}
+  '@types/react@19.2.14':
+    resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
 
   '@typescript-eslint/eslint-plugin@8.14.0':
     resolution: {integrity: sha512-tqp8H7UWFaZj0yNO6bycd5YjMwxa6wIHOLZvWPkidwbgLCsBMetQoGj7DPuAlWa2yGO3H48xmPwjhsSPPCGU5w==}
@@ -827,8 +824,8 @@ packages:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
 
-  csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -1794,8 +1791,8 @@ packages:
   react-property@2.0.2:
     resolution: {integrity: sha512-+PbtI3VuDV0l6CleQMsx2gtK0JZbZKbpdu5ynr+lbsuvtmgbNcS3VM0tuY2QjFNOcWxvXeHjDpy42RO+4U2rug==}
 
-  react@19.2.4:
-    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
+  react@19.2.6:
+    resolution: {integrity: sha512-sfWGGfavi0xr8Pg0sVsyHMAOziVYKgPLNrS7ig+ivMNb3wbCBw3KxtflsGBAwD3gYQlE/AEZsTLgToRrSCjb0Q==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -2263,7 +2260,7 @@ snapshots:
   '@gsap/react@2.1.1':
     dependencies:
       gsap: 3.15.0
-      react: 19.2.4
+      react: 19.2.6
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
@@ -2422,10 +2419,10 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.2.6':
     optional: true
 
-  '@next/third-parties@16.2.6(next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)':
+  '@next/third-parties@16.2.6(next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6))(react@19.2.6)':
     dependencies:
-      next: 16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      react: 19.2.4
+      next: 16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6)
+      react: 19.2.6
       third-party-capital: 1.0.20
 
   '@nodelib/fs.scandir@2.1.5':
@@ -2562,16 +2559,13 @@ snapshots:
     dependencies:
       undici-types: 7.21.0
 
-  '@types/prop-types@15.7.13': {}
-
   '@types/react-dom@18.3.1':
     dependencies:
-      '@types/react': 18.3.12
+      '@types/react': 19.2.14
 
-  '@types/react@18.3.12':
+  '@types/react@19.2.14':
     dependencies:
-      '@types/prop-types': 15.7.13
-      csstype: 3.1.3
+      csstype: 3.2.3
 
   '@typescript-eslint/eslint-plugin@8.14.0(@typescript-eslint/parser@8.14.0(eslint@9.8.0)(typescript@5.6.3))(eslint@9.8.0)(typescript@5.6.3)':
     dependencies:
@@ -2893,7 +2887,7 @@ snapshots:
     dependencies:
       css-tree: 2.2.1
 
-  csstype@3.1.3: {}
+  csstype@3.2.3: {}
 
   damerau-levenshtein@1.0.8: {}
 
@@ -3469,15 +3463,15 @@ snapshots:
       domhandler: 6.0.1
       htmlparser2: 12.0.0
 
-  html-react-parser@6.1.0(@types/react@18.3.12)(react@19.2.4):
+  html-react-parser@6.1.0(@types/react@19.2.14)(react@19.2.6):
     dependencies:
       domhandler: 6.0.1
       html-dom-parser: 7.1.0
-      react: 19.2.4
+      react: 19.2.6
       react-property: 2.0.2
       style-to-js: 1.1.21
     optionalDependencies:
-      '@types/react': 18.3.12
+      '@types/react': 19.2.14
 
   htmlparser2@12.0.0:
     dependencies:
@@ -3682,9 +3676,9 @@ snapshots:
     dependencies:
       language-subtag-registry: 0.3.23
 
-  lenis@1.3.23(react@19.2.4):
+  lenis@1.3.23(react@19.2.6):
     optionalDependencies:
-      react: 19.2.4
+      react: 19.2.6
 
   levn@0.4.1:
     dependencies:
@@ -3717,9 +3711,9 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@0.460.0(react@19.2.4):
+  lucide-react@0.460.0(react@19.2.6):
     dependencies:
-      react: 19.2.4
+      react: 19.2.6
 
   mdn-data@2.0.28: {}
 
@@ -3760,16 +3754,16 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6):
     dependencies:
       '@next/env': 16.2.6
       '@swc/helpers': 0.5.15
       baseline-browser-mapping: 2.10.29
       caniuse-lite: 1.0.30001792
       postcss: 8.4.31
-      react: 19.2.4
-      react-dom: 19.2.4(react@19.2.4)
-      styled-jsx: 5.1.6(@babel/core@7.26.0)(react@19.2.4)
+      react: 19.2.6
+      react-dom: 19.2.4(react@19.2.6)
+      styled-jsx: 5.1.6(@babel/core@7.26.0)(react@19.2.6)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.6
       '@next/swc-darwin-x64': 16.2.6
@@ -3951,20 +3945,20 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-dom@19.2.4(react@19.2.4):
+  react-dom@19.2.4(react@19.2.6):
     dependencies:
-      react: 19.2.4
+      react: 19.2.6
       scheduler: 0.27.0
 
-  react-icons@5.5.0(react@19.2.4):
+  react-icons@5.5.0(react@19.2.6):
     dependencies:
-      react: 19.2.4
+      react: 19.2.6
 
   react-is@16.13.1: {}
 
   react-property@2.0.2: {}
 
-  react@19.2.4: {}
+  react@19.2.6: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -4179,10 +4173,10 @@ snapshots:
     dependencies:
       inline-style-parser: 0.2.7
 
-  styled-jsx@5.1.6(@babel/core@7.26.0)(react@19.2.4):
+  styled-jsx@5.1.6(@babel/core@7.26.0)(react@19.2.6):
     dependencies:
       client-only: 0.0.1
-      react: 19.2.4
+      react: 19.2.6
     optionalDependencies:
       '@babel/core': 7.26.0
 
