@@ -13,7 +13,7 @@ importers:
         version: 2.1.1
       '@next/third-parties':
         specifier: ^16.2.6
-        version: 16.2.6(next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6))(react@19.2.6)
+        version: 16.2.6(next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(react@19.2.6)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -34,13 +34,13 @@ importers:
         version: 0.460.0(react@19.2.6)
       next:
         specifier: 16.2.6
-        version: 16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6)
+        version: 16.2.6(@babel/core@7.26.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       react:
         specifier: 19.2.6
         version: 19.2.6
       react-dom:
-        specifier: 19.2.4
-        version: 19.2.4(react@19.2.6)
+        specifier: 19.2.6
+        version: 19.2.6(react@19.2.6)
       react-icons:
         specifier: ^5.6.0
         version: 5.6.0(react@19.2.6)
@@ -61,8 +61,8 @@ importers:
         specifier: ^19
         version: 19.2.14
       '@types/react-dom':
-        specifier: ^18
-        version: 18.3.1
+        specifier: ^19
+        version: 19.2.3(@types/react@19.2.14)
       eslint:
         specifier: ^9
         version: 9.8.0
@@ -535,8 +535,10 @@ packages:
   '@types/node@25.8.0':
     resolution: {integrity: sha512-TCFSk8IZh+iLX1xtksoBVtdmgL+1IX0fC9BeU4QqFSuNdN/K+HUlhqOzEmSYYpZUVsLYcPqc9KX+60iDuninSQ==}
 
-  '@types/react-dom@18.3.1':
-    resolution: {integrity: sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==}
+  '@types/react-dom@19.2.3':
+    resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
+    peerDependencies:
+      '@types/react': ^19.2.0
 
   '@types/react@19.2.14':
     resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
@@ -1775,10 +1777,10 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-dom@19.2.4:
-    resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
+  react-dom@19.2.6:
+    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
     peerDependencies:
-      react: ^19.2.4
+      react: ^19.2.6
 
   react-icons@5.6.0:
     resolution: {integrity: sha512-RH93p5ki6LfOiIt0UtDyNg/cee+HLVR6cHHtW3wALfo+eOHTp8RnU2kRkI6E+H19zMIs03DyxUG/GfZMOGvmiA==}
@@ -2419,9 +2421,9 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.2.6':
     optional: true
 
-  '@next/third-parties@16.2.6(next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6))(react@19.2.6)':
+  '@next/third-parties@16.2.6(next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(react@19.2.6)':
     dependencies:
-      next: 16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6)
+      next: 16.2.6(@babel/core@7.26.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       react: 19.2.6
       third-party-capital: 1.0.20
 
@@ -2559,7 +2561,7 @@ snapshots:
     dependencies:
       undici-types: 7.24.6
 
-  '@types/react-dom@18.3.1':
+  '@types/react-dom@19.2.3(@types/react@19.2.14)':
     dependencies:
       '@types/react': 19.2.14
 
@@ -3754,7 +3756,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.4(react@19.2.6))(react@19.2.6):
+  next@16.2.6(@babel/core@7.26.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
     dependencies:
       '@next/env': 16.2.6
       '@swc/helpers': 0.5.15
@@ -3762,7 +3764,7 @@ snapshots:
       caniuse-lite: 1.0.30001792
       postcss: 8.4.31
       react: 19.2.6
-      react-dom: 19.2.4(react@19.2.6)
+      react-dom: 19.2.6(react@19.2.6)
       styled-jsx: 5.1.6(@babel/core@7.26.0)(react@19.2.6)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.6
@@ -3945,7 +3947,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-dom@19.2.4(react@19.2.6):
+  react-dom@19.2.6(react@19.2.6):
     dependencies:
       react: 19.2.6
       scheduler: 0.27.0
