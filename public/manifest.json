@@ -1,0 +1,16 @@
+{
+  "name": "Arnav Angarkar – Portfolio",
+  "short_name": "Arnav Angarkar",
+  "description": "Arnav Angarkar – Full Stack Developer, GSoC 2026, IIIT Dharwad. Portfolio and projects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/Pic.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
