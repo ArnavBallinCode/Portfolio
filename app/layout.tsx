@@ -5,7 +5,6 @@ import { ReactLenis } from 'lenis/react';
 import 'lenis/dist/lenis.css';
 import './globals.css';
 import Footer from '@/components/Footer';
-// import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
 import ParticleBackground from '@/components/ParticleBackground';
 import CustomCursor from '@/components/CustomCursor';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -22,24 +21,56 @@ const anton = Anton({
 });
 
 export const metadata: Metadata = {
-    title: 'Arnav Angarkar - Full Stack Developer',
+    title: {
+        default: 'Arnav Angarkar – Full Stack Developer & GSoC 2026',
+        template: '%s | Arnav Angarkar',
+    },
     description:
-        'Full Stack Developer specializing in AI/ML, Web Development, and Cloud Technologies',
-    metadataBase: new URL('https://arnavangarkar.com'),
+        'Arnav Angarkar – CS undergrad at IIIT Dharwad, GSoC 2026 @ FOSSASIA, ISRO IROC AIR 3, Linux Foundation Scholar, 4x hackathon winner, published researcher. Full-stack developer specialising in AI/ML, web platforms, and open source.',
+    keywords: [
+        'Arnav Angarkar',
+        'Arnav Angarkar portfolio',
+        'angarkar.is-a.dev',
+        'GSoC 2026 FOSSASIA',
+        'IIIT Dharwad developer',
+        'Full Stack Developer India',
+        'AI ML developer',
+        'open source developer India',
+        'ISRO IROC AIR 3',
+        'hackathon winner India',
+        'Linux Foundation Scholar',
+        'quantum error correction researcher',
+    ],
+    authors: [{ name: 'Arnav Angarkar', url: 'https://angarkar.is-a.dev' }],
+    creator: 'Arnav Angarkar',
+    metadataBase: new URL('https://angarkar.is-a.dev'),
+    alternates: {
+        canonical: 'https://angarkar.is-a.dev',
+    },
     openGraph: {
-        title: 'Arnav Angarkar - Full Stack Developer',
+        title: 'Arnav Angarkar – Full Stack Developer & GSoC 2026',
         description:
-            'Full Stack Developer specializing in AI/ML, Web Development, and Cloud Technologies',
-        url: 'https://arnavangarkar.com',
-        siteName: 'Arnav Angarkar Portfolio',
+            'Arnav Angarkar – CS undergrad at IIIT Dharwad, GSoC 2026 @ FOSSASIA, ISRO IROC AIR 3, Linux Foundation Scholar, 4x hackathon winner, published researcher.',
+        url: 'https://angarkar.is-a.dev',
+        siteName: 'Arnav Angarkar',
         locale: 'en_US',
         type: 'website',
+        images: [
+            {
+                url: '/Pic.jpeg',
+                width: 1200,
+                height: 630,
+                alt: 'Arnav Angarkar – Full Stack Developer',
+            },
+        ],
     },
     twitter: {
-        title: 'Arnav Angarkar - Full Stack Developer',
+        title: 'Arnav Angarkar – Full Stack Developer & GSoC 2026',
         description:
-            'Full Stack Developer specializing in AI/ML, Web Development, and Cloud Technologies',
+            'Arnav Angarkar – CS undergrad at IIIT Dharwad, GSoC 2026 @ FOSSASIA, ISRO IROC AIR 3, Linux Foundation Scholar, 4x hackathon winner.',
         card: 'summary_large_image',
+        images: ['/Pic.jpeg'],
+        creator: '@ArnavAngarkar',
     },
     robots: {
         index: true,
@@ -62,6 +93,39 @@ export default function RootLayout({
     return (
         <html lang="en">
             <GoogleAnalytics gaId="G-MHLY1LNGY5" />
+            <Script
+                id="json-ld-person"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'Person',
+                        name: 'Arnav Angarkar',
+                        url: 'https://angarkar.is-a.dev',
+                        image: 'https://angarkar.is-a.dev/Pic.jpeg',
+                        jobTitle: 'Full Stack Developer',
+                        description:
+                            'CS undergrad at IIIT Dharwad. GSoC 2026 @ FOSSASIA. ISRO IROC AIR 3. Linux Foundation Scholar. 4x hackathon winner. Published researcher in quantum error correction.',
+                        alumniOf: {
+                            '@type': 'EducationalOrganization',
+                            name: 'IIIT Dharwad',
+                        },
+                        sameAs: [
+                            'https://github.com/ArnavAngarkar',
+                            'https://linkedin.com/in/arnav-angarkar',
+                        ],
+                        knowsAbout: [
+                            'Full Stack Development',
+                            'Artificial Intelligence',
+                            'Machine Learning',
+                            'Open Source',
+                            'Cloud Technologies',
+                            'Quantum Computing',
+                        ],
+                    }),
+                }}
+                strategy="beforeInteractive"
+            />
             <Script id="hotjar" strategy="afterInteractive">
                 {`(function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -87,7 +151,6 @@ export default function RootLayout({
                     <Footer />
 
                     <CustomCursor />
-                    {/* <ScrollProgressIndicator /> */}
                     <ParticleBackground />
                 </ReactLenis>
             </body>
