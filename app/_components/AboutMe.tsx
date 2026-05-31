@@ -50,8 +50,7 @@ const AboutMe = () => {
                         researcher in quantum error correction.
                     </p>
                     <p className="text-xl md:text-2xl mb-8 text-gray-400 text-left leading-snug">
-                        100+ PRs merged in production open source. Speaker at
-                        FOSSASIA Summit 2026. I build full-stack platforms,
+                        Speaker at FOSSASIA Summit 2026. I build full-stack platforms,
                         deploy ML models that replace commercial solutions, and
                         architect real-time streaming infrastructure.
                     </p>
