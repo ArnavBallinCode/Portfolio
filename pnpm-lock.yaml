@@ -13,7 +13,7 @@ importers:
         version: 2.1.1
       '@next/third-parties':
         specifier: ^16.2.9
-        version: 16.2.9(next@16.2.7(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7))(react@19.2.7)
+        version: 16.2.9(next@16.2.7(@babel/core@7.29.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -34,13 +34,13 @@ importers:
         version: 0.460.0(react@19.2.7)
       next:
         specifier: 16.2.7
-        version: 16.2.7(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+        version: 16.2.7(@babel/core@7.29.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react:
         specifier: 19.2.7
         version: 19.2.7
       react-dom:
-        specifier: 19.2.6
-        version: 19.2.6(react@19.2.7)
+        specifier: 19.2.7
+        version: 19.2.7(react@19.2.7)
       react-icons:
         specifier: ^5.6.0
         version: 5.6.0(react@19.2.7)
@@ -2081,10 +2081,10 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-dom@19.2.6:
-    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
+  react-dom@19.2.7:
+    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
-      react: ^19.2.6
+      react: ^19.2.7
 
   react-icons@5.6.0:
     resolution: {integrity: sha512-RH93p5ki6LfOiIt0UtDyNg/cee+HLVR6cHHtW3wALfo+eOHTp8RnU2kRkI6E+H19zMIs03DyxUG/GfZMOGvmiA==}
@@ -2916,9 +2916,9 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.2.7':
     optional: true
 
-  '@next/third-parties@16.2.9(next@16.2.7(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7))(react@19.2.7)':
+  '@next/third-parties@16.2.9(next@16.2.7(@babel/core@7.29.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)':
     dependencies:
-      next: 16.2.7(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+      next: 16.2.7(@babel/core@7.29.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react: 19.2.7
       third-party-capital: 1.0.20
 
@@ -3729,7 +3729,7 @@ snapshots:
       eslint: 9.8.0
       eslint-import-resolver-node: 0.3.10
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint@9.8.0))(eslint@9.8.0)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.8.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint@9.8.0))(eslint@9.8.0))(eslint@9.8.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.8.0)
       eslint-plugin-react: 7.37.5(eslint@9.8.0)
       eslint-plugin-react-hooks: 7.1.1(eslint@9.8.0)
@@ -3762,7 +3762,7 @@ snapshots:
       tinyglobby: 0.2.16
       unrs-resolver: 1.12.2
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.8.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint@9.8.0))(eslint@9.8.0))(eslint@9.8.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3777,7 +3777,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.8.0):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.4(eslint@9.8.0)(typescript@6.0.3))(eslint@9.8.0))(eslint@9.8.0))(eslint@9.8.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -4434,7 +4434,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@16.2.7(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7):
+  next@16.2.7(@babel/core@7.29.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@next/env': 16.2.7
       '@swc/helpers': 0.5.15
@@ -4442,7 +4442,7 @@ snapshots:
       caniuse-lite: 1.0.30001793
       postcss: 8.4.31
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
       styled-jsx: 5.1.6(@babel/core@7.29.0)(react@19.2.7)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.7
@@ -4646,7 +4646,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-dom@19.2.6(react@19.2.7):
+  react-dom@19.2.7(react@19.2.7):
     dependencies:
       react: 19.2.7
       scheduler: 0.27.0
