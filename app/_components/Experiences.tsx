@@ -9,29 +9,30 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const experiences = [
     {
-        company: 'FOSSASIA – Google Summer of Code',
+        company: 'Google Summer of Code 2026 – FOSSASIA',
         location: 'Remote',
-        title: 'GSoC 2026 Intern | Eventyay',
+        title: 'GSoC Contributor | VoxBento',
         period: 'May 2026 – Present',
-        link: 'https://github.com/fossasia/eventyay',
+        link: 'https://voxbento.com',
         details: [
-            'Invited speaker at FOSSASIA Summit 2026 — delivered a talk on architecting real-time multilingual streaming infrastructure for open-source event platforms.',
-            'Selected as a Google Summer of Code contributor with FOSSASIA, building real-time interpreter audio streaming and synchronized multilingual playback for the Eventyay live streaming platform.',
-            'Developing a browser-based interpreter console using WebRTC and Jitsi infrastructure for low-latency translated speech streaming during live events.',
-            'Building a multi-language audio player for viewers with automatic and user-adjustable timing offsets to maintain synchronization with YouTube video streams.',
-            'Integrating interpretation settings (languages, streams, sync offsets) into the Eventyay admin system and processing interpreter input into scalable HLS streams.',
+            'Selected as a GSoC 2026 contributor to architect VoxBento from scratch – a distributed, low-latency multilingual audio platform for conference-scale virtual and hybrid events, deployed and tested on Linux server infrastructure.',
+            'Designed and implemented a concurrent multi-channel audio routing system using WebRTC, Jitsi, and MediaMTX – core multimedia/audio-codec pipeline work; engineered synchronization primitives to coordinate real-time audio streams across parallel language channels without drift or race conditions.',
+            'Built end-to-end horizontally scalable speech pipelines: concurrent Speech-to-Text, translation, subtitle generation, and Text-to-Speech; coordinated via asynchronous event-driven processing with Redis pub/sub for inter-service synchronization.',
+            'Engineered scalable backend microservices with Python, FastAPI, PostgreSQL, and Redis on Linux; designed distributed interpreter management and language-routing logic for conference-scale multilingual audio delivery.',
+            'Presented distributed systems architecture and engineering trade-offs as a speaker at FOSSASIA Summit 2026, and live-demoed VoxBento at Wikimania Paris 2026 to attendees from the global Wikimedia community.',
         ],
     },
     {
         company: 'FOSSASIA',
         location: 'Remote',
-        title: 'Open Source Contributor | Eventyay',
-        period: 'November 2024 – May 2025',
+        title: 'Project Maintainer | Eventyay',
+        period: 'October 2025 – Present',
         link: 'https://github.com/fossasia/eventyay',
         details: [
-            'Contributed to the Eventyay event management platform across ticketing flows, talks/schedule pages, event dashboards, and payment workflows.',
-            'Resolved critical bugs and implemented features for real events at scale.',
-            'Collaborated with global maintainers through code reviews and iterative feedback, following clean commit and backward-compatibility practices.',
+            'Maintainer of Eventyay, a 6k+ GitHub star open-source conference management platform used by organizations including Wikimedia, PyCon, and numerous international conferences.',
+            'Showcased Eventyay in person at Wikimania Paris 2026 to multiple conference organizers and community members.',
+            'Led development and maintenance across Django and Jinja codebases on Linux, reviewing contributions, merging pull requests, maintaining production stability, and delivering features spanning ticketing, scheduling, and organizer workflows.',
+            'Invited to FOSSASIA Summit 2026 (Bangkok) to present open-source contribution workflows and platform engineering practices.',
         ],
     },
     {

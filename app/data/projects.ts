@@ -1,6 +1,29 @@
 export const projects = [
     // Top-priority projects (user requested order)
     {
+        title: 'VoxBento – Distributed Multilingual Streaming Infrastructure',
+        slug: 'voxbento',
+        github: 'https://github.com/fossasia/voxbento',
+        link: 'https://voxbento.com',
+        period: 'May 2026 – Present',
+        tech: [
+            'WebRTC',
+            'Jitsi',
+            'MediaMTX',
+            'Python',
+            'FastAPI',
+            'PostgreSQL',
+            'Redis',
+            'Linux',
+        ],
+        description: [
+            'Architected VoxBento from scratch as a GSoC 2026 contributor – a distributed, low-latency multilingual audio platform for conference-scale virtual and hybrid events.',
+            'Designed and implemented a concurrent multi-channel audio routing system using WebRTC, Jitsi, and MediaMTX to coordinate real-time audio streams across parallel language channels without drift.',
+            'Built end-to-end horizontally scalable speech pipelines including concurrent Speech-to-Text, translation, subtitle generation, and Text-to-Speech via asynchronous event-driven processing with Redis pub/sub.',
+            'Engineered scalable backend microservices with Python, FastAPI, and PostgreSQL on Linux with distributed interpreter management and language-routing logic.',
+        ],
+    },
+    {
         title: 'CerebrumAI – Offline-First Multimodal Healthcare Triage Engine',
         slug: 'cerebrumai-healthcare-triage',
         github: 'https://github.com/Cerebrum-Ai/Cerebrum-web-frontend',

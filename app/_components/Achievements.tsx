@@ -10,6 +10,22 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const achievements = [
     {
+        title: 'Wikimania Paris 2026',
+        place: 'Presenter',
+        description:
+            'Live-demoed VoxBento and Eventyay to global Wikimedia community members and conference organizers.',
+        image: '/images/achievements/fossasia-summit.svg',
+        link: null,
+    },
+    {
+        title: 'Google Summer of Code 2026',
+        place: 'GSoC Contributor',
+        description:
+            'GSoC contributor with FOSSASIA; one of ~1,200 selected globally.',
+        image: '/images/achievements/fossasia-summit.svg',
+        link: 'https://voxbento.com',
+    },
+    {
         title: 'FOSSASIA Summit 2026',
         place: 'Speaker',
         description:
