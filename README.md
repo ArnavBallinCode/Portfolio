@@ -2,7 +2,7 @@
 
 Personal portfolio site built with Next.js, Tailwind CSS, and GSAP.
 
-**Live:** [https://angarkar.is-a.dev](https://angarkar.is-a.dev/)
+**Live:** [arnavangarkar.xyz](https://arnavangarkar.xyz)
 
 ## Stack
 
