@@ -63,9 +63,7 @@ export const metadata: Metadata = {
     creator: 'Arnav Angarkar',
     publisher: 'Arnav Angarkar',
     metadataBase: new URL('https://angarkar.is-a.dev'),
-    alternates: {
-        canonical: 'https://angarkar.is-a.dev',
-    },
+
     verification: {
         google: 'googleb73ec97d9cf6ea95',
     },

@@ -18,12 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: project.title,
         description: `${project.summary} Built by Arnav Angarkar with ${project.tech.slice(0, 5).join(', ')}.`,
         alternates: {
-            canonical: `https://angarkar.is-a.dev/projects/${slug}`,
+            canonical: `https://angarkar.is-a.dev/projects/${slug}/`,
         },
         openGraph: {
             title: `${project.title} – Arnav Angarkar`,
             description: project.summary,
-            url: `https://angarkar.is-a.dev/projects/${slug}`,
+            url: `https://angarkar.is-a.dev/projects/${slug}/`,
             type: 'article',
         },
     };

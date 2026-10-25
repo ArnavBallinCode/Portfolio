@@ -11,9 +11,14 @@ export const site = {
     availability: 'Open to internships · India or remote',
 };
 
+import { github } from './gsoc';
+
 export const stats = [
     { value: 'AIR 3', label: 'ISRO IROC Grand Challenge, of 2,000+ teams' },
-    { value: '6k+ ★', label: 'Eventyay, the open-source platform I maintain' },
+    {
+        value: String(github.stats.mergedPullRequests),
+        label: 'merged PRs across FOSSASIA, incl. 6k★ Eventyay',
+    },
     { value: '~₹2 Cr/yr', label: 'vendor cost replaced by my ML pipeline' },
     { value: '5×', label: 'national hackathon wins & podiums' },
 ];
@@ -34,13 +39,13 @@ export const experience: Experience[] = [
         role: 'GSoC Contributor, VoxBento',
         period: 'May 2026 – Present',
         location: 'Remote',
-        link: 'https://voxbento.com',
+        link: '/gsoc',
         points: [
-            'Architected VoxBento from scratch: a distributed, low-latency multilingual audio platform for conference-scale events.',
-            'Concurrent multi-channel audio routing over WebRTC, Jitsi and MediaMTX; speech-to-text, translation and TTS pipelines as event-driven services on Redis pub/sub.',
-            'Presented the architecture at FOSSASIA Summit 2026 and demoed it live at Wikimania Paris 2026.',
+            'Architected VoxBento from scratch: a low-latency, browser-based multilingual interpretation platform for conference-scale events.',
+            'Live audio over WebRTC (WHIP/WHEP) through MediaMTX, kept out of Python; FastAPI coordinates booths and async speech-to-text, translation and TTS workers over WebSockets.',
+            'Presented it at FOSSASIA Summit 2026, demoed it live at Wikimania Paris 2026, and wrote up the whole journey on this site.',
         ],
-        tech: ['WebRTC', 'FastAPI', 'Redis', 'PostgreSQL'],
+        tech: ['WebRTC', 'MediaMTX', 'FastAPI', 'PostgreSQL'],
     },
     {
         org: 'FOSSASIA',
@@ -245,7 +250,8 @@ export const awards = [
 export const publications = [
     {
         title: 'Predicting BB84 Error Rates from Transmon Calibration Data: Learned Surrogates versus Physical Baselines on a 156-Qubit IBM Heron Processor',
-        authors: 'with Aswath Babu (IIIT Dharwad)',
+        authors:
+            'with Aswath Babu (IIIT Dharwad) · supervised by Aswath Babu and Prof. V. Ravishankar (IIT Delhi)',
         venue: 'Manuscript, 2026',
         note: '25 days, 115 calibration snapshots and 105 BB84 runs on ibm_marrakesh: readout error alone predicts QBER better than ML surrogates (Spearman ρ 0.61 vs 0.47).',
         link: 'https://github.com/ArnavBallinCode/transmon-qkd-ml',

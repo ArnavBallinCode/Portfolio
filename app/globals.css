@@ -82,6 +82,40 @@
         @apply inline-flex items-center rounded-md bg-secondary px-2 py-0.5 font-mono text-[11px] text-secondary-foreground;
     }
 
+    .prose-body {
+        @apply space-y-5 leading-relaxed text-foreground/90;
+    }
+    .prose-body h2 {
+        @apply pt-4 text-xl font-semibold tracking-tight text-foreground;
+    }
+    .prose-body h3 {
+        @apply pt-2 font-semibold text-foreground;
+    }
+    .prose-body a {
+        @apply underline decoration-border underline-offset-4 hover:decoration-primary hover:text-primary;
+    }
+    .prose-body ul {
+        @apply list-disc space-y-1.5 pl-5 marker:text-muted-foreground;
+    }
+    .prose-body ol {
+        @apply list-decimal space-y-1.5 pl-5;
+    }
+    .prose-body code {
+        @apply rounded bg-secondary px-1.5 py-0.5 font-mono text-[0.85em];
+    }
+    .prose-body pre {
+        @apply overflow-x-auto rounded-lg bg-secondary p-4 text-sm;
+    }
+    .prose-body pre code {
+        @apply bg-transparent p-0;
+    }
+    .prose-body blockquote {
+        @apply border-l-2 border-border pl-4 text-muted-foreground;
+    }
+    .prose-body img {
+        @apply rounded-lg;
+    }
+
     .link {
         @apply underline decoration-border underline-offset-4 transition-colors hover:decoration-primary hover:text-primary;
     }

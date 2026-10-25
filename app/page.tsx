@@ -4,10 +4,11 @@ import ExperienceSection from './_components/ExperienceSection';
 import Hero from './_components/Hero';
 import ProjectsSection from './_components/ProjectsSection';
 import RecognitionSection from './_components/RecognitionSection';
+import WritingSection from './_components/WritingSection';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'https://angarkar.is-a.dev',
+        canonical: 'https://angarkar.is-a.dev/',
     },
 };
 
@@ -18,6 +19,7 @@ export default function Home() {
             <ExperienceSection />
             <ProjectsSection />
             <RecognitionSection />
+            <WritingSection />
             <SkillsEducation />
             <Contact />
         </div>

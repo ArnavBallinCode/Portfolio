@@ -6,7 +6,7 @@ const Footer = () => (
             <span>
                 &copy; {new Date().getFullYear()} {site.fullName}
             </span>
-            <span>Built with Next.js · Deployed on Netlify</span>
+            <span>Built with Next.js · Hosted on GitHub Pages</span>
         </div>
     </footer>
 );

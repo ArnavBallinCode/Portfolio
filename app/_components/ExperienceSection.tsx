@@ -20,8 +20,12 @@ const ExperienceSection = () => (
                             {job.link ? (
                                 <a
                                     href={job.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    {...(job.link.startsWith('/')
+                                        ? {}
+                                        : {
+                                              target: '_blank',
+                                              rel: 'noopener noreferrer',
+                                          })}
                                     className="group inline-flex items-center gap-0.5 hover:text-primary"
                                 >
                                     {job.org}
