@@ -31,8 +31,7 @@ export const Contact = () => (
     <section id="contact" className="py-20">
         <h2 className="section-title">Contact</h2>
         <p className="max-w-xl text-2xl font-semibold leading-snug tracking-tight sm:text-3xl">
-            Hiring for a backend, systems or ML infrastructure internship? I’d
-            love to talk.
+            Looking for a backend, systems or ML engineer? I’d love to talk.
         </p>
         <p className="mt-4 text-muted-foreground">
             Based in {site.location}. Open to roles anywhere in India or

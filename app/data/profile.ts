@@ -8,14 +8,14 @@ export const site = {
     resume: '/Arnav_Angarkar_Resume.pdf',
     location: 'Pune, India',
     role: 'Software Engineer · Distributed Systems & ML',
-    availability: 'Open to internships · India or remote',
+    availability: 'Open to opportunities · India or remote',
 };
 
 import { github } from './gsoc';
 
 export const stats = [
     { value: 'AIR 3', label: 'ISRO IROC', detail: 'Led our team through the autonomous UAV challenge.' },
-    { value: `${github.stats.mergedPullRequests} merged contributions`, label: 'Open-source engineering', detail: 'Across FOSSASIA, including Eventyay and VoxBento.' },
+    { value: `${github.stats.mergedPullRequests} merged contributions`, label: 'Open-source maintainer', detail: 'VoxBento & Eventyay.' },
     { value: 'ML in production', label: 'Poonawalla Fincorp', detail: 'Built an in-house alternative to a ~₹2 Cr/year vendor service.' },
     { value: '5 wins & podiums', label: 'National hackathons', detail: 'From offline AI to hardware and developer tools.' },
 ];
