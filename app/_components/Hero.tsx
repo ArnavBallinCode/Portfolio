@@ -26,11 +26,12 @@ const Hero = () => (
             </div>
         </div>
 
-        <h1 className="mt-10 max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
-            I build distributed real-time systems and ship ML to production.
+        <h1 className="mt-10 max-w-xl text-xl font-semibold leading-snug tracking-tight sm:text-2xl">
+            I make things fast: live translation, drone ground control, and ML
+            on tiny devices. ⚡
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+        <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
             CS undergrad at IIIT Dharwad (minor in Quantum Computing, class of
             2028). Google Summer of Code 2026 contributor and Eventyay
             maintainer at FOSSASIA. Previously ML at IISc and Poonawalla
@@ -38,7 +39,7 @@ const Hero = () => (
             Grand Challenge.
         </p>
 
-        <div className="mt-8 flex flex-wrap items-center gap-3">
+        <div className="mt-8 flex flex-wrap items-center gap-2">
             <a
                 href={site.resume}
                 target="_blank"

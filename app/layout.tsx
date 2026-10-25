@@ -4,6 +4,7 @@ import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import { themeInitScript } from '@/lib/theme';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
 
@@ -114,8 +115,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <head>
+                <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
                 <link rel="manifest" href="/manifest.json" />
                 <link rel="icon" href="/Pic.jpeg" />
                 <link rel="apple-touch-icon" href="/Pic.jpeg" />

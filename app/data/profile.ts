@@ -15,7 +15,7 @@ export const stats = [
     { value: 'AIR 3', label: 'ISRO IROC Grand Challenge, of 2,000+ teams' },
     { value: '6k+ ★', label: 'Eventyay, the open-source platform I maintain' },
     { value: '~₹2 Cr/yr', label: 'vendor cost replaced by my ML pipeline' },
-    { value: '4×', label: 'national hackathon 1st places' },
+    { value: '5×', label: 'national hackathon wins & podiums' },
 ];
 
 export interface Experience {
@@ -120,26 +120,72 @@ export const experience: Experience[] = [
     },
 ];
 
-export const talks = [
+export interface Talk {
+    title: string;
+    link?: string;
+}
+
+export interface EventEntry {
+    event: string;
+    place: string;
+    date: string;
+    role: string;
+    upcoming?: boolean;
+    talks: Talk[];
+}
+
+/** Newest first. */
+export const events: EventEntry[] = [
     {
-        event: 'FOSSASIA Summit 2026',
-        place: 'Bangkok',
-        note: 'Speaker: architecting real-time multilingual streaming infrastructure',
+        event: 'OpenTechSummit India 2026',
+        place: 'Mumbai · at Devcon 8',
+        date: 'Nov 2026',
+        role: 'Speaker · 3 sessions',
+        upcoming: true,
+        talks: [
+            {
+                title: 'Let the Agent Cook: Building AI-Native Developer Workflows',
+                link: 'https://eventyay.com/fossasia/ots2026/talk/CWBR9P/',
+            },
+            {
+                title: 'VoxBento — When 2 Seconds Matter: Building Real-Time AI Captions and Live Interpretation',
+                link: 'https://eventyay.com/fossasia/ots2026/talk/8BTAYL/',
+            },
+            {
+                title: 'Set up Eventyay: Docker Up, PR Out — your first contribution to a real Django + Vue platform',
+                link: 'https://eventyay.com/fossasia/ots2026/talk/AKCCWQ/',
+            },
+        ],
+    },
+    {
+        event: 'Opportunity Open Source Conference 4.0',
+        place: 'IIIT Allahabad',
+        date: 'Aug 2026',
+        role: 'Speaker',
+        talks: [
+            {
+                title: 'From Speech to Speech: Building a Low-Latency Interpretation Platform with Open Source',
+                link: 'https://events.canonical.com/event/154/contributions/1010/',
+            },
+        ],
     },
     {
         event: 'Wikimania 2026',
         place: 'Paris',
-        note: 'Live demo of VoxBento and Eventyay',
+        date: 'Jul 2026',
+        role: 'Presenter',
+        talks: [{ title: 'Live demo of VoxBento and Eventyay' }],
     },
     {
-        event: 'Opportunity Open Source Conference 4.0',
-        place: 'Allahabad',
-        note: 'Speaker',
-    },
-    {
-        event: 'OpenTech Summit Mumbai',
-        place: 'Mumbai, co-located with Devcon',
-        note: 'Speaker',
+        event: 'FOSSASIA Summit 2026',
+        place: 'Bangkok',
+        date: 'Mar 2026',
+        role: 'Speaker',
+        talks: [
+            {
+                title: 'Talk on Eventyay and real-time multilingual streaming',
+            },
+        ],
     },
 ];
 
@@ -150,8 +196,8 @@ export const awards = [
         year: '2025',
     },
     {
-        title: '1st Place, Open Source Track, ZeroDay MLH',
-        detail: 'DataMind',
+        title: '1st Place, MLH ZeroDay Hackathon',
+        detail: 'DataMind · Open Source Track',
         year: '2026',
     },
     {
@@ -198,14 +244,21 @@ export const awards = [
 
 export const publications = [
     {
-        title: 'Quantum Error Correction: Understanding from Bell States to Surface Codes',
-        venue: 'ResearchGate, 2025',
-        link: 'https://www.researchgate.net/publication/392866270_Quantum_Error_Correction_Understanding_from_Bell_States_to_Surface_Codes',
+        title: 'Predicting BB84 Error Rates from Transmon Calibration Data: Learned Surrogates versus Physical Baselines on a 156-Qubit IBM Heron Processor',
+        authors: 'with Aswath Babu (IIIT Dharwad)',
+        venue: 'Manuscript, 2026',
+        note: '25 days, 115 calibration snapshots and 105 BB84 runs on ibm_marrakesh: readout error alone predicts QBER better than ML surrogates (Spearman ρ 0.61 vs 0.47).',
+        link: 'https://github.com/ArnavBallinCode/transmon-qkd-ml',
     },
     {
         title: 'Temporal Graph Neural Models for Predicting Organizational Silos in Evolving Communication Networks',
         venue: 'Under review, 2026',
         link: 'https://github.com/ArnavBallinCode/temporal-gnn-silo-prediction',
+    },
+    {
+        title: 'Quantum Error Correction: Understanding from Bell States to Surface Codes',
+        venue: 'ResearchGate, 2025',
+        link: 'https://www.researchgate.net/publication/392866270_Quantum_Error_Correction_Understanding_from_Bell_States_to_Surface_Codes',
     },
 ];
 

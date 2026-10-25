@@ -4,6 +4,7 @@
 
 @layer base {
     :root {
+        color-scheme: light;
         --background: 0 0% 100%;
         --background-light: 240 5% 96%;
         --foreground: 240 10% 4%;
@@ -27,27 +28,26 @@
         --radius: 0.75rem;
     }
 
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --background: 240 10% 4%;
-            --background-light: 240 6% 8%;
-            --foreground: 0 0% 96%;
-            --card: 240 6% 7%;
-            --card-foreground: 0 0% 96%;
-            --popover: 240 6% 7%;
-            --popover-foreground: 0 0% 96%;
-            --primary: 213 94% 68%;
-            --primary-foreground: 240 10% 4%;
-            --secondary: 240 4% 14%;
-            --secondary-foreground: 0 0% 96%;
-            --muted: 240 4% 14%;
-            --muted-foreground: 240 5% 65%;
-            --accent: 240 4% 14%;
-            --accent-foreground: 0 0% 96%;
-            --border: 240 4% 16%;
-            --input: 240 4% 16%;
-            --ring: 213 94% 68%;
-        }
+    .dark {
+        color-scheme: dark;
+        --background: 240 10% 4%;
+        --background-light: 240 6% 8%;
+        --foreground: 0 0% 96%;
+        --card: 240 6% 7%;
+        --card-foreground: 0 0% 96%;
+        --popover: 240 6% 7%;
+        --popover-foreground: 0 0% 96%;
+        --primary: 213 94% 68%;
+        --primary-foreground: 240 10% 4%;
+        --secondary: 240 4% 14%;
+        --secondary-foreground: 0 0% 96%;
+        --muted: 240 4% 14%;
+        --muted-foreground: 240 5% 65%;
+        --accent: 240 4% 14%;
+        --accent-foreground: 0 0% 96%;
+        --border: 240 4% 16%;
+        --input: 240 4% 16%;
+        --ring: 213 94% 68%;
     }
 
     * {
@@ -60,7 +60,7 @@
     }
 
     body {
-        @apply bg-background text-foreground antialiased;
+        @apply bg-background text-foreground antialiased transition-colors duration-200;
         text-rendering: optimizeLegibility;
     }
 
@@ -85,6 +85,12 @@
     .link {
         @apply underline decoration-border underline-offset-4 transition-colors hover:decoration-primary hover:text-primary;
     }
+}
+
+/* Swap themes instantly so borders and text don't animate out of sync. */
+.theme-switching *,
+.theme-switching {
+    transition: none !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

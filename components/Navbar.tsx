@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { site } from '@/app/data/profile';
+import ThemeToggle from './ThemeToggle';
 
 const LINKS = [
     { name: 'Experience', href: '/#experience' },
     { name: 'Projects', href: '/#projects' },
+    { name: 'Talks', href: '/#talks' },
     { name: 'Awards', href: '/#awards' },
     { name: 'Contact', href: '/#contact' },
 ];
@@ -14,7 +16,7 @@ const Navbar = () => (
             <Link href="/" className="font-semibold tracking-tight">
                 {site.name}
             </Link>
-            <div className="flex items-center gap-6 text-sm">
+            <div className="flex items-center gap-5 text-sm">
                 {LINKS.map((link) => (
                     <a
                         key={link.name}
@@ -32,6 +34,7 @@ const Navbar = () => (
                 >
                     Résumé
                 </a>
+                <ThemeToggle />
             </div>
         </nav>
     </header>
