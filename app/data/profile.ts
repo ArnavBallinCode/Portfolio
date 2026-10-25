@@ -14,7 +14,7 @@ export const site = {
 import { github } from './gsoc';
 
 export const stats = [
-    { value: 'National finalist', label: '3rd place · ISRO IROC', detail: 'Led our team through the autonomous UAV challenge.' },
+    { value: 'AIR 3', label: 'ISRO IROC', detail: 'Led our team through the autonomous UAV challenge.' },
     { value: `${github.stats.mergedPullRequests} merged contributions`, label: 'Open-source engineering', detail: 'Across FOSSASIA, including Eventyay and VoxBento.' },
     { value: 'ML in production', label: 'Poonawalla Fincorp', detail: 'Built an in-house alternative to a ~₹2 Cr/year vendor service.' },
     { value: '5 wins & podiums', label: 'National hackathons', detail: 'From offline AI to hardware and developer tools.' },
