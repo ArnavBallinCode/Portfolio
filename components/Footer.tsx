@@ -1,22 +1,14 @@
-'use client';
+import { site } from '@/app/data/profile';
 
-const Footer = () => {
-    return (
-        <footer className="w-full py-8 flex flex-col items-center justify-center text-gray-500 text-sm border-t border-primary/10">
-            <div className="mb-2">
-                <a
-                    href="mailto:arnav.angarkar20@gmail.com"
-                    className="hover:text-blue-600 transition-colors"
-                >
-                    arnav.angarkar20@gmail.com
-                </a>
-            </div>
-            <div>
-                &copy; {new Date().getFullYear()} Arnav Amit Angarkar. All
-                rights reserved.
-            </div>
-        </footer>
-    );
-};
+const Footer = () => (
+    <footer className="border-t border-border/60">
+        <div className="mx-auto flex max-w-4xl flex-col gap-2 px-6 py-8 text-sm text-muted-foreground sm:flex-row sm:justify-between">
+            <span>
+                &copy; {new Date().getFullYear()} {site.fullName}
+            </span>
+            <span>Built with Next.js · Deployed on Netlify</span>
+        </div>
+    </footer>
+);
 
 export default Footer;

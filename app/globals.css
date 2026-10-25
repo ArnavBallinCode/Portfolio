@@ -4,94 +4,91 @@
 
 @layer base {
     :root {
-        --background: 210 54% 9%;
-        --background-light: 0 0% 19%;
-        --foreground: 0 0% 87%;
-
-        --card: 0 0% 3.9%;
-        --card-foreground: 0 0% 98%;
-        --popover: 0 0% 3.9%;
-        --popover-foreground: 0 0% 98%;
-
-        --primary: 167 100% 70%;
-        --primary-foreground: 0 0% 13%;
-        --secondary: 193 100% 47%;
-        --secondary-foreground: 0 0% 13%;
-        --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 71%;
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
+        --background: 0 0% 100%;
+        --background-light: 240 5% 96%;
+        --foreground: 240 10% 4%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 4%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 4%;
+        --primary: 221 83% 53%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 240 5% 96%;
+        --secondary-foreground: 240 6% 10%;
+        --muted: 240 5% 96%;
+        --muted-foreground: 240 4% 42%;
+        --accent: 240 5% 96%;
+        --accent-foreground: 240 6% 10%;
+        --destructive: 0 72% 51%;
         --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 24%;
-        --input: 0 0% 14.9%;
-        --ring: 0 0% 83.1%;
-        --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
-        --chart-3: 30 80% 55%;
-        --chart-4: 280 65% 60%;
-        --chart-5: 340 75% 55%;
+        --border: 240 6% 90%;
+        --input: 240 6% 90%;
+        --ring: 221 83% 53%;
+        --radius: 0.75rem;
     }
-}
 
-@layer base {
-    ::-webkit-scrollbar {
-        width: 12px;
-        background: hsl(var(--background));
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background: 240 10% 4%;
+            --background-light: 240 6% 8%;
+            --foreground: 0 0% 96%;
+            --card: 240 6% 7%;
+            --card-foreground: 0 0% 96%;
+            --popover: 240 6% 7%;
+            --popover-foreground: 0 0% 96%;
+            --primary: 213 94% 68%;
+            --primary-foreground: 240 10% 4%;
+            --secondary: 240 4% 14%;
+            --secondary-foreground: 0 0% 96%;
+            --muted: 240 4% 14%;
+            --muted-foreground: 240 5% 65%;
+            --accent: 240 4% 14%;
+            --accent-foreground: 0 0% 96%;
+            --border: 240 4% 16%;
+            --input: 240 4% 16%;
+            --ring: 213 94% 68%;
+        }
     }
-    ::-webkit-scrollbar-thumb {
-        background: hsl(var(--primary));
-        border-radius: 8px;
-        border: 3px solid hsl(var(--background));
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: hsl(var(--primary) / 0.8);
-    }
-    ::-webkit-scrollbar-corner {
-        background: hsl(var(--background));
-    }
+
     * {
         @apply border-border;
     }
-    @media (pointer: fine) and (min-width: 768px) {
-        *,
-        *::before,
-        *::after {
-            cursor: none !important;
-        }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;
     }
+
     body {
-        @apply bg-background text-foreground font-roboto-flex;
-        scrollbar-color: hsl(var(--primary)) hsl(var(--background));
-        scrollbar-width: thin;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+        @apply bg-background text-foreground antialiased;
         text-rendering: optimizeLegibility;
     }
 
     ::selection {
-        background: hsl(var(--primary) / 0.25);
-        color: hsl(var(--foreground));
+        background: hsl(var(--primary) / 0.2);
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: optimizeLegibility;
+    :focus-visible {
+        @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background rounded-sm;
     }
 }
 
 @layer components {
-    .grid {
-        @apply gap-[25px];
+    .section-title {
+        @apply font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-8;
     }
 
-    .markdown-text ul {
-        @apply pl-5 mt-2 list-disc;
+    .tag {
+        @apply inline-flex items-center rounded-md bg-secondary px-2 py-0.5 font-mono text-[11px] text-secondary-foreground;
+    }
+
+    .link {
+        @apply underline decoration-border underline-offset-4 transition-colors hover:decoration-primary hover:text-primary;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }

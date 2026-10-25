@@ -47,13 +47,6 @@ export default {
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
                 ring: 'hsl(var(--ring))',
-                chart: {
-                    '1': 'hsl(var(--chart-1))',
-                    '2': 'hsl(var(--chart-2))',
-                    '3': 'hsl(var(--chart-3))',
-                    '4': 'hsl(var(--chart-4))',
-                    '5': 'hsl(var(--chart-5))',
-                },
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -61,11 +54,8 @@ export default {
                 sm: 'calc(var(--radius) - 4px)',
             },
             fontFamily: {
-                anton: ['var(--font-anton)'],
-                'roboto-flex': ['var(--font-roboto-flex)'],
-            },
-            padding: {
-                section: '250px',
+                sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+                mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
             },
             container: {
                 center: true,
@@ -74,9 +64,6 @@ export default {
                     xl: '1148px',
                     '2xl': '1148px',
                 },
-            },
-            transitionDuration: {
-                '7000': '7s',
             },
             screens: {
                 xs: '420px',

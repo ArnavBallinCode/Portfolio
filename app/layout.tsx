@@ -1,33 +1,33 @@
-import type { Metadata } from 'next';
-import { Inter, Anton } from 'next/font/google';
-import { ReactLenis } from 'lenis/react';
+import type { Metadata, Viewport } from 'next';
+import { Inter, JetBrains_Mono } from 'next/font/google';
 
-import 'lenis/dist/lenis.css';
 import './globals.css';
 import Footer from '@/components/Footer';
-import ParticleBackground from '@/components/ParticleBackground';
-import CustomCursor from '@/components/CustomCursor';
+import Navbar from '@/components/Navbar';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
-import StickyEmailLeft from './_components/StickyEmailLeft';
-import StickyContactRight from './_components/StickyContactRight';
-import Navbar from '@/components/Navbar';
 
-const inter = Inter({ subsets: ['latin'] });
-const anton = Anton({
-    subsets: ['latin'],
-    weight: '400',
-    variable: '--font-anton',
-});
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
+
+const TITLE =
+    'Arnav Angarkar – Software Engineer, Distributed Systems & ML | GSoC 2026';
+const DESCRIPTION =
+    'Arnav Angarkar – CS undergrad at IIIT Dharwad building distributed real-time systems and production ML. Google Summer of Code 2026 @ FOSSASIA, Eventyay maintainer, ISRO IROC All India Rank 3, 4x national hackathon winner.';
+
+export const viewport: Viewport = {
+    themeColor: [
+        { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+        { media: '(prefers-color-scheme: dark)', color: '#09090b' },
+    ],
+};
 
 export const metadata: Metadata = {
     title: {
-        default:
-            'Arnav Angarkar – Full Stack Developer, GSoC 2026, IIIT Dharwad',
+        default: TITLE,
         template: '%s | Arnav Angarkar',
     },
-    description:
-        'Arnav Angarkar (Angarkar) – Full Stack Developer & CS undergrad at IIIT Dharwad. Google Summer of Code 2026 @ FOSSASIA. ISRO IROC AIR 3. Linux Foundation Scholar. 4x hackathon winner. Published researcher in quantum error correction. Building AI/ML systems, open-source platforms, and production web applications.',
+    description: DESCRIPTION,
     keywords: [
         'Arnav Angarkar',
         'Angarkar',
@@ -42,7 +42,9 @@ export const metadata: Metadata = {
         'Arnav Angarkar GSoC 2026',
         'Arnav Angarkar FOSSASIA',
         'Arnav Angarkar ISRO',
-        'Arnav Angarkar full stack developer',
+        'Arnav Angarkar software engineer',
+        'distributed systems engineer India',
+        'ML infrastructure intern India',
         'GSoC 2026 FOSSASIA',
         'IIIT Dharwad developer',
         'Full Stack Developer India',
@@ -68,9 +70,8 @@ export const metadata: Metadata = {
     },
     category: 'technology',
     openGraph: {
-        title: 'Arnav Angarkar – Full Stack Developer, GSoC 2026, IIIT Dharwad',
-        description:
-            'Arnav Angarkar – CS undergrad at IIIT Dharwad. Google Summer of Code 2026 @ FOSSASIA. ISRO IROC AIR 3. Linux Foundation Scholar. 4x hackathon winner. Published researcher. Full-stack developer building AI/ML and open-source platforms.',
+        title: TITLE,
+        description: DESCRIPTION,
         url: 'https://angarkar.is-a.dev',
         siteName: 'Arnav Angarkar – Portfolio',
         locale: 'en_US',
@@ -80,14 +81,13 @@ export const metadata: Metadata = {
                 url: '/Pic.jpeg',
                 width: 1200,
                 height: 630,
-                alt: 'Arnav Angarkar – Full Stack Developer & GSoC 2026',
+                alt: 'Arnav Angarkar',
             },
         ],
     },
     twitter: {
-        title: 'Arnav Angarkar – Full Stack Developer, GSoC 2026',
-        description:
-            'Arnav Angarkar – CS undergrad at IIIT Dharwad. GSoC 2026 @ FOSSASIA. ISRO IROC AIR 3. Linux Foundation Scholar. 4x hackathon winner. Open-source developer.',
+        title: TITLE,
+        description: DESCRIPTION,
         card: 'summary_large_image',
         images: ['/Pic.jpeg'],
         creator: '@ArnavAngarkar',
@@ -117,7 +117,6 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <link rel="manifest" href="/manifest.json" />
-                <meta name="theme-color" content="#000000" />
                 <link rel="icon" href="/Pic.jpeg" />
                 <link rel="apple-touch-icon" href="/Pic.jpeg" />
             </head>
@@ -142,9 +141,9 @@ export default function RootLayout({
                             familyName: 'Angarkar',
                             url: 'https://angarkar.is-a.dev',
                             image: 'https://angarkar.is-a.dev/Pic.jpeg',
-                            jobTitle: 'Full Stack Developer',
+                            jobTitle: 'Software Engineer',
                             description:
-                                'Arnav Angarkar is a full-stack developer and CS undergrad at IIIT Dharwad. Google Summer of Code 2026 contributor at FOSSASIA. ISRO IROC AIR 3. Linux Foundation Scholar. 4x hackathon winner. Published researcher in quantum error correction.',
+                                DESCRIPTION,
                             email: 'mailto:arnav.angarkar20@gmail.com',
                             alumniOf: {
                                 '@type': 'CollegeOrUniversity',
@@ -175,7 +174,8 @@ export default function RootLayout({
                                 'Linux Foundation Scholarship',
                                 'HACKMAZE 2026 – 1st Place',
                                 'DevHack 2025 (IIT Dharwad) – 1st Place',
-                                'HAL Aerothon – 3rd Place',
+                                'HAL Aerothon 2026 – Runner-up',
+                                'ZeroDay MLH 2026 – 1st Place, Open Source Track',
                                 'FOSSASIA Summit 2026 – Invited Speaker',
                             ],
                             sameAs: [
@@ -184,7 +184,9 @@ export default function RootLayout({
                                 'https://angarkar.is-a.dev',
                             ],
                             knowsAbout: [
-                                'Full Stack Development',
+                                'Distributed Systems',
+                                'Real-time Systems',
+                                'ML Infrastructure',
                                 'Artificial Intelligence',
                                 'Machine Learning',
                                 'Open Source Software',
@@ -208,7 +210,7 @@ export default function RootLayout({
                             url: 'https://angarkar.is-a.dev',
                             name: 'Arnav Angarkar – Portfolio',
                             description:
-                                'Official portfolio of Arnav Angarkar – Full Stack Developer, GSoC 2026 @ FOSSASIA, IIIT Dharwad.',
+                                DESCRIPTION,
                             publisher: {
                                 '@id': 'https://angarkar.is-a.dev/#person',
                             },
@@ -260,23 +262,16 @@ export default function RootLayout({
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
             </Script>
-            <body className={`${inter.className} ${anton.variable}`}>
-                <ReactLenis
-                    root
-                    options={{
-                        lerp: 0.1,
-                        duration: 1.4,
-                    }}
+            <body className={`${inter.variable} ${mono.variable} font-sans`}>
+                <a
+                    href="#main"
+                    className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-md focus:bg-primary focus:px-3 focus:py-2 focus:text-primary-foreground"
                 >
-                    <StickyEmailLeft />
-                    <StickyContactRight />
-                    <Navbar />
-                    <main className="relative">{children}</main>
-                    <Footer />
-
-                    <CustomCursor />
-                    <ParticleBackground />
-                </ReactLenis>
+                    Skip to content
+                </a>
+                <Navbar />
+                <main id="main">{children}</main>
+                <Footer />
             </body>
         </html>
     );
