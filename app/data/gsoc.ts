@@ -10,6 +10,14 @@ export const github = contributions as unknown as {
         repositories: number;
         mergedPullRequests: number;
     };
+    pullRequests: {
+        title: string;
+        repository: string;
+        number: number;
+        url: string;
+        merged: boolean;
+        mergedAt: string | null;
+    }[];
     repositories: {
         name: string;
         count: number;

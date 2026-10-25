@@ -19,6 +19,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.repository == 'ArnavBallinCode/ArnavBallinCode.github.io'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

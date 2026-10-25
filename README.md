@@ -2,12 +2,15 @@
 
 Personal site: portfolio, blog, and my GSoC 2026 journey with FOSSASIA.
 
-**Live:** [angarkar.is-a.dev](https://angarkar.is-a.dev)
+**Live:** [angarkar.is-a.dev](https://angarkar.is-a.dev) (Netlify) and [arnavballincode.github.io](https://arnavballincode.github.io) (GitHub Pages)
 
 ## Stack
 
 - Next.js (static export) + Tailwind CSS
-- Hosted on GitHub Pages, deployed by `.github/workflows/deploy.yml` on every push to `main`
+- `Portfolio` deploys to Netlify from `main` using `netlify.toml`.
+- `ArnavBallinCode.github.io` deploys to GitHub Pages from `main` using `.github/workflows/deploy.yml`.
+- Keep `angarkar.is-a.dev` DNS pointing to Netlify during the transition. No Pages CNAME: both addresses stay independently accessible.
+- Push the same tested commit to both repositories; do not force-push or overwrite the separate GitHub profile repository.
 
 ## Editing content
 
@@ -28,6 +31,21 @@ pnpm install
 pnpm dev          # http://localhost:3000
 pnpm build        # static site in ./out
 ```
+
+## Publish to both hosts
+
+The `origin` remote is `ArnavBallinCode/Portfolio`; the `pages` remote is
+`ArnavBallinCode/ArnavBallinCode.github.io`. After integrating remote changes and
+running `pnpm build`:
+
+```bash
+git push origin HEAD:main
+git push pages HEAD:main
+```
+
+The canonical URL remains `https://angarkar.is-a.dev` so existing résumé links
+and search metadata stay consistent. GitHub Pages refreshes contribution data
+weekly; Netlify uses the committed snapshot.
 
 ## License
 

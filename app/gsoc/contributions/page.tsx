@@ -10,6 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function GsocContributions() {
+    const recentBusinessPRs = github.pullRequests
+        .filter(pr => pr.repository === 'fossasia/eventyay-business' && pr.merged)
+        .sort((a, b) => Date.parse(b.mergedAt!) - Date.parse(a.mergedAt!))
+        .slice(0, 6);
     const updated = new Date(github.generatedAt).toLocaleDateString('en-US', {
         month: 'short',
         day: 'numeric',
@@ -83,37 +87,27 @@ export default function GsocContributions() {
             </section>
 
             <section className="border-t border-border/60 py-12">
-                <h2 className="section-title">In progress · Eventyay Business</h2>
-                <div className="grid gap-8 sm:grid-cols-2">
-                    <div className="space-y-3 text-muted-foreground">
-                        <h3 className="font-medium text-foreground">
-                            What is taking shape
-                        </h3>
-                        <p>
-                            Versioned tiers with draft, published and archived
-                            states; multi-currency monthly and annual prices;
-                            and typed feature entitlements. New organizers get
-                            a default Free subscription, and the dashboard
-                            resolves the effective plan.
-                        </p>
-                        <p>
-                            A capability registry defines 13 standard
-                            capabilities, and usage records are idempotent so
-                            metering has an audit trail.
-                        </p>
-                    </div>
-                    <div className="space-y-3 text-muted-foreground">
-                        <h3 className="font-medium text-foreground">
-                            Deliberately marked incomplete
-                        </h3>
-                        <p>
-                            Stripe identifiers and overage fields exist in the
-                            model, but payment webhooks, charging, upgrades,
-                            proration, capacity enforcement and usage analytics
-                            are not wired yet.
-                        </p>
-                    </div>
-                </div>
+                <h2 className="section-title">Recent work · Eventyay Business</h2>
+                <p className="mb-6 text-muted-foreground">
+                    Latest merged contributions, refreshed with the GitHub snapshot.
+                </p>
+                <ul className="divide-y divide-border">
+                    {recentBusinessPRs.map(pr => (
+                        <li key={pr.number} className="py-4">
+                            <a
+                                href={pr.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-start justify-between gap-4 hover:text-primary"
+                            >
+                                <span>{pr.title}</span>
+                                <span className="shrink-0 font-mono text-xs text-muted-foreground">
+                                    #{pr.number} ↗
+                                </span>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
             </section>
 
             <section className="border-t border-border/60 py-12">

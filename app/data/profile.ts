@@ -14,13 +14,10 @@ export const site = {
 import { github } from './gsoc';
 
 export const stats = [
-    { value: 'AIR 3', label: 'ISRO IROC Grand Challenge, of 2,000+ teams' },
-    {
-        value: String(github.stats.mergedPullRequests),
-        label: 'merged PRs across FOSSASIA, incl. 6k★ Eventyay',
-    },
-    { value: '~₹2 Cr/yr', label: 'vendor cost replaced by my ML pipeline' },
-    { value: '5×', label: 'national hackathon wins & podiums' },
+    { value: 'National finalist', label: '3rd place · ISRO IROC', detail: 'Led our team through the autonomous UAV challenge.' },
+    { value: `${github.stats.mergedPullRequests} merged contributions`, label: 'Open-source engineering', detail: 'Across FOSSASIA, including Eventyay and VoxBento.' },
+    { value: 'ML in production', label: 'Poonawalla Fincorp', detail: 'Built an in-house alternative to a ~₹2 Cr/year vendor service.' },
+    { value: '5 wins & podiums', label: 'National hackathons', detail: 'From offline AI to hardware and developer tools.' },
 ];
 
 export interface Experience {
@@ -55,7 +52,7 @@ export const experience: Experience[] = [
         link: 'https://github.com/fossasia/eventyay',
         points: [
             'Maintain Eventyay, a 6k+ star open-source conference platform used by Wikimedia and PyCon.',
-            'Merged 100+ PRs across ticketing, the schedule editor, speaker management and event settings before GSoC selection; now review contributions and keep production stable.',
+            `Authored ${github.repositories.find(repo => repo.name === 'fossasia/eventyay')?.mergedPullRequests ?? 221} merged PRs in Eventyay across ticketing, scheduling, speaker management and platform infrastructure; review contributions and keep production stable.`,
         ],
         tech: ['Django', 'Jinja', 'Vue.js', 'Linux'],
     },

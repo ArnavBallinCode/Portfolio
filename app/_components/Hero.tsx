@@ -74,15 +74,15 @@ const Hero = () => (
             </a>
         </div>
 
-        <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-4">
+        <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2">
             {stats.map((stat) => (
                 <div key={stat.value} className="bg-background p-5">
-                    <dt className="sr-only">{stat.label}</dt>
-                    <dd className="text-2xl font-semibold tracking-tight">
+                    <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">{stat.label}</dt>
+                    <dd className="mt-2 text-lg font-semibold tracking-tight">
                         {stat.value}
                     </dd>
                     <dd className="mt-1 text-sm leading-snug text-muted-foreground">
-                        {stat.label}
+                        {stat.detail}
                     </dd>
                 </div>
             ))}
