@@ -125,6 +125,8 @@ export const experience: Experience[] = [
 export interface Talk {
     title: string;
     link?: string;
+    slides?: string;
+    code?: string;
 }
 
 export interface EventEntry {
@@ -148,10 +150,13 @@ export const events: EventEntry[] = [
             {
                 title: 'Let the Agent Cook: Building AI-Native Developer Workflows',
                 link: 'https://eventyay.com/fossasia/ots2026/talk/CWBR9P/',
+                slides: 'https://arnavballincode.github.io/Talks/LetTheAgentCook/',
+                code: 'https://github.com/ArnavBallinCode/let-the-agent-cook',
             },
             {
                 title: 'VoxBento — When 2 Seconds Matter: Building Real-Time AI Captions and Live Interpretation',
                 link: 'https://eventyay.com/fossasia/ots2026/talk/8BTAYL/',
+                slides: 'https://arnavballincode.github.io/Talks/OpenTechSummit2026/',
             },
             {
                 title: 'Set up Eventyay: Docker Up, PR Out — your first contribution to a real Django + Vue platform',

@@ -24,9 +24,9 @@ const RecognitionSection = () => (
                             <p className="text-sm text-muted-foreground">
                                 {ev.place} · {ev.role}
                             </p>
-                            <ul className="mt-2 space-y-1.5 text-[15px] leading-relaxed">
+                            <ul className="mt-2 space-y-2 text-[15px] leading-relaxed">
                                 {ev.talks.map((talk) => (
-                                    <li key={talk.title}>
+                                    <li key={talk.title} className="flex flex-wrap items-center gap-x-2 gap-y-1">
                                         {talk.link ? (
                                             <a
                                                 href={talk.link}
@@ -39,8 +39,30 @@ const RecognitionSection = () => (
                                             </a>
                                         ) : (
                                             <span className="text-muted-foreground">
-                                                {talk.title}
+                                                “{talk.title}”
                                             </span>
+                                        )}
+                                        {talk.slides && (
+                                            <a
+                                                href={talk.slides}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-0.5 rounded border border-border px-1.5 py-0.5 font-mono text-[11px] text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
+                                            >
+                                                Slides
+                                                <ArrowUpRight className="size-3" />
+                                            </a>
+                                        )}
+                                        {talk.code && (
+                                            <a
+                                                href={talk.code}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-0.5 rounded border border-border px-1.5 py-0.5 font-mono text-[11px] text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
+                                            >
+                                                Workshop code
+                                                <ArrowUpRight className="size-3" />
+                                            </a>
                                         )}
                                     </li>
                                 ))}
@@ -49,6 +71,15 @@ const RecognitionSection = () => (
                     </li>
                 ))}
             </ol>
+            <a
+                href="https://arnavballincode.github.io/Talks/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+                Browse all slide decks & presentations at Talks
+                <ArrowUpRight className="size-3.5" />
+            </a>
         </section>
 
         <section id="research" className="py-16">
