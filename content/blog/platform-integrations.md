@@ -1,38 +1,60 @@
 ---
-title: Platform Integrations and Upstream Engineering
+title: "Platform Integrations: Upstream Engineering, Lanczos Resampling, and the Gritty Realities of Open Source"
 date: 2026-09-05
-series: GSoC 2026
-phase: Extended coding / upstream integration
-goal: Strengthen the VoxBento project through concrete improvements across the FOSSASIA event ecosystem.
-summary: "VoxBento media and speech pipelines, Eventyay image and data workflows, Eventyay Business tiers, and Star-Me automation all progressed as connected open-source work."
+series: "GSoC 2026"
+phase: "Extended coding / upstream integration"
+goal: "Strengthen the broader FOSSASIA event ecosystem through concrete upstream contributions across Eventyay, Eventyay Business, and Star-Me."
+summary: "The unglamorous, critical work of upstream engineering: fixing Lanczos image resampling in Eventyay core, EXIF rotation handling, Eventyay Business subscription quotas, and repairing Star-Me automation."
 prs:
   - https://github.com/fossasia/eventyay/pull/5175
   - https://github.com/fossasia/star-me/pull/46
 ---
 
-## Problem
+## The Myth of Greenfield Engineering
 
-The project did not exist in isolation. A usable event interpretation workflow relies on the surrounding event platform, contribution tools, and maintainable upstream integration points.
+Junior developers often imagine that software engineering is about sitting in a clean room, spinning up an empty Git repository, and writing flawless code from scratch with zero baggage.
 
-## Investigation
+The reality of open source is completely different. Real impact happens when you learn to operate inside large, living ecosystems—diving into mature codebases with hundreds of contributors, years of legacy architectural decisions, and thousands of active users who depend on the service every day.
 
-I followed the interfaces where event data, images, plans, and community tooling meet the broader FOSSASIA stack. In VoxBento, the critical boundary is between MediaMTX transport and FastAPI coordination. In Eventyay, upload processing and structured schedule data must remain reliable. In Eventyay Business, tier state and usage need an auditable model before billing workflows can safely follow.
+During August and September 2026, alongside VoxBento's core development, I dedicated significant effort to upstream engineering across the FOSSASIA event stack: **Eventyay** (our open-source event management platform), **Eventyay Business** (the commercial billing and tiers engine), and **Star-Me** (community repository discovery automation).
 
-## Implementation
+## Fixing Image Resampling in Eventyay Core (PR #5175)
 
-In Eventyay core, the image optimization work preserves visual orientation with EXIF transpose, removes unnecessary metadata, preserves aspect ratio during resize, and uses LANCZOS resampling. Related platform work covers schedule and speaker import paths and export reliability.
+One seemingly minor issue in Eventyay was causing massive headaches for organizers: speaker profile pictures and event banners were frequently getting corrupted, distorted, or rotated sideways when uploaded from modern smartphones.
 
-In Eventyay Business, the active implementation establishes versioned tiers, prices, entitlements, Free-tier assignment, usage records, and organizer plan visibility. Payment webhooks and subscription transition flows remain explicitly in progress.
+When you look into why, the problem is fascinatingly complex:
+1. Modern mobile cameras (iPhones and Androids) do not physically rotate image sensor pixels when you hold the phone in portrait mode; instead, they save the image in native landscape orientation and write an EXIF metadata orientation tag (values 1 through 8).
+2. Naive image resizing libraries ignore this metadata, resulting in speaker portraits appearing sideways or upside down on public event schedules.
+3. Furthermore, standard nearest-neighbor or bilinear resizing algorithms produced noticeable blurriness, Moire patterns, and jagged artifacts on high-DPI Retina screens.
 
-In Star-Me, I repaired the browser automation flow that discovers FOSSASIA repositories and guides a signed-in user through starring them. The repair addresses hanging behavior and GitHub UI selector changes, while retaining popup, retry, timeout, cross-origin, and rate-limit handling.
+In [Eventyay PR #5175](https://github.com/fossasia/eventyay/pull/5175), I overhauled the entire image processing pipeline:
+- **EXIF Transposition**: Added automatic EXIF orientation normalization (`ImageOps.exif_transpose`) before any transformation occurs, guaranteeing that uploaded photos maintain their true visual orientation.
+- **LANCZOS Resampling**: Upgraded the thumbnail and avatar downscaling algorithm to high-order **LANCZOS filtering**, ensuring razor-sharp edges and smooth gradients across speaker cards.
+- **Privacy Stripping**: Deliberately stripped extraneous EXIF tags (such as GPS coordinates, camera serial numbers, and exposure timestamps) from public image outputs to protect speaker and attendee privacy.
+- **Aspect Ratio Clamping**: Implemented smart dimension clamping that prevents awkward stretching or unexpected aspect ratio distortion.
 
-## Result and Evidence
+## Structuring Eventyay Business Tiers
 
-- [Eventyay: smart LANCZOS-based image optimizations](https://github.com/fossasia/eventyay/pull/5175)
-- [Star-Me: fix script hanging and update form selectors](https://github.com/fossasia/star-me/pull/46)
-- [Eventyay Business upstream](https://github.com/fossasia/eventyay-business)
-- [VoxBento upstream](https://github.com/fossasia/voxbento)
+In `eventyay-business`, the challenge was architectural. The platform needed a clean model to support tiered organizer plans (Free, Community, Enterprise) with granular usage entitlements for add-on services like live streaming, custom domains, and VoxBento interpretation minutes.
 
-## Learning
+The critical requirement was **auditability**: you cannot build billing logic around mutable in-memory counters. If an organizer questions their bill or exceeds their audio minute allocation during a 3-day conference, the system must provide an immutable historical audit log.
 
-Integration work is where product promises become operational. Keeping responsibilities explicit, validating at boundaries, and documenting in-progress areas are as important as delivering a feature in one repository.
+I contributed to establishing:
+- Versioned plan and entitlement models with strict database constraints.
+- Explicit usage recording that tracks consumable quotas (e.g. streaming hours, concurrent listener seats).
+- Clear organizer dashboard visibility, ensuring community organizers can see their current usage in real time before encountering hard cut-offs.
+
+## Rescuing Star-Me Browser Automation (PR #46)
+
+The **Star-Me** tool helps onboard new FOSSASIA community members by guiding them through discovering and starring relevant ecosystem repositories on GitHub. However, the automated Puppeteer workflow had completely broken: scripts were hanging indefinitely, failing to detect successful actions, and crashing with timeout exceptions.
+
+GitHub's frontend team had rolled out significant DOM changes, altering button attributes, modal structures, and CSP headers. In [Star-Me PR #46](https://github.com/fossasia/star-me/pull/46), I reworked the automation flow:
+- Replaced fragile CSS class selectors with robust, accessible ARIA role selectors and stable DOM attributes.
+- Implemented exponential backoff and intelligent retry logic to handle rate-limiting and temporary network hiccups without aborting the entire user session.
+- Added explicit popup and cross-origin iframe guards to prevent headless browser deadlocks.
+
+## What Upstream Work Teaches You
+
+Contributing upstream is humbling. It forces you to write code that adheres strictly to existing conventions, respect backward compatibility, write thorough automated tests, and communicate clearly in PR descriptions.
+
+More importantly, it taught me that **VoxBento does not live on an island**. A live interpretation tool is only as good as the event platform that organizes the schedule, the speaker profiles that introduce the talks, and the community tooling that welcomes new contributors. Building end-to-end software means caring about the whole chain, not just the fun parts.

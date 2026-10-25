@@ -3,7 +3,22 @@ import { ArrowRight } from 'lucide-react';
 import { formatDate, getPosts } from '@/lib/blog';
 
 const WritingSection = () => {
-    const posts = getPosts().slice(0, 3);
+    const allPosts = getPosts();
+
+    // Curate the strongest showcase posts across themes
+    const featuredSlugs = [
+        'heros-journey',
+        'community-bonding',
+        'school-me-in-next-five-years',
+        'fossasia-summit-bangkok',
+    ];
+
+    const featuredPosts = featuredSlugs
+        .map((slug) => allPosts.find((p) => p.slug === slug))
+        .filter(Boolean) as typeof allPosts;
+
+    const displayPosts = featuredPosts.length > 0 ? featuredPosts : allPosts.slice(0, 4);
+
     return (
         <section id="writing" className="py-16">
             <h2 className="section-title">Writing</h2>
@@ -21,27 +36,34 @@ const WritingSection = () => {
                 <ArrowRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-foreground" />
             </Link>
             <ul className="divide-y divide-border border-y border-border">
-                {posts.map((post) => (
+                {displayPosts.map((post) => (
                     <li key={post.slug}>
                         <Link
                             href={`/blog/${post.slug}`}
-                            className="group flex flex-col gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4"
+                            className="group flex flex-col gap-1 py-3.5 sm:flex-row sm:items-baseline sm:gap-4"
                         >
-                            <span className="font-mono text-xs text-muted-foreground sm:w-24 sm:shrink-0">
+                            <span className="font-mono text-xs text-muted-foreground sm:w-28 sm:shrink-0">
                                 {formatDate(post.date)}
                             </span>
-                            <span className="font-medium group-hover:text-primary">
-                                {post.title}
-                            </span>
+                            <div className="flex flex-1 flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-3">
+                                <span className="font-medium group-hover:text-primary transition-colors">
+                                    {post.title}
+                                </span>
+                                {post.series && (
+                                    <span className="font-mono text-[11px] text-muted-foreground sm:shrink-0">
+                                        {post.series}
+                                    </span>
+                                )}
+                            </div>
                         </Link>
                     </li>
                 ))}
             </ul>
             <Link
                 href="/blog"
-                className="mt-4 inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-                All posts <ArrowRight className="size-3.5" />
+                View all {allPosts.length} posts and school writings <ArrowRight className="size-3.5" />
             </Link>
         </section>
     );

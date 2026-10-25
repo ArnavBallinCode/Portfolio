@@ -2,29 +2,19 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import { type Post, type PostMeta, formatDate } from './blog-types';
+
+export * from './blog-types';
 
 const BLOG_DIR = path.join(process.cwd(), 'content/blog');
-
-export interface PostMeta {
-    slug: string;
-    title: string;
-    date: string;
-    summary: string;
-    series?: string;
-    phase?: string;
-    goal?: string;
-    prs: string[];
-}
-
-export interface Post extends PostMeta {
-    html: string;
-}
 
 function read(file: string): Post {
     const slug = file.replace(/\.md$/, '');
     const { data, content } = matter(
         fs.readFileSync(path.join(BLOG_DIR, file), 'utf8'),
     );
+    const wordCount = content.split(/\s+/).filter(Boolean).length;
+    const readTime = `${Math.max(1, Math.ceil(wordCount / 220))} min read`;
     return {
         slug,
         title: data.title,
@@ -34,6 +24,8 @@ function read(file: string): Post {
         phase: data.phase,
         goal: data.goal,
         prs: data.prs ?? [],
+        originalUrl: data.originalUrl ?? data.original_url,
+        readTime,
         html: marked.parse(content, { async: false }),
     };
 }
@@ -49,13 +41,4 @@ export function getPosts(): Post[] {
 
 export function getPost(slug: string): Post | undefined {
     return getPosts().find((p) => p.slug === slug);
-}
-
-export function formatDate(date: string) {
-    return new Date(date).toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric',
-        timeZone: 'UTC',
-    });
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { formatDate, getPost, getPosts } from '@/lib/blog';
 
 interface Props {
@@ -43,18 +43,47 @@ export default async function BlogPost({ params }: Props) {
                 <ArrowLeft className="size-4" /> All posts
             </Link>
             <header className="mt-10">
-                <p className="font-mono text-xs text-muted-foreground">
-                    {formatDate(post.date)}
-                    {post.phase && <span> · {post.phase}</span>}
-                </p>
+                <div className="flex flex-wrap items-center gap-2 font-mono text-xs text-muted-foreground">
+                    <span>{formatDate(post.date)}</span>
+                    <span>·</span>
+                    <span>{post.readTime}</span>
+                    {post.series && (
+                        <>
+                            <span>·</span>
+                            <span className="text-primary font-medium">{post.series}</span>
+                        </>
+                    )}
+                    {post.phase && (
+                        <>
+                            <span>·</span>
+                            <span>{post.phase}</span>
+                        </>
+                    )}
+                </div>
                 <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
                     {post.title}
                 </h1>
                 {post.goal && (
-                    <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+                    <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                         <span className="font-medium text-foreground">Goal:</span>{' '}
                         {post.goal}
                     </p>
+                )}
+                {post.originalUrl && (
+                    <div className="mt-6 flex flex-col gap-2 rounded-lg border border-border/80 bg-secondary/40 p-3.5 text-sm sm:flex-row sm:items-center sm:justify-between">
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                            <span className="inline-block size-2 rounded-full bg-emerald-500" />
+                            <span>Originally written during school days on Blogger</span>
+                        </div>
+                        <a
+                            href={post.originalUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
+                        >
+                            View original post <ExternalLink className="size-3" />
+                        </a>
+                    </div>
                 )}
             </header>
             <div
@@ -67,6 +96,20 @@ export default async function BlogPost({ params }: Props) {
                     <Link href="/gsoc" className="link">
                         GSoC 2026 journey with FOSSASIA
                     </Link>
+                    .
+                </p>
+            )}
+            {post.originalUrl && (
+                <p className="mt-12 border-t border-border/60 pt-6 text-xs text-muted-foreground">
+                    Archived from{' '}
+                    <a
+                        href={post.originalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link"
+                    >
+                        Blogs by Arnav Angarkar (Blogger)
+                    </a>
                     .
                 </p>
             )}
