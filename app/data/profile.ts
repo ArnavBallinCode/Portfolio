@@ -15,7 +15,7 @@ import { github } from './gsoc';
 
 export const stats = [
     { value: 'AIR 3', label: 'ISRO IROC', detail: 'Led our team through the autonomous UAV challenge.' },
-    { value: `${github.stats.mergedPullRequests} merged contributions`, label: 'Open-source maintainer', detail: 'VoxBento & Eventyay.' },
+    { value: 'Open-source maintainer', label: 'FOSSASIA', detail: 'VoxBento & Eventyay.' },
     { value: 'ML in production', label: 'Poonawalla Fincorp', detail: 'Built an in-house alternative to a ~₹2 Cr/year vendor service.' },
     { value: '5 wins & podiums', label: 'National hackathons', detail: 'From offline AI to hardware and developer tools.' },
 ];
