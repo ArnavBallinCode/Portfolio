@@ -2,14 +2,14 @@
 
 Personal site: portfolio, blog, and my GSoC 2026 journey with FOSSASIA.
 
-**Live:** [angarkar.is-a.dev](https://angarkar.is-a.dev) (Netlify) and [arnavballincode.github.io](https://arnavballincode.github.io) (GitHub Pages)
+**Live:** [angarkar.tech](https://angarkar.tech) (Netlify) and [arnavballincode.github.io](https://arnavballincode.github.io) (GitHub Pages)
 
 ## Stack
 
 - Next.js (static export) + Tailwind CSS
 - `Portfolio` deploys to Netlify from `main` using `netlify.toml`.
 - `ArnavBallinCode.github.io` deploys to GitHub Pages from `main` using `.github/workflows/deploy.yml`.
-- Keep `angarkar.is-a.dev` DNS pointing to Netlify during the transition. No Pages CNAME: both addresses stay independently accessible.
+- Keep `angarkar.tech` DNS pointing to Netlify during the transition. No Pages CNAME: both addresses stay independently accessible.
 - Push the same tested commit to both repositories; do not force-push or overwrite the separate GitHub profile repository.
 
 ## Editing content
@@ -43,7 +43,7 @@ git push origin HEAD:main
 git push pages HEAD:main
 ```
 
-The canonical URL remains `https://angarkar.is-a.dev` so existing résumé links
+The canonical URL remains `https://angarkar.tech` so existing résumé links
 and search metadata stay consistent. GitHub Pages refreshes contribution data
 weekly; Netlify uses the committed snapshot.
 

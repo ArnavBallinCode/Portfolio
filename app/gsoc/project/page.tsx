@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: 'VoxBento architecture · GSoC 2026',
     description:
         'How VoxBento delivers low-latency multilingual interpretation: WHIP/WHEP over MediaMTX, FastAPI coordination, and STT, translation and TTS workers.',
-    alternates: { canonical: 'https://angarkar.is-a.dev/gsoc/project/' },
+    alternates: { canonical: 'https://angarkar.tech/gsoc/project/' },
 };
 
 export default function GsocProject() {

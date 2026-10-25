@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://angarkar.is-a.dev/sitemap.xml',
-        host: 'https://angarkar.is-a.dev',
+        sitemap: 'https://angarkar.tech/sitemap.xml',
+        host: 'https://angarkar.tech',
     };
 }

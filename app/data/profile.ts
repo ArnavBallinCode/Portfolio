@@ -1,7 +1,7 @@
 export const site = {
     name: 'Arnav Angarkar',
     fullName: 'Arnav Amit Angarkar',
-    url: 'https://angarkar.is-a.dev',
+    url: 'https://angarkar.tech',
     email: 'arnav.angarkar20@gmail.com',
     github: 'https://github.com/ArnavBallinCode',
     linkedin: 'https://www.linkedin.com/in/arnav-angarkar/',

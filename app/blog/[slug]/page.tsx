@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: post.title,
         description: post.summary,
-        alternates: { canonical: `https://angarkar.is-a.dev/blog/${slug}/` },
+        alternates: { canonical: `https://angarkar.tech/blog/${slug}/` },
         openGraph: {
             title: post.title,
             description: post.summary,

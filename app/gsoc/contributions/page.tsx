@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: 'FOSSASIA contributions · GSoC 2026',
     description:
         'Every public FOSSASIA pull request and issue by Arnav Angarkar, grouped by repository and refreshed from the GitHub API at build time.',
-    alternates: { canonical: 'https://angarkar.is-a.dev/gsoc/contributions/' },
+    alternates: { canonical: 'https://angarkar.tech/gsoc/contributions/' },
 };
 
 export default function GsocContributions() {

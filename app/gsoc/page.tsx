@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'GSoC 2026 · VoxBento',
     description:
         'Arnav Angarkar’s Google Summer of Code 2026 with FOSSASIA: building VoxBento, a real-time speech translation and multilingual interpretation platform.',
-    alternates: { canonical: 'https://angarkar.is-a.dev/gsoc/' },
+    alternates: { canonical: 'https://angarkar.tech/gsoc/' },
 };
 
 const featuredPhotos = [

@@ -30,7 +30,7 @@ export const projects: Project[] = [
             'Interpreters publish over WebRTC/WHIP to MediaMTX and listeners play over WHEP (with HLS fallback); the live audio path never passes through Python.',
             'FastAPI coordinates events, booths and roles, and runs per-booth speech-to-text workers (faster-whisper, Deepgram and others) fed by RTSP/FFmpeg, with lazy translation and on-demand TTS pushed over WebSockets.',
             'Transient booth state lives in an in-memory registry with per-booth asyncio locks; durable records persist in PostgreSQL via SQLAlchemy and Alembic. Interpreter handoff happens without listeners changing endpoints.',
-            'Presented the architecture at FOSSASIA Summit 2026 and gave a live demo at Wikimania Paris 2026. The full write-up lives at angarkar.is-a.dev/gsoc.',
+            'Presented the architecture at FOSSASIA Summit 2026 and gave a live demo at Wikimania Paris 2026. The full write-up lives at angarkar.tech/gsoc.',
         ],
     },
     {

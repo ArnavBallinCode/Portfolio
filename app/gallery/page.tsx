@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: 'Gallery',
     description:
         'Photos from FOSSASIA Summit Bangkok, Wikimania Paris and the FOSSASIA community in Germany.',
-    alternates: { canonical: 'https://angarkar.is-a.dev/gallery/' },
+    alternates: { canonical: 'https://angarkar.tech/gallery/' },
 };
 
 export default function GalleryPage() {

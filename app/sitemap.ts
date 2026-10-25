@@ -4,7 +4,7 @@ import { projects } from './data/projects';
 
 export const dynamic = 'force-static';
 
-const SITE = 'https://angarkar.is-a.dev';
+const SITE = 'https://angarkar.tech';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const now = new Date();

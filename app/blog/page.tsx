@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: 'Writing & Essays',
     description:
         'Engineering notes, GSoC updates, personal reflections on athletics and rebuilding, and archived science blogs from school days.',
-    alternates: { canonical: 'https://angarkar.is-a.dev/blog/' },
+    alternates: { canonical: 'https://angarkar.tech/blog/' },
 };
 
 export default function BlogIndex() {

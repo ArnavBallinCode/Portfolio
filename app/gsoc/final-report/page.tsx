@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'GSoC 2026 final report · VoxBento',
     description:
         'Arnav Angarkar’s Google Summer of Code 2026 final report for VoxBento at FOSSASIA.',
-    alternates: { canonical: 'https://angarkar.is-a.dev/gsoc/final-report/' },
+    alternates: { canonical: 'https://angarkar.tech/gsoc/final-report/' },
 };
 
 /*

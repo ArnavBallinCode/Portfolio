@@ -8,7 +8,7 @@ import WritingSection from './_components/WritingSection';
 
 export const metadata: Metadata = {
     alternates: {
-        canonical: 'https://angarkar.is-a.dev/',
+        canonical: 'https://angarkar.tech/',
     },
 };
 

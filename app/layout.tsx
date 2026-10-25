@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         'Arnav',
         'Anav Angarkar',
         'Arnav Amit Angarkar',
-        'angarkar.is-a.dev',
+        'angarkar.tech',
         'Arnav Angarkar portfolio',
         'Arnav Angarkar developer',
         'Arnav Angarkar IIIT Dharwad',
@@ -59,10 +59,10 @@ export const metadata: Metadata = {
         'Arnav Angarkar LinkedIn',
         'Arnav Angarkar software engineer',
     ],
-    authors: [{ name: 'Arnav Angarkar', url: 'https://angarkar.is-a.dev' }],
+    authors: [{ name: 'Arnav Angarkar', url: 'https://angarkar.tech' }],
     creator: 'Arnav Angarkar',
     publisher: 'Arnav Angarkar',
-    metadataBase: new URL('https://angarkar.is-a.dev'),
+    metadataBase: new URL('https://angarkar.tech'),
 
     verification: {
         google: 'googleb73ec97d9cf6ea95',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: TITLE,
         description: DESCRIPTION,
-        url: 'https://angarkar.is-a.dev',
+        url: 'https://angarkar.tech',
         siteName: 'Arnav Angarkar – Portfolio',
         locale: 'en_US',
         type: 'website',
@@ -129,7 +129,7 @@ export default function RootLayout({
                         {
                             '@context': 'https://schema.org',
                             '@type': 'Person',
-                            '@id': 'https://angarkar.is-a.dev/#person',
+                            '@id': 'https://angarkar.tech/#person',
                             name: 'Arnav Angarkar',
                             alternateName: [
                                 'Arnav Amit Angarkar',
@@ -139,8 +139,8 @@ export default function RootLayout({
                             ],
                             givenName: 'Arnav',
                             familyName: 'Angarkar',
-                            url: 'https://angarkar.is-a.dev',
-                            image: 'https://angarkar.is-a.dev/Pic.jpeg',
+                            url: 'https://angarkar.tech',
+                            image: 'https://angarkar.tech/Pic.jpeg',
                             jobTitle: 'Software Engineer',
                             description:
                                 DESCRIPTION,
@@ -181,7 +181,7 @@ export default function RootLayout({
                             sameAs: [
                                 'https://github.com/ArnavBallinCode',
                                 'https://linkedin.com/in/arnav-angarkar',
-                                'https://angarkar.is-a.dev',
+                                'https://angarkar.tech',
                             ],
                             knowsAbout: [
                                 'Distributed Systems',
@@ -206,24 +206,24 @@ export default function RootLayout({
                         {
                             '@context': 'https://schema.org',
                             '@type': 'WebSite',
-                            '@id': 'https://angarkar.is-a.dev/#website',
-                            url: 'https://angarkar.is-a.dev',
+                            '@id': 'https://angarkar.tech/#website',
+                            url: 'https://angarkar.tech',
                             name: 'Arnav Angarkar – Portfolio',
                             description:
                                 DESCRIPTION,
                             publisher: {
-                                '@id': 'https://angarkar.is-a.dev/#person',
+                                '@id': 'https://angarkar.tech/#person',
                             },
                             inLanguage: 'en-US',
                         },
                         {
                             '@context': 'https://schema.org',
                             '@type': 'ProfilePage',
-                            '@id': 'https://angarkar.is-a.dev/#profilepage',
-                            url: 'https://angarkar.is-a.dev',
+                            '@id': 'https://angarkar.tech/#profilepage',
+                            url: 'https://angarkar.tech',
                             name: 'Arnav Angarkar',
                             mainEntity: {
-                                '@id': 'https://angarkar.is-a.dev/#person',
+                                '@id': 'https://angarkar.tech/#person',
                             },
                             dateCreated: '2024-01-01',
                             dateModified: new Date()
@@ -238,13 +238,13 @@ export default function RootLayout({
                                     '@type': 'ListItem',
                                     position: 1,
                                     name: 'Home',
-                                    item: 'https://angarkar.is-a.dev',
+                                    item: 'https://angarkar.tech',
                                 },
                                 {
                                     '@type': 'ListItem',
                                     position: 2,
                                     name: 'Projects',
-                                    item: 'https://angarkar.is-a.dev/#projects',
+                                    item: 'https://angarkar.tech/#projects',
                                 },
                             ],
                         },
