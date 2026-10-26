@@ -1,0 +1,88 @@
+[
+  {
+    "pr": "https://github.com/fossasia/eventyay/pull/6036",
+    "title": "redesign: modernize issued gift cards & accepted gift cards layout",
+    "reviews": [
+      {
+        "url": "https://github.com/fossasia/eventyay/pull/6036#pullrequestreview-5629312339",
+        "body": "The card redesign looks really clean! Just two minor styling fixes needed:\n\n1. **Horizontal padding**: In `app/eventyay/static/pretixcontrol/css/giftcards.css`, `.gc-container` has `padding: 20px 0;`. This leaves zero margin on mobile/narrow viewports so the cards touch the physical screen edges. Please add horizontal padding (e.g. `padding: 20px 15px;`).\n2. **Theme colors**: Please replace any hardcoded hex color codes in `giftcards.css` with Eventyay's standard CSS variables (e.g. `var(--bs-border-color)`, `var(--bs-body-bg)`) so dark mode and custom themes render properly.",
+        "state": "CHANGES_REQUESTED"
+      }
+    ]
+  },
+  {
+    "pr": "https://github.com/fossasia/eventyay/pull/6526",
+    "title": "fix(settings): move header and footer links to Menus & Texts",
+    "reviews": [
+      {
+        "url": "https://github.com/fossasia/eventyay/pull/6526#pullrequestreview-5637485269",
+        "body": "Please clean up the messy git history, squash and force push into 1 clean commit. ",
+        "state": "CHANGES_REQUESTED"
+      }
+    ]
+  },
+  {
+    "pr": "https://github.com/fossasia/voxbento/pull/810",
+    "title": "fix(ws): isolate booth broadcasts by granted role",
+    "reviews": [
+      {
+        "url": "https://github.com/fossasia/voxbento/pull/810#pullrequestreview-5633689729",
+        "body": "### Deep Review Summary (PR #810)\n\nThank you for working on booth broadcast isolation and session revocation! The revocation epoch mechanism and filtering broadcasts by `session.granted_role in ALL_ROLES` are great security improvements. However, there are two blocking items that need rebasing against current `dev`:\n\n1. **Merge Conflict in `portal/routers/admin.py`:**\n   - `apply_user_access` and `admin_delete_user` were updated on `dev` to use asynchronous notification queues (`queue_notification`). Please preserve the notification queuing when inserting `manager.close_user_sessions(user_id)` upon account demotion, deactivation, or deletion.\n2. **Alignment with `broadcast_booth_state`:**\n   - In `portal/websockets/handlers.py`, `_handle_set_broadcast_unlocked` now uses `await broadcast_booth_state(session.booth_id, state)` on `dev` to unify listener-safe status filtering with interpreter broadcasts. Please use `broadcast_booth_state` rather than manually constructing `listener_state` and fanning out to `listener_manager.broadcast`.\n\nPlease rebase on `upstream/dev` and resolve these conflicts.",
+        "state": "CHANGES_REQUESTED"
+      },
+      {
+        "url": "https://github.com/fossasia/voxbento/pull/810#pullrequestreview-5647809691",
+        "body": "Addressed the two blockers: the notification queue is preserved when closing sessions on demotion, deactivation and deletion, and broadcasts go through the shared broadcast_booth_state. I merged current dev (renumbered the migrations to 036-038 after dev's 035, single Alembic head), kept the sockets open when the membership check hits a database error instead of disconnecting everyone, and fixed an end-to-end test that only passed through that error path. Full suite: 1974 passed.",
+        "state": "APPROVED"
+      }
+    ]
+  },
+  {
+    "pr": "https://github.com/fossasia/voxbento/pull/694",
+    "title": "fix(listener): start playback when the booth goes live",
+    "reviews": [
+      {
+        "url": "https://github.com/fossasia/voxbento/pull/694#pullrequestreview-5539657232",
+        "body": "Please resolve merge conflicts",
+        "state": "CHANGES_REQUESTED"
+      },
+      {
+        "url": "https://github.com/fossasia/voxbento/pull/694#pullrequestreview-5558121677",
+        "body": "Thanks for addressing the listener go-live flow and adding regression coverage. I\u2019m requesting changes for two issues before this is merged:\n\n1. The per-booth lock registry needs a lifecycle-safe cleanup strategy. `_state_locks` grows for every distinct booth ID touched by `broadcast_booth_state()` or `send_booth_state()`, but `remove()` only clears `_last_state`. Since the captions endpoint can be reached with arbitrary booth IDs in configurations without access-token enforcement, repeated connections using distinct IDs can leave locks resident indefinitely. Please clean up or redesign this registry without allowing concurrent operations for the same booth to use different locks, and add a focused regression test.\n\n2. Please correct the captions-feed documentation in `agents.md`. It currently says `/ws/captions/{booth_id}` has \u201cno auth\u201d, but `ws_captions()` calls `resolve_ws_auth()`, which enforces credentials and scope checks when `BOOTH_ACCESS_TOKEN` is configured. Document the conditional authentication behavior accurately, including the listener-safe state payload.",
+        "state": "CHANGES_REQUESTED"
+      },
+      {
+        "url": "https://github.com/fossasia/voxbento/pull/694#pullrequestreview-5629885523",
+        "body": "### Deep Review Summary (PR #694)\n\n#### What Was Verified\n1. **Listener Go-Live Experience & State Separation:**\n   - Eliminates the need for listeners to refresh the page when an interpreter goes live.\n   - `broadcast_booth_state` cleanly partitions state: full state (including participant list and private booth chat) remains confined to interpreter sockets, while listeners receive only `_LISTENER_STATE_KEYS` (`booth_id`, `event_slug`, `room_id`, `language_code`, `broadcast_unlocked`, `ingest_status`).\n2. **Concurrency & Resource Management:**\n   - Per-booth serialization uses a reference-counted `_StateLock` context manager that automatically cleans up `_state_locks` entries when `users == 0`, preventing memory leaks from arbitrary booth IDs on the captions route.\n   - Reading registry state inside the lock ensures listeners never receive an older out-of-order state if events overlap.\n3. **WebSocket Error Handling & Auth:**\n   - Sockets on `/ws/captions/{booth_id}` are accepted before auth resolution so browser clients receive meaningful WebSocket close codes (4001/4003) rather than an HTTP 403 / code 1006 reconnect loop.\n   - Updated `agents.md`, `ROUTE_MAP.md`, and documentation to reflect conditional caption feed auth.\n4. **Tests:**\n   - All 139 tests in `tests/test_fastapi_app.py` pass cleanly.\n\nApproved!",
+        "state": "APPROVED"
+      },
+      {
+        "url": "https://github.com/fossasia/voxbento/pull/694#pullrequestreview-5647747103",
+        "body": "Re-verified on current dev. The listener-safe booth status is the six public fields only, lock registry entries are reference-counted and freed, and captions auth is documented accurately. I merged dev and removed the README section, since routine features no longer go in the README (#1013). Tests pass.",
+        "state": "APPROVED"
+      }
+    ]
+  },
+  {
+    "pr": "https://github.com/fossasia/eventyay-interpretation/pull/146",
+    "title": "fix(voxbento): resolve webhook room mapping, fix spurious warning banner, and support dual room IDs",
+    "reviews": [
+      {
+        "url": "https://github.com/fossasia/eventyay-interpretation/pull/146#pullrequestreview-5647621692",
+        "body": "The webhook room mapping, the preserved VoxBento room ID, and the banner fix all look right, and the existing suite passes (74 passed on this branch). One part needs to change before merge.\n\n## Blocking: `AttendeeVideoPermission` admits people Eventyay denies video access\n\n`user_has_valid_ticket()` in Eventyay core is the access rule for the video join flow. It honours `venueless_all_products` (admission products only) and `venueless_products` (the products chosen for video). The second fallback added here (the direct `OrderPosition` query) drops both checks. It admits any paid, non-canceled order position, so it grants access whenever the core check has just said no.\n\nI reproduced it against the host code on this branch. The event has `venueless_all_products = True`, and the user holds a paid order for a non-admission product (a T-shirt):\n\n```\nhost user_has_valid_ticket: False | plugin AttendeeVideoPermission: True\n```\n\nThat permission guards `listener_token` and the booth-status endpoints, so a buyer of an excluded product gets a listener token for interpreted audio of a video they are not entitled to watch. The same gap exists for events that set `venueless_products` to specific products.\n\nPlease:\n1. Remove the `OrderPosition` fallback and rely on `user_has_valid_ticket()`. It already covers `venueless_allow_pending`, and a second copy of the rule will drift from it.\n2. Don't wrap the check in `except Exception: pass`. It turns a broken import or a DB error into a silent \"not a ticket holder\" (or, with the fallback, into access). Catch `ImportError` only, as the trait import above already does.\n3. Add a test next to the new permission code: a buyer of an excluded product is denied, and a buyer of an included product is allowed. The repro above is a starting point.\n\n## Non-blocking\n- `_get_room_from_booth_id` now queues `sync_all_rooms_to_voxbento` for every webhook that names an unknown room. A burst of webhooks for a deleted or foreign room queues a full event sync each time. Consider a short per-event cache key (for example `cache.add(f\"voxbento-resync:{event.id}\", 1, 60)`) so it queues at most once a minute.\n- Moving the `interp.save()` inside `transaction.atomic()` in the started/stopped handlers fixes a real lost-update race. Thanks for that.\n\nHappy to re-review as soon as the permission change is in.\n",
+        "state": "CHANGES_REQUESTED"
+      }
+    ]
+  },
+  {
+    "pr": "https://github.com/fossasia/eventyay-interpretation/pull/139",
+    "title": "refactor: remove interpretation from global event settings sidebar for eventyay",
+    "reviews": [
+      {
+        "url": "https://github.com/fossasia/eventyay-interpretation/pull/139#pullrequestreview-5506040574",
+        "body": "### Comprehensive Review of Companion PR #139\n\nThis PR re-routes the interpretation dashboard to be embedded within the event video area (`/video/plugins/...` / `/video/event/...`), applies `SAMEORIGIN` framing headers, and sets up OAuth broadcast messaging.\n\nWhile the objective aligns with embedding the dashboard inside the Video Organizer SPA, several critical issues were identified during end-to-end review:\n\n1. **Fatal Template Syntax / NoReverseMatch:** In `overview.html`, `{% url 'plugins:interpretation:connect' ... %}` is used, but no route with name `'connect'` is registered in `urls.py`. Rendering this template will immediately crash with a `NoReverseMatch` error.\n2. **Hardcoded SPA Redirect URLs:** In `views_oauth.py`, multiple redirects hardcode `f\"/video/event/{kwargs.get('organizer')}/{kwargs.get('event')}/event/interpretation/\"` instead of using Django `reverse()`.\n3. **Multi-Tenancy & Permission Leak in Organizer Emails Query:** In `voxbento_api.py`, `organizer.teams.filter(can_change_event_settings=True)` includes teams with `all_events=False` that may not have access to this specific `event`.\n4. **Duplicated Language Map:** `room_control.py` redefines an in-line 180-entry dictionary `lang_map` despite the existing `language_map.py` module.\n5. **Direct View Invocation Antipattern:** In `InterpretationOverview`, instantiating and directly delegating `interpreter_view.post(...)` and `room_view.post(...)` without going through standard Django request dispatching or form handling is error-prone.\n\nDetailed inline comments have been provided below.",
+        "state": "CHANGES_REQUESTED"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "sha": "2f4a19ace4d598b104fbd8b6b9c695e7ac86c687",
+    "filename": "app/eventyay/base/entitlements.py",
+    "status": "added",
+    "additions": 51,
+    "deletions": 0,
+    "changes": 51,
+    "blob_url": "https://github.com/fossasia/eventyay/blob/991e8ab0bf2a22b9203105cf313d9c5449963e37/app%2Feventyay%2Fbase%2Fentitlements.py",
+    "raw_url": "https://github.com/fossasia/eventyay/raw/991e8ab0bf2a22b9203105cf313d9c5449963e37/app%2Feventyay%2Fbase%2Fentitlements.py",
+    "contents_url": "https://api.github.com/repos/fossasia/eventyay/contents/app%2Feventyay%2Fbase%2Fentitlements.py?ref=991e8ab0bf2a22b9203105cf313d9c5449963e37",
+    "patch": "@@ -0,0 +1,51 @@\n+import logging\n+\n+from eventyay.base.signals import (\n+    entitlement_check,\n+    entitlement_usage_recorded,\n+    register_entitlements,\n+)\n+\n+logger = logging.getLogger(__name__)\n+\n+\n+def check_entitlement(organizer, capability: str, **kwargs) -> bool:\n+    \"\"\"\n+    Checks if an organizer has a specific capability.\n+    Dispatches the `entitlement_check` signal.\n+    If ANY receiver returns False, access is denied.\n+    Otherwise (if no receivers or all return True/None), access is allowed.\n+    \"\"\"\n+    responses = entitlement_check.send(sender=organizer, capability=capability, **kwargs)\n+    for receiver, response in responses:\n+        if response is False:\n+            return False\n+    return True\n+\n+\n+def record_usage(organizer, capability: str, amount: int = 1, **kwargs) -> None:\n+    \"\"\"\n+    Records usage of a capability for an organizer.\n+    Dispatches the `entitlement_usage_recorded` signal.\n+    \"\"\"\n+    entitlement_usage_recorded.send(\n+        sender=organizer, capability=capability, amount=amount, **kwargs\n+    )\n+\n+\n+def get_capability_registry() -> dict:\n+    \"\"\"\n+    Returns a dictionary of all registered capabilities by dispatching `register_entitlements`.\n+    \"\"\"\n+    registry = {}\n+    responses = register_entitlements.send(sender=None)\n+    for receiver, response in responses:\n+        if isinstance(response, dict):\n+            registry.update(response)\n+        elif response is not None:\n+            logger.warning(\n+                \"Receiver %r for register_entitlements returned %r instead of dict\",\n+                receiver,\n+                type(response),\n+            )\n+    return registry"
+  },
+  {
+    "sha": "8ea2f289a42aa84082183dac058f4f8496c859a7",
+    "filename": "app/eventyay/base/signals.py",
+    "status": "modified",
+    "additions": 23,
+    "deletions": 0,
+    "changes": 23,
+    "blob_url": "https://github.com/fossasia/eventyay/blob/991e8ab0bf2a22b9203105cf313d9c5449963e37/app%2Feventyay%2Fbase%2Fsignals.py",
+    "raw_url": "https://github.com/fossasia/eventyay/raw/991e8ab0bf2a22b9203105cf313d9c5449963e37/app%2Feventyay%2Fbase%2Fsignals.py",
+    "contents_url": "https://api.github.com/repos/fossasia/eventyay/contents/app%2Feventyay%2Fbase%2Fsignals.py?ref=991e8ab0bf2a22b9203105cf313d9c5449963e37",
+    "patch": "@@ -819,3 +819,26 @@ class and point to a valid JPEG or PNG file. If no image is available, ``evaluat\n \n As with all event-plugin signals, the ``sender`` keyword argument will contain the event.\n \"\"\"\n+\n+\n+entitlement_check = django.dispatch.Signal()\n+\"\"\"\n+Sent to check if a capability is allowed for an organizer. \n+If any receiver returns False, the capability is denied.\n+Sender is an ``Organizer`` instance.\n+Kwargs: ``capability`` (str)\n+\"\"\"\n+\n+entitlement_usage_recorded = django.dispatch.Signal()\n+\"\"\"\n+Sent to record usage of a specific capability.\n+Sender is an ``Organizer`` instance.\n+Kwargs: ``capability`` (str), ``amount`` (int)\n+\"\"\"\n+\n+register_entitlements = django.dispatch.Signal()\n+\"\"\"\n+Sent to collect all available capabilities. \n+Receivers should return a dictionary of capabilities they define or enforce.\n+Sender is None.\n+\"\"\""
+  },
+  {
+    "sha": "88c06338235ff3748fc274d7577478c5549521b6",
+    "filename": "app/tests/base/test_entitlements.py",
+    "status": "added",
+    "additions": 87,
+    "deletions": 0,
+    "changes": 87,
+    "blob_url": "https://github.com/fossasia/eventyay/blob/991e8ab0bf2a22b9203105cf313d9c5449963e37/app%2Ftests%2Fbase%2Ftest_entitlements.py",
+    "raw_url": "https://github.com/fossasia/eventyay/raw/991e8ab0bf2a22b9203105cf313d9c5449963e37/app%2Ftests%2Fbase%2Ftest_entitlements.py",
+    "contents_url": "https://api.github.com/repos/fossasia/eventyay/contents/app%2Ftests%2Fbase%2Ftest_entitlements.py?ref=991e8ab0bf2a22b9203105cf313d9c5449963e37",
+    "patch": "@@ -0,0 +1,87 @@\n+import pytest\n+from unittest.mock import MagicMock\n+\n+from eventyay.base.entitlements import (\n+    check_entitlement,\n+    get_capability_registry,\n+    record_usage,\n+)\n+from eventyay.base.signals import (\n+    entitlement_check,\n+    entitlement_usage_recorded,\n+    register_entitlements,\n+)\n+\n+\n+@pytest.fixture\n+def dummy_organizer():\n+    return MagicMock()\n+\n+\n+@pytest.mark.django_db\n+def test_check_entitlement_default_allow(dummy_organizer):\n+    \"\"\"If no receivers block it, it should return True.\"\"\"\n+    assert check_entitlement(dummy_organizer, \"some_capability\") is True\n+\n+\n+@pytest.mark.django_db\n+def test_check_entitlement_denied(dummy_organizer):\n+    \"\"\"If a receiver returns False, it should return False.\"\"\"\n+    \n+    def deny_receiver(sender, capability, **kwargs):\n+        if capability == \"restricted_feature\":\n+            return False\n+        return True\n+\n+    entitlement_check.connect(deny_receiver)\n+    try:\n+        assert check_entitlement(dummy_organizer, \"restricted_feature\") is False\n+        assert check_entitlement(dummy_organizer, \"other_feature\") is True\n+    finally:\n+        entitlement_check.disconnect(deny_receiver)\n+\n+\n+@pytest.mark.django_db\n+def test_record_usage(dummy_organizer):\n+    \"\"\"Test that record_usage dispatches the correct signal.\"\"\"\n+    received = []\n+\n+    def usage_receiver(sender, capability, amount, **kwargs):\n+        received.append((sender, capability, amount))\n+\n+    entitlement_usage_recorded.connect(usage_receiver)\n+    try:\n+        record_usage(dummy_organizer, \"test_cap\", amount=5)\n+        assert len(received) == 1\n+        assert received[0] == (dummy_organizer, \"test_cap\", 5)\n+    finally:\n+        entitlement_usage_recorded.disconnect(usage_receiver)\n+\n+\n+@pytest.mark.django_db\n+def test_get_capability_registry():\n+    \"\"\"Test that get_capability_registry merges dictionaries correctly.\"\"\"\n+    \n+    def reg_receiver_1(sender, **kwargs):\n+        return {\"cap1\": \"Description 1\"}\n+\n+    def reg_receiver_2(sender, **kwargs):\n+        return {\"cap2\": \"Description 2\"}\n+\n+    def reg_receiver_invalid(sender, **kwargs):\n+        return [\"invalid list\"]\n+\n+    register_entitlements.connect(reg_receiver_1)\n+    register_entitlements.connect(reg_receiver_2)\n+    register_entitlements.connect(reg_receiver_invalid)\n+    \n+    try:\n+        registry = get_capability_registry()\n+        assert registry == {\n+            \"cap1\": \"Description 1\",\n+            \"cap2\": \"Description 2\",\n+        }\n+    finally:\n+        register_entitlements.disconnect(reg_receiver_1)\n+        register_entitlements.disconnect(reg_receiver_2)\n+        register_entitlements.disconnect(reg_receiver_invalid)"
+  }
+]

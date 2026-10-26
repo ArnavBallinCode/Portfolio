@@ -132,3 +132,16 @@
         scroll-behavior: auto;
     }
 }
+
+/* Long-form work-product report: readable anchors, evidence links, and print output. */
+.report-body h2 { scroll-margin-top: 6rem; margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid hsl(var(--border)); }
+.report-body h3 { margin-top: 2rem; }
+.report-body p { margin-top: 1rem; }
+.report-body li { margin-top: .65rem; }
+.report-body strong { color: hsl(var(--foreground)); font-weight: 600; }
+@media print {
+    .report-page nav { display: none; }
+    .report-page { color: #111; background: white; }
+    .report-page h2, .report-page h3 { break-after: avoid; }
+    .report-page a { text-decoration: underline; }
+}

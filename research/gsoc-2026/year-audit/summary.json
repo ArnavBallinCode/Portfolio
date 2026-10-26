@@ -1,0 +1,110 @@
+{
+  "from": "2025-10-27T00:00:00Z",
+  "asOf": "2026-10-26T08:20:49Z",
+  "authoredAllTime": 709,
+  "mergedAllTime": 645,
+  "openedDuringPeriod": 709,
+  "mergedOpenedDuringPeriod": 645,
+  "openDuringPeriod": 1,
+  "closedUnmergedDuringPeriod": 63,
+  "reviewedPRs": 1625,
+  "reviewSubmissions": 2155,
+  "reviewStates": {
+    "CHANGES_REQUESTED": 504,
+    "APPROVED": 1415,
+    "COMMENTED": 221,
+    "DISMISSED": 15
+  },
+  "reviewRepositories": [
+    {
+      "name": "fossasia/eventyay",
+      "prs": 1135,
+      "submissions": 1479
+    },
+    {
+      "name": "fossasia/voxbento",
+      "prs": 312,
+      "submissions": 458
+    },
+    {
+      "name": "fossasia/visdom",
+      "prs": 42,
+      "submissions": 48
+    },
+    {
+      "name": "fossasia/voxbento_translator",
+      "prs": 30,
+      "submissions": 46
+    },
+    {
+      "name": "fossasia/eventyay-interpretation",
+      "prs": 27,
+      "submissions": 39
+    },
+    {
+      "name": "fossasia/eventyay-checkin",
+      "prs": 16,
+      "submissions": 16
+    },
+    {
+      "name": "fossasia/veditor",
+      "prs": 14,
+      "submissions": 15
+    },
+    {
+      "name": "fossasia/eventyay-exhibition",
+      "prs": 9,
+      "submissions": 9
+    },
+    {
+      "name": "fossasia/scrum_helper",
+      "prs": 8,
+      "submissions": 8
+    },
+    {
+      "name": "fossasia/magic-epaper-app",
+      "prs": 8,
+      "submissions": 9
+    },
+    {
+      "name": "fossasia/eventyay-hubspot",
+      "prs": 7,
+      "submissions": 7
+    },
+    {
+      "name": "fossasia/badgemagic-app",
+      "prs": 5,
+      "submissions": 5
+    },
+    {
+      "name": "fossasia/eventyay-stripe",
+      "prs": 4,
+      "submissions": 4
+    },
+    {
+      "name": "fossasia/eventyay-teamshifts",
+      "prs": 3,
+      "submissions": 7
+    },
+    {
+      "name": "fossasia/eventyay-paypal",
+      "prs": 2,
+      "submissions": 2
+    },
+    {
+      "name": "fossasia/eventyay-socialmedia",
+      "prs": 1,
+      "submissions": 1
+    },
+    {
+      "name": "fossasia/visdom-dev",
+      "prs": 1,
+      "submissions": 1
+    },
+    {
+      "name": "fossasia/pslab-app",
+      "prs": 1,
+      "submissions": 1
+    }
+  ]
+}

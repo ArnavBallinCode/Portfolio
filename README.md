@@ -50,3 +50,28 @@ weekly; Netlify uses the committed snapshot.
 ## License
 
 MIT – see [LICENSE](./LICENSE) for details.
+
+## GSoC final-report draft
+
+- Narrative: `content/reports/gsoc-2026.md`.
+- Page: `app/gsoc/final-report/page.tsx` at the stable `/gsoc/final-report/` URL.
+- Frozen statistics: `app/data/gsoc-report.json`; public CSV/JSON evidence: `public/reports/gsoc-2026/`.
+- Research, inspected patches, official-project snapshot and editorial checklist: `research/gsoc-2026/`.
+
+The report stays a dated working draft until scope, outstanding work, upstream
+revisions, and validation are finalized with mentors. The weekly portfolio
+stats refresh does not change this report's evidence snapshot.
+
+To intentionally refresh its GitHub evidence using an authenticated `gh` CLI:
+
+```bash
+python3 scripts/audit-gsoc.py
+python3 scripts/audit-gsoc.py --start 2025-10-27T00:00:00Z --output research/gsoc-2026/year-audit
+python3 scripts/compile-gsoc-evidence.py
+pnpm build
+```
+
+The contribution API requires windows of at most one year; choose an appropriate
+broader window when refreshing later. Review narrative dates, current PR states,
+selected-PR evidence, and remaining work before publishing a new snapshot. The
+audit fails on incomplete searches or unhandled review pagination.

@@ -1,0 +1,710 @@
+repository,number,title,opened,merged,status,opened_in_coding_window,url
+eventyay,1152,UI Adjustment: Remove Shadow from Talk Component Top Menu Bar,2025-10-30T08:52:19Z,2025-10-30T14:27:39Z,merged,False,https://github.com/fossasia/eventyay/pull/1152
+eventyay,1153,fix: dropdown event search redirects to unified dashboard instead of tickets dashboard,2025-10-30T10:17:52Z,2025-11-02T12:53:48Z,merged,False,https://github.com/fossasia/eventyay/pull/1153
+eventyay,1157,fix(ui) unify navigation button styling across Tickets and Talk views,2025-10-30T13:36:22Z,2025-11-16T08:43:51Z,merged,False,https://github.com/fossasia/eventyay/pull/1157
+eventyay,1230,Register Social Auth plugin URLs in main routing,2025-11-11T17:08:41Z,2025-11-12T13:54:13Z,merged,False,https://github.com/fossasia/eventyay/pull/1230
+eventyay,1237,fix(sso): populate Wikimedia username fields after OAuth login (phase 1 of #1214),2025-11-12T17:26:17Z,,closed,False,https://github.com/fossasia/eventyay/pull/1237
+eventyay,1256,fix: resolve PDF download issues,2025-11-13T13:49:38Z,2025-11-24T14:21:16Z,merged,False,https://github.com/fossasia/eventyay/pull/1256
+eventyay,1257,Fix HTTP 500 error during add-on product checkout,2025-11-13T15:24:44Z,2025-11-14T17:50:16Z,merged,False,https://github.com/fossasia/eventyay/pull/1257
+eventyay,1258,fix: unable to export order data – HTTP 500 error,2025-11-13T18:06:00Z,2025-11-28T07:08:30Z,merged,False,https://github.com/fossasia/eventyay/pull/1258
+eventyay,1260,Fix: gift card 500 error,2025-11-13T19:41:33Z,2025-11-22T10:42:15Z,merged,False,https://github.com/fossasia/eventyay/pull/1260
+eventyay,1275,Fix: Immediately trigger waiting list notifications ,2025-11-14T09:52:28Z,2026-01-09T09:26:36Z,merged,False,https://github.com/fossasia/eventyay/pull/1275
+eventyay,1277,(refactor) Move 'Show number of tickets left' to Availability section …,2025-11-14T10:04:32Z,2025-11-14T18:40:45Z,merged,False,https://github.com/fossasia/eventyay/pull/1277
+eventyay,1280,Fix: HTTP 500 error handling during room deletion,2025-11-14T19:01:49Z,2025-11-22T10:41:03Z,merged,False,https://github.com/fossasia/eventyay/pull/1280
+eventyay,1281,Adding talk permissions clarity,2025-11-14T19:49:16Z,2025-12-11T12:42:00Z,merged,False,https://github.com/fossasia/eventyay/pull/1281
+eventyay,1299,Fix Speaker Acceptance Confirmation Link Returning 500 Error,2025-11-15T17:07:02Z,,closed,False,https://github.com/fossasia/eventyay/pull/1299
+eventyay,1300,Fix Speaker Acceptance Confirmation Link Returning 500 Error,2025-11-15T17:10:34Z,2025-12-01T07:36:41Z,merged,False,https://github.com/fossasia/eventyay/pull/1300
+eventyay,1306,fix(ui) prevent sidebar auto-collapse on navigation,2025-11-16T10:12:07Z,2025-11-16T10:23:44Z,merged,False,https://github.com/fossasia/eventyay/pull/1306
+eventyay,1310,Refactored the entire system to replace all legacy 'pretix/pretalx' references with 'eventyay' in activity log system,2025-11-16T12:02:10Z,2025-11-17T10:21:16Z,merged,False,https://github.com/fossasia/eventyay/pull/1310
+eventyay,1318,Fix: Hide unpublished sessions from talk component menu,2025-11-16T19:49:06Z,2025-11-30T14:15:58Z,merged,False,https://github.com/fossasia/eventyay/pull/1318
+eventyay,1319,Resolve Sidebar Icon Layout Shift,2025-11-17T05:41:31Z,2025-11-20T00:20:15Z,merged,False,https://github.com/fossasia/eventyay/pull/1319
+eventyay,1321,fix: Resolve multiple exporter failures after database migration,2025-11-17T16:26:58Z,2025-11-28T14:44:43Z,merged,False,https://github.com/fossasia/eventyay/pull/1321
+eventyay,1356,Fix payment duplicate confirmation to return proper error,2025-11-27T14:57:29Z,,closed,False,https://github.com/fossasia/eventyay/pull/1356
+eventyay,1383,Fix tickets page layout issues ,2025-11-30T06:03:27Z,,closed,False,https://github.com/fossasia/eventyay/pull/1383
+eventyay,1384,fix(presale): Fix Tickets page layout inconsistencies,2025-11-30T10:49:18Z,,closed,False,https://github.com/fossasia/eventyay/pull/1384
+eventyay,1399,Fix voucher redemption race condition using pessimistic locking,2025-12-01T13:10:27Z,2025-12-09T11:00:27Z,merged,False,https://github.com/fossasia/eventyay/pull/1399
+eventyay,1406,Fix  double refund race condition vulnerability,2025-12-01T17:57:41Z,,closed,False,https://github.com/fossasia/eventyay/pull/1406
+eventyay,1408,Fixing the Cfp custom fields ,2025-12-01T20:44:42Z,2025-12-02T17:20:02Z,merged,False,https://github.com/fossasia/eventyay/pull/1408
+eventyay,1418,Add options management for CFP custom fields - drag functionality ,2025-12-02T17:37:38Z,,closed,False,https://github.com/fossasia/eventyay/pull/1418
+eventyay,1421,fix: ensure ticket PDF directories are created before saving,2025-12-03T04:40:37Z,,closed,False,https://github.com/fossasia/eventyay/pull/1421
+eventyay,1422,Implement drag sort cfp questions,2025-12-03T08:48:17Z,2025-12-03T11:14:46Z,merged,False,https://github.com/fossasia/eventyay/pull/1422
+eventyay,1423,Fix question type labels,2025-12-03T09:03:43Z,,closed,False,https://github.com/fossasia/eventyay/pull/1423
+eventyay,1424,Update question type labels for better clarity in both attendee and speaker forms,2025-12-03T09:20:36Z,2025-12-03T11:21:06Z,merged,False,https://github.com/fossasia/eventyay/pull/1424
+eventyay,1431,Updated label for tickets,2025-12-04T04:12:19Z,2025-12-07T12:32:39Z,merged,False,https://github.com/fossasia/eventyay/pull/1431
+eventyay,1439,fix(agenda): Fix scroll behaviour in sessions,2025-12-05T04:00:08Z,,closed,False,https://github.com/fossasia/eventyay/pull/1439
+eventyay-talk-schedule,27,feat: add disable-auto-scroll prop to prevent auto-scroll on sessions page ,2025-12-05T19:28:20Z,2025-12-08T10:32:27Z,merged,False,https://github.com/fossasia/eventyay-talk-schedule/pull/27
+eventyay,1444,Fixes Autoscroll on Sessions page,2025-12-05T19:58:24Z,2025-12-08T10:32:11Z,merged,False,https://github.com/fossasia/eventyay/pull/1444
+eventyay,1453,Remove files which are not required,2025-12-07T18:14:42Z,2025-12-08T15:44:24Z,merged,False,https://github.com/fossasia/eventyay/pull/1453
+eventyay,1460,Refactor: Removed Redundant .get() Usage After Key Validation in Order and Search Views,2025-12-09T06:53:54Z,2025-12-11T11:58:13Z,merged,False,https://github.com/fossasia/eventyay/pull/1460
+eventyay,1464,fix(ui): unify navigation button styling across Tickets and Talk views,2025-12-09T13:30:25Z,2025-12-10T06:10:39Z,merged,False,https://github.com/fossasia/eventyay/pull/1464
+eventyay,1497,feat: Add Active Languages and Content Languages to event creation form,2025-12-13T14:14:40Z,2025-12-18T11:08:36Z,merged,False,https://github.com/fossasia/eventyay/pull/1497
+eventyay,1498,Add concurrent refund race condition test ,2025-12-13T14:59:45Z,,closed,False,https://github.com/fossasia/eventyay/pull/1498
+eventyay,1499,fix: schedule grid overflow - contain within container,2025-12-14T10:25:58Z,,closed,False,https://github.com/fossasia/eventyay/pull/1499
+eventyay,1501,Fix: missing room config fields required by frontend,2025-12-14T15:33:57Z,2025-12-15T06:42:20Z,merged,False,https://github.com/fossasia/eventyay/pull/1501
+eventyay,1502,fix(logout): correct logout URL path in presale dropdown menu,2025-12-15T01:17:01Z,2025-12-15T06:40:29Z,merged,False,https://github.com/fossasia/eventyay/pull/1502
+eventyay,1504,fix: Handle AnonymousUser in has_event_perm template tag and ScheduleView,2025-12-15T04:55:36Z,2025-12-17T06:11:01Z,merged,False,https://github.com/fossasia/eventyay/pull/1504
+eventyay,1511,Fix AttributeError in GiftCardPayment: use 'product' instead of 'item',2025-12-16T03:51:25Z,2025-12-17T07:15:49Z,merged,False,https://github.com/fossasia/eventyay/pull/1511
+eventyay,1517,feat: Implement require login for checkout ,2025-12-16T07:16:24Z,,closed,False,https://github.com/fossasia/eventyay/pull/1517
+eventyay,1523,enhance: Enforce Login Before Checkout With Modal Login and Post Login Redirect to Checkout,2025-12-16T18:08:42Z,2026-01-05T02:57:33Z,merged,False,https://github.com/fossasia/eventyay/pull/1523
+eventyay,1530,fix: use 'product' instead of 'item' attribute in invoice generation ,2025-12-17T10:51:36Z,2025-12-17T12:46:22Z,merged,False,https://github.com/fossasia/eventyay/pull/1530
+eventyay,1531,fix: use 'product' instead of 'item' attribute in notifications,2025-12-17T11:17:12Z,2025-12-17T12:34:47Z,merged,False,https://github.com/fossasia/eventyay/pull/1531
+eventyay,1541,fix: use 'product' instead of 'item' attribute in waitinglist service,2025-12-17T18:44:27Z,2025-12-18T10:19:12Z,merged,False,https://github.com/fossasia/eventyay/pull/1541
+eventyay,1557,Fix: Wikimedia login redirect to return user to last visited page ,2025-12-19T17:59:56Z,2025-12-19T21:55:38Z,merged,False,https://github.com/fossasia/eventyay/pull/1557
+eventyay,1560,Rename default organizer team ,2025-12-20T21:03:15Z,2025-12-21T10:17:35Z,merged,False,https://github.com/fossasia/eventyay/pull/1560
+eventyay,1573,Fix plugin enable/disable issue ,2025-12-21T19:00:19Z,2025-12-26T10:18:00Z,merged,False,https://github.com/fossasia/eventyay/pull/1573
+eventyay,1598,fix: Replace absolute URLs with Django relative URLs for navigation buttons,2025-12-23T07:06:19Z,2025-12-29T09:23:05Z,merged,False,https://github.com/fossasia/eventyay/pull/1598
+eventyay,1600,Fix/schedule grid overflow,2025-12-23T13:03:45Z,,closed,False,https://github.com/fossasia/eventyay/pull/1600
+eventyay,1607,Fix cfp deadline save,2025-12-24T10:41:56Z,2025-12-25T09:07:48Z,merged,False,https://github.com/fossasia/eventyay/pull/1607
+eventyay,1633,fix to set development defaults to localhost instead of test.eventyay.com,2026-01-03T11:31:41Z,2026-01-03T11:38:19Z,merged,False,https://github.com/fossasia/eventyay/pull/1633
+eventyay,1648,fix: prevent header image from displaying as logo,2026-01-04T07:47:54Z,2026-01-04T11:17:03Z,merged,False,https://github.com/fossasia/eventyay/pull/1648
+eventyay,1653,fix: hide empty Schedule and Sessions tabs when no content exists,2026-01-04T09:46:27Z,2026-01-05T10:37:51Z,merged,False,https://github.com/fossasia/eventyay/pull/1653
+eventyay,1676,fix redirect login button directly to login form instead of proposal page,2026-01-05T21:05:51Z,2026-01-06T13:00:35Z,merged,False,https://github.com/fossasia/eventyay/pull/1676
+eventyay,1726,Fix markdown content not updating - remove HTML-to-markdown conversion,2026-01-08T17:03:49Z,2026-01-09T09:18:49Z,merged,False,https://github.com/fossasia/eventyay/pull/1726
+eventyay,1744,Fix form validation errors not visible,2026-01-10T18:28:39Z,2026-01-11T23:58:42Z,merged,False,https://github.com/fossasia/eventyay/pull/1744
+eventyay,1775,Re-implement CfP content and custom field toggles ,2026-01-13T15:47:52Z,,closed,False,https://github.com/fossasia/eventyay/pull/1775
+eventyay,1778,feat: Implement dropdown UI for CfP question toggles ,2026-01-13T20:29:21Z,,closed,False,https://github.com/fossasia/eventyay/pull/1778
+eventyay,1784,Implement CFP toggle buttons and UI issues ,2026-01-14T09:32:16Z,2026-01-15T20:34:20Z,merged,False,https://github.com/fossasia/eventyay/pull/1784
+eventyay,1787,Remove redundant 'Your Account' section from speaker profile page,2026-01-14T10:23:48Z,2026-01-14T14:02:44Z,merged,False,https://github.com/fossasia/eventyay/pull/1787
+eventyay,1793,fix: Handle missing notification fields in CancelSettings view,2026-01-14T14:14:52Z,2026-01-15T17:37:15Z,merged,False,https://github.com/fossasia/eventyay/pull/1793
+eventyay,1795,fix(ui): unify navigation button styling across Tickets and Talk views,2026-01-14T18:50:50Z,,closed,False,https://github.com/fossasia/eventyay/pull/1795
+eventyay,1851,fix: revert 'Avatar' terminology to 'Profile picture' for speaker context,2026-01-16T07:49:53Z,2026-01-16T09:09:57Z,merged,False,https://github.com/fossasia/eventyay/pull/1851
+eventyay,1865,fix: Standardize radio button styling across all Talk component pages,2026-01-16T10:29:49Z,2026-01-20T20:45:24Z,merged,False,https://github.com/fossasia/eventyay/pull/1865
+eventyay,1968,Feat: telemetry sender,2026-01-20T14:18:53Z,,closed,False,https://github.com/fossasia/eventyay/pull/1968
+eventyay,1971,Move speaker invite box below existing speakers,2026-01-20T20:30:22Z,2026-01-21T00:18:52Z,merged,False,https://github.com/fossasia/eventyay/pull/1971
+eventyay,1973,Make custom field label optional,2026-01-20T20:56:51Z,2026-01-22T07:49:05Z,merged,False,https://github.com/fossasia/eventyay/pull/1973
+eventyay,1975,Integrate custom fields into order forms,2026-01-21T07:21:11Z,2026-01-23T17:07:02Z,merged,False,https://github.com/fossasia/eventyay/pull/1975
+eventyay,1978,Remove references to non-existent repositories,2026-01-21T08:35:12Z,,closed,False,https://github.com/fossasia/eventyay/pull/1978
+eventyay,1979,Remove legacy pretalx version display and GitHub link from talk base …,2026-01-21T08:44:16Z,,closed,False,https://github.com/fossasia/eventyay/pull/1979
+eventyay,1982,Add migration for locale choices update,2026-01-21T09:09:56Z,,closed,False,https://github.com/fossasia/eventyay/pull/1982
+eventyay,1996,Feature telemetry system,2026-01-21T20:28:13Z,2026-02-14T10:33:24Z,merged,False,https://github.com/fossasia/eventyay/pull/1996
+eventyay,2048,Remove Custom fields sidebar item,2026-01-23T18:42:38Z,2026-01-23T20:02:33Z,merged,False,https://github.com/fossasia/eventyay/pull/2048
+eventyay,2069,Add drag n drop to the unified forms page,2026-01-24T04:55:35Z,2026-01-27T12:23:11Z,merged,False,https://github.com/fossasia/eventyay/pull/2069
+eventyay,2100,Optimize question toggle handlers,2026-01-25T20:40:24Z,2026-01-28T18:54:33Z,merged,False,https://github.com/fossasia/eventyay/pull/2100
+eventyay,2202,Refactor : Clean up duplicate settings and standardize naming,2026-02-01T18:22:21Z,2026-02-06T11:50:22Z,merged,False,https://github.com/fossasia/eventyay/pull/2202
+eventyay,2204,Reorganize payment gateway settings UI,2026-02-02T10:03:52Z,2026-02-03T13:05:18Z,merged,False,https://github.com/fossasia/eventyay/pull/2204
+eventyay,2258,Add submission/slot context to NEW_SCHEDULE emails,2026-02-04T20:10:55Z,2026-02-10T10:54:16Z,merged,False,https://github.com/fossasia/eventyay/pull/2258
+eventyay,2262,fix: correct URL name for submission view in admin template,2026-02-05T09:40:30Z,2026-02-05T10:45:40Z,merged,False,https://github.com/fossasia/eventyay/pull/2262
+eventyay,2278,chore(i18n): add translation markers to form labels,2026-02-06T08:41:52Z,2026-02-06T09:16:46Z,merged,False,https://github.com/fossasia/eventyay/pull/2278
+eventyay,2281, Fix navbar layout consistency in Talk section for RTL languages,2026-02-06T09:56:50Z,2026-02-10T15:19:20Z,merged,False,https://github.com/fossasia/eventyay/pull/2281
+eventyay,2331,AI-generated translations for Arabic and French locale files,2026-02-09T09:08:35Z,,closed,False,https://github.com/fossasia/eventyay/pull/2331
+eventyay,2359,Improve and expand French translations in the Django .po localization file - Phase 1 ,2026-02-10T14:44:40Z,2026-02-11T07:15:01Z,merged,False,https://github.com/fossasia/eventyay/pull/2359
+eventyay,2360,Improve and expand French translations in the Django .po localization file - Phase 2,2026-02-10T15:40:23Z,2026-02-11T21:42:52Z,merged,False,https://github.com/fossasia/eventyay/pull/2360
+eventyay,2363,Improve and expand French translations in the Django .po localization file - Phase 3,2026-02-10T18:34:31Z,,closed,False,https://github.com/fossasia/eventyay/pull/2363
+eventyay,2365,Add initial Arabic translation coverage across core and talk-video components,2026-02-11T05:09:48Z,,closed,False,https://github.com/fossasia/eventyay/pull/2365
+eventyay,2366,Expand and refine Arabic translations in the main Django .po localization file,2026-02-11T07:36:36Z,,closed,False,https://github.com/fossasia/eventyay/pull/2366
+eventyay,2447,Introduce Unified AI Policy Framework for AI Agents,2026-02-17T08:34:33Z,2026-02-18T08:47:09Z,merged,False,https://github.com/fossasia/eventyay/pull/2447
+eventyay,2477,Fix untranslated UI in cfp proposal flow,2026-02-20T21:00:41Z,2026-02-22T22:40:11Z,merged,False,https://github.com/fossasia/eventyay/pull/2477
+eventyay,2481,feat: add event-scoped track selection for team Permissions,2026-02-21T08:25:15Z,2026-02-22T22:37:32Z,merged,False,https://github.com/fossasia/eventyay/pull/2481
+eventyay,2483,Sync locale choices migration with Weblate language additions,2026-02-21T16:36:21Z,,closed,False,https://github.com/fossasia/eventyay/pull/2483
+visdom,965,patched build to use certify.where(),2026-02-21T19:29:34Z,,closed,False,https://github.com/fossasia/visdom/pull/965
+eventyay,2516,Adding Featured Speakers ,2026-02-23T05:36:00Z,2026-02-26T12:56:36Z,merged,False,https://github.com/fossasia/eventyay/pull/2516
+eventyay,2520,fix(presale) restore login popup on checkout for unauthenticated users,2026-02-23T12:02:42Z,2026-02-23T12:10:26Z,merged,False,https://github.com/fossasia/eventyay/pull/2520
+eventyay,2525,Added translation for no file chosen,2026-02-23T14:58:45Z,2026-02-23T20:26:37Z,merged,False,https://github.com/fossasia/eventyay/pull/2525
+eventyay,2531,Fix radio button layout in Talk organizer area,2026-02-23T18:49:16Z,2026-02-23T20:29:44Z,merged,False,https://github.com/fossasia/eventyay/pull/2531
+eventyay,2593,Fix review link showing blank page for unscheduled proposals,2026-02-26T18:03:00Z,2026-02-26T20:20:05Z,merged,False,https://github.com/fossasia/eventyay/pull/2593
+eventyay,2629,Feat: Import schedule and speakers  ,2026-02-28T14:52:47Z,2026-04-01T16:04:26Z,merged,False,https://github.com/fossasia/eventyay/pull/2629
+eventyay,2767,Add .agents/skills AI agent system ,2026-03-14T23:31:05Z,2026-03-31T19:28:19Z,merged,False,https://github.com/fossasia/eventyay/pull/2767
+eventyay,2834,"Fix presale mobile layout, dropdowns, and sticky nav",2026-03-19T05:26:33Z,2026-03-20T16:49:36Z,merged,False,https://github.com/fossasia/eventyay/pull/2834
+eventyay,2897,fix organizer email placeholder,2026-03-22T04:59:23Z,,closed,False,https://github.com/fossasia/eventyay/pull/2897
+eventyay,2899,Make organizer email a placeholder in event forms,2026-03-22T05:28:25Z,2026-04-07T11:27:19Z,merged,False,https://github.com/fossasia/eventyay/pull/2899
+eventyay,2938,"Revert ""Add preferred login provider option to Social Auth settings""",2026-03-22T19:10:26Z,,closed,False,https://github.com/fossasia/eventyay/pull/2938
+eventyay,2939,Restore navigation and fix add-more from checkout,2026-03-22T19:20:21Z,2026-03-23T09:53:46Z,merged,False,https://github.com/fossasia/eventyay/pull/2939
+eventyay,2954,fix waiting list product name,2026-03-23T07:51:04Z,2026-03-23T08:00:39Z,merged,False,https://github.com/fossasia/eventyay/pull/2954
+eventyay,3002,Fix presale xss issues ,2026-03-27T11:46:20Z,2026-03-31T08:42:48Z,merged,False,https://github.com/fossasia/eventyay/pull/3002
+eventyay,3008,link event and ui language by default,2026-03-28T06:14:50Z,2026-03-30T08:10:22Z,merged,False,https://github.com/fossasia/eventyay/pull/3008
+eventyay,3012,add chunk_size to iterator in order exporter and remove identifier from order forms,2026-03-28T09:54:25Z,2026-03-30T07:46:31Z,merged,False,https://github.com/fossasia/eventyay/pull/3012
+eventyay,3025,Add per-ticket default field settings for order forms,2026-03-28T19:27:36Z,2026-04-21T12:21:06Z,merged,False,https://github.com/fossasia/eventyay/pull/3025
+eventyay,3103,Unlink event language on unsupported UI choice,2026-03-30T21:12:17Z,2026-03-30T21:23:28Z,merged,False,https://github.com/fossasia/eventyay/pull/3103
+eventyay,3106,Fix addon checkout item field parsing,2026-03-31T07:01:02Z,2026-03-31T11:31:43Z,merged,False,https://github.com/fossasia/eventyay/pull/3106
+eventyay,3116,Add PR screenshot and issue link reminder workflow,2026-03-31T20:43:45Z,,closed,False,https://github.com/fossasia/eventyay/pull/3116
+eventyay,3118,Standardize skill scaffolding and fix docs references,2026-04-01T07:54:13Z,2026-04-07T10:21:59Z,merged,False,https://github.com/fossasia/eventyay/pull/3118
+eventyay,3120,Fix ticket variant toggle and selection limits,2026-04-01T11:20:36Z,2026-04-02T09:32:03Z,merged,False,https://github.com/fossasia/eventyay/pull/3120
+eventyay,3139,Gray out and limiting extended to add-ons,2026-04-02T11:16:56Z,2026-04-03T11:09:56Z,merged,False,https://github.com/fossasia/eventyay/pull/3139
+eventyay,3178,Support markdown rendering for featured speaker biographies,2026-04-06T11:41:21Z,,closed,False,https://github.com/fossasia/eventyay/pull/3178
+eventyay,3182,Fix general settings validation for missing name scheme fields,2026-04-06T20:20:49Z,2026-04-08T03:35:15Z,merged,False,https://github.com/fossasia/eventyay/pull/3182
+eventyay,3192,feat: enable workshop variant switching after order placement,2026-04-08T09:38:36Z,2026-04-10T07:59:23Z,merged,False,https://github.com/fossasia/eventyay/pull/3192
+eventyay,3215,fix settings to scope general event settings form to rendered fields,2026-04-10T08:44:27Z,2026-04-14T11:47:08Z,merged,False,https://github.com/fossasia/eventyay/pull/3215
+eventyay,3217,Fix sessions row action buttons responsive layout,2026-04-10T13:40:30Z,2026-04-11T08:18:48Z,merged,False,https://github.com/fossasia/eventyay/pull/3217
+eventyay,3282,allow localhost values in SITE_URL,2026-04-17T11:36:55Z,2026-04-17T11:57:35Z,merged,False,https://github.com/fossasia/eventyay/pull/3282
+eventyay,3350,Add a dedicated social account signup template to correctly render redirect parameters,2026-04-23T06:38:57Z,,closed,False,https://github.com/fossasia/eventyay/pull/3350
+eventyay,3363,Enforce limits on speaker avatar license/source text and improve their display in the organiser submission view.,2026-04-24T05:29:34Z,2026-04-29T12:13:39Z,merged,False,https://github.com/fossasia/eventyay/pull/3363
+eventyay,3389,Fix Wikimedia OAuth login for existing email accounts,2026-04-25T19:03:16Z,,closed,False,https://github.com/fossasia/eventyay/pull/3389
+eventyay,3433,Fix upsert speakers during schedule import,2026-04-27T05:23:03Z,2026-05-21T12:24:04Z,merged,False,https://github.com/fossasia/eventyay/pull/3433
+eventyay,3434,enable tost ui markdown editor in the sendmail editor,2026-04-28T10:11:35Z,2026-05-14T13:54:01Z,merged,False,https://github.com/fossasia/eventyay/pull/3434
+eventyay,3436,fix zod errors for imports legacy wikimedia events import,2026-04-28T16:47:04Z,2026-04-29T08:39:37Z,merged,False,https://github.com/fossasia/eventyay/pull/3436
+eventyay,3437,add FILE_UPLOAD_MAX_MEMORY_SIZE,2026-04-29T09:26:14Z,2026-04-29T13:10:22Z,merged,False,https://github.com/fossasia/eventyay/pull/3437
+eventyay,3440,implement order import view with csv matching,2026-04-29T19:20:57Z,2026-05-05T12:37:13Z,merged,False,https://github.com/fossasia/eventyay/pull/3440
+eventyay,3442,Normalize CFP field ordering and centralize built-in field definitions,2026-04-30T04:55:10Z,2026-05-04T16:34:56Z,merged,False,https://github.com/fossasia/eventyay/pull/3442
+eventyay,3444,Use Django-allauth native social login flow ,2026-04-30T07:57:06Z,2026-05-08T07:17:34Z,merged,False,https://github.com/fossasia/eventyay/pull/3444
+eventyay,3445,feature(live): webhook / external push for chat channel messages,2026-04-30T09:56:58Z,2026-05-20T22:06:38Z,merged,False,https://github.com/fossasia/eventyay/pull/3445
+eventyay,3448,Fix: allow valid external links in schedule rich text,2026-05-02T08:27:24Z,2026-05-04T09:19:16Z,merged,False,https://github.com/fossasia/eventyay/pull/3448
+voxbento_translator,48,chore: migrate project setup to uv workflow,2026-05-06T15:54:49Z,2026-05-14T01:25:35Z,merged,False,https://github.com/fossasia/voxbento_translator/pull/48
+eventyay,3482,fix sendmail log to eventyay instead of pretalx,2026-05-07T08:46:20Z,2026-05-07T16:26:03Z,merged,False,https://github.com/fossasia/eventyay/pull/3482
+eventyay,3494,Remove JWT SSO cookie from account adapter post_login,2026-05-08T07:53:29Z,2026-05-17T03:55:07Z,merged,False,https://github.com/fossasia/eventyay/pull/3494
+visdom,1288,Docs: Clarify environments for local development,2026-05-10T15:32:58Z,2026-05-15T16:25:41Z,merged,False,https://github.com/fossasia/visdom/pull/1288
+visdom,1289,fix: allow shared markercolor palettes larger than max(Y) in scatter plots,2026-05-10T17:57:09Z,2026-05-18T14:41:27Z,merged,False,https://github.com/fossasia/visdom/pull/1289
+visdom,1290,fix(plotlyplot): decode Plotly typed-array JSON for frontend compatibility,2026-05-10T18:52:51Z,,closed,False,https://github.com/fossasia/visdom/pull/1290
+eventyay,3544,add slot count and slides to builtin,2026-05-11T17:37:11Z,2026-05-11T19:08:51Z,merged,False,https://github.com/fossasia/eventyay/pull/3544
+eventyay,3548,Clarify additional speaker help text: ask for email not username,2026-05-13T20:07:11Z,,closed,False,https://github.com/fossasia/eventyay/pull/3548
+voxbento,19,feat(booth): add collaborative interpretation booth controls,2026-05-14T06:55:52Z,,closed,False,https://github.com/fossasia/voxbento/pull/19
+voxbento,20,feat(portal): bootstrap interpretation portal project,2026-05-14T07:09:02Z,2026-05-14T07:54:19Z,merged,False,https://github.com/fossasia/voxbento/pull/20
+voxbento,21,Feat/eventyay UI layout,2026-05-14T07:09:44Z,2026-05-14T07:54:45Z,merged,False,https://github.com/fossasia/voxbento/pull/21
+voxbento,22,Feat/jitsi monitoring,2026-05-14T07:12:00Z,2026-05-14T07:55:15Z,merged,False,https://github.com/fossasia/voxbento/pull/22
+voxbento,23,Feat/webrtc ingest,2026-05-14T07:12:31Z,2026-05-14T07:57:17Z,merged,False,https://github.com/fossasia/voxbento/pull/23
+voxbento,24,docs: add architecture and setup documentation,2026-05-14T07:16:19Z,2026-05-14T07:57:36Z,merged,False,https://github.com/fossasia/voxbento/pull/24
+voxbento,25,Refactor/flask booth workflow,2026-05-14T07:17:19Z,2026-05-14T07:57:57Z,merged,False,https://github.com/fossasia/voxbento/pull/25
+voxbento,26,Chore/dependabot config,2026-05-14T07:17:41Z,2026-05-14T07:58:20Z,merged,False,https://github.com/fossasia/voxbento/pull/26
+voxbento,27,build: manage development setup with uv,2026-05-14T07:21:00Z,,closed,False,https://github.com/fossasia/voxbento/pull/27
+voxbento,28,Configure Dependabot for Python and GitHub Actions,2026-05-14T07:27:30Z,2026-05-14T07:59:18Z,merged,False,https://github.com/fossasia/voxbento/pull/28
+voxbento,29,ci: add GitHub Actions workflow for testing,2026-05-14T07:29:14Z,2026-05-14T07:59:37Z,merged,False,https://github.com/fossasia/voxbento/pull/29
+voxbento,30,Refactor workflow to sync dependencies and run tests,2026-05-14T07:29:51Z,,closed,False,https://github.com/fossasia/voxbento/pull/30
+voxbento,31,refactor(ci): improve GitHub Actions test workflow,2026-05-14T07:30:38Z,,closed,False,https://github.com/fossasia/voxbento/pull/31
+voxbento,32,Refactor GitHub Actions workflow syntax,2026-05-14T07:36:04Z,,closed,False,https://github.com/fossasia/voxbento/pull/32
+voxbento,36,sync: merge remaining incubator changes,2026-05-14T08:04:16Z,2026-05-14T08:04:25Z,merged,False,https://github.com/fossasia/voxbento/pull/36
+voxbento,37,docs: add comprehensive documentation,2026-05-14T10:03:08Z,2026-05-14T10:08:33Z,merged,False,https://github.com/fossasia/voxbento/pull/37
+visdom,1299,Cypress: tolerate small screenshot dimension mismatches by cropping to overlap in numDifferentPixels,2026-05-18T08:40:53Z,2026-05-28T09:24:52Z,merged,False,https://github.com/fossasia/visdom/pull/1299
+visdom,1301,Add standardized agent skills scaffold,2026-05-18T20:34:41Z,2026-06-20T13:48:08Z,merged,False,https://github.com/fossasia/visdom/pull/1301
+visdom,1306,fix: prevent caption overlap in ImageComparePane,2026-05-20T21:24:12Z,2026-06-22T07:24:05Z,merged,False,https://github.com/fossasia/visdom/pull/1306
+voxbento,39,docs: add interpretation audio streaming plan,2026-05-21T20:53:28Z,,closed,False,https://github.com/fossasia/voxbento/pull/39
+voxbento,54,"Add MediaMTX docker-compose, config, and README",2026-05-23T20:23:31Z,2026-05-23T20:33:24Z,merged,False,https://github.com/fossasia/voxbento/pull/54
+voxbento,55,Expand mediamtx.yml with full documentation and fix deprecated field,2026-05-23T20:48:12Z,2026-05-23T20:51:29Z,merged,False,https://github.com/fossasia/voxbento/pull/55
+voxbento,56,Integrate browser WHIP publishing with MediaMTX,2026-05-24T05:45:42Z,2026-05-24T05:57:24Z,merged,False,https://github.com/fossasia/voxbento/pull/56
+voxbento,57,"Add mic device selection, level meter, and HLS URL display",2026-05-24T06:30:33Z,2026-05-24T06:34:39Z,merged,False,https://github.com/fossasia/voxbento/pull/57
+voxbento,58,Add Google Meet-style control bar and mute/unmute controls,2026-05-24T07:12:03Z,2026-05-24T07:21:05Z,merged,False,https://github.com/fossasia/voxbento/pull/58
+voxbento,76,"Add preflight checks for mic, audio device, and server",2026-05-24T10:50:57Z,2026-05-24T10:53:44Z,merged,False,https://github.com/fossasia/voxbento/pull/76
+voxbento,77,Add HLS playback validation with polling,2026-05-24T11:06:36Z,2026-05-24T11:11:04Z,merged,False,https://github.com/fossasia/voxbento/pull/77
+voxbento,78,Make WHIP/MediaMTX the primary ingest path; demote aiortc to fallback,2026-05-24T11:23:18Z,2026-05-24T11:24:38Z,merged,False,https://github.com/fossasia/voxbento/pull/78
+voxbento,79,feat: introduce FastAPI alongside Flask (Migration 1B),2026-05-24T11:46:56Z,2026-05-24T11:47:22Z,merged,False,https://github.com/fossasia/voxbento/pull/79
+voxbento,80,feat: migrate coordination to FastAPI WebSocket (Migration 1C),2026-05-24T20:11:37Z,2026-05-25T06:00:13Z,merged,False,https://github.com/fossasia/voxbento/pull/80
+voxbento,81,"feat: Remove Flask/aiortc/Socket.IO, migrate to pure FastAPI + WebRTC/WHIP with seamless interpreter relay",2026-05-25T10:21:01Z,2026-05-28T15:37:33Z,merged,True,https://github.com/fossasia/voxbento/pull/81
+eventyay,3654,Feature: include avatars import in speaker import ,2026-05-26T05:52:47Z,2026-05-26T07:41:19Z,merged,True,https://github.com/fossasia/eventyay/pull/3654
+eventyay,3663,fix: handle missing user emails in schedule notifications and gravatar generation,2026-05-26T10:49:58Z,2026-05-28T11:11:47Z,merged,True,https://github.com/fossasia/eventyay/pull/3663
+eventyay,3693,Auto-create tracks on session CSV import,2026-05-30T04:52:15Z,2026-05-30T11:43:27Z,merged,True,https://github.com/fossasia/eventyay/pull/3693
+voxbento,91,"Self-host Jitsi, remove Vue/src legacy, update all docs",2026-05-30T07:12:10Z,2026-05-30T14:44:17Z,merged,True,https://github.com/fossasia/voxbento/pull/91
+voxbento,93,feat: migrate listener playback from HLS to WHEP/WebRTC,2026-05-31T07:22:52Z,2026-05-31T07:36:16Z,merged,True,https://github.com/fossasia/voxbento/pull/93
+voxbento,95,Expand Ci to docker build and all containers smoke test,2026-05-31T07:55:17Z,2026-05-31T08:03:17Z,merged,True,https://github.com/fossasia/voxbento/pull/95
+eventyay,3701,Show connected SSO accounts on admin user info page,2026-05-31T09:44:16Z,2026-05-31T21:09:38Z,merged,True,https://github.com/fossasia/eventyay/pull/3701
+voxbento,96,Add booth identity schema: {event_slug}-{language_code} IDs and Media…,2026-05-31T10:14:46Z,2026-05-31T10:18:22Z,merged,True,https://github.com/fossasia/voxbento/pull/96
+voxbento,97,"Add room_id field to Booth, derive channel_id from MediaMTX path",2026-05-31T10:30:18Z,2026-05-31T10:35:24Z,merged,True,https://github.com/fossasia/voxbento/pull/97
+voxbento,98,Add multi-layer active-interpreter enforcement (#60),2026-05-31T10:47:50Z,2026-05-31T10:49:49Z,merged,True,https://github.com/fossasia/voxbento/pull/98
+voxbento,99,Implement booth bootstrap flow (#61),2026-05-31T12:22:46Z,2026-05-31T12:39:01Z,merged,True,https://github.com/fossasia/voxbento/pull/99
+voxbento,100,Add multi-event namespace isolation (#62),2026-05-31T14:27:30Z,2026-05-31T15:25:02Z,merged,True,https://github.com/fossasia/voxbento/pull/100
+voxbento,103,feat: Add role model and permission helpers,2026-05-31T16:37:42Z,2026-05-31T17:48:19Z,merged,True,https://github.com/fossasia/voxbento/pull/103
+voxbento,104,"Add database schema: SQLAlchemy models, Alembic migrations, CRUD layer",2026-05-31T19:11:50Z,2026-05-31T19:28:04Z,merged,True,https://github.com/fossasia/voxbento/pull/104
+voxbento,105,Feat: Implement invite-token authentication flow,2026-05-31T19:46:31Z,2026-05-31T19:49:11Z,merged,True,https://github.com/fossasia/voxbento/pull/105
+voxbento,106,"Add event-scoped roles, token management UI, and membership for admin ",2026-05-31T21:09:59Z,2026-06-04T13:09:21Z,merged,True,https://github.com/fossasia/voxbento/pull/106
+voxbento,108,ci: add GitHub Actions auto-deploy workflow on push to main,2026-06-04T13:19:11Z,2026-06-04T13:33:10Z,merged,True,https://github.com/fossasia/voxbento/pull/108
+voxbento,109,"fix(ui,auth): rename templates to Voxbento, fix WHEP validate, allow …",2026-06-04T13:47:17Z,2026-06-04T14:14:30Z,merged,True,https://github.com/fossasia/voxbento/pull/109
+voxbento,110,fix(webrtc): uncomment production IPs in mediamtx.yml,2026-06-04T14:30:05Z,2026-06-04T14:30:17Z,merged,True,https://github.com/fossasia/voxbento/pull/110
+voxbento,111,feat(ui): redesign interpreter booth layout to 2-column sidebar,2026-06-04T16:49:28Z,2026-06-04T16:55:43Z,merged,True,https://github.com/fossasia/voxbento/pull/111
+voxbento,112,fix(ui): add css cache buster,2026-06-04T17:02:07Z,2026-06-04T17:02:16Z,merged,True,https://github.com/fossasia/voxbento/pull/112
+voxbento,113,fix(ui): re-add missing monitor-status to prevent js crash,2026-06-04T17:11:30Z,2026-06-04T17:11:38Z,merged,True,https://github.com/fossasia/voxbento/pull/113
+voxbento,114,Fix/role assignment and UI,2026-06-04T18:06:32Z,2026-06-04T18:20:59Z,merged,True,https://github.com/fossasia/voxbento/pull/114
+voxbento,115,style: remove bottom footers from portal and admin pages,2026-06-04T18:30:26Z,2026-06-04T18:30:46Z,merged,True,https://github.com/fossasia/voxbento/pull/115
+voxbento,116,security: fix CodeQL open redirect warnings with safe_redirect helper,2026-06-04T18:35:10Z,2026-06-05T07:17:42Z,merged,True,https://github.com/fossasia/voxbento/pull/116
+voxbento,117,"refactor: completely remove HLS fallback and polling, fix MediaMTX preflight check, use WHEP exclusively",2026-06-04T19:13:19Z,2026-06-04T19:41:13Z,merged,True,https://github.com/fossasia/voxbento/pull/117
+voxbento,118,Docs/cleanup readme,2026-06-04T19:38:50Z,2026-06-04T19:39:04Z,merged,True,https://github.com/fossasia/voxbento/pull/118
+voxbento,119,fetch user details in booth and issue and pr templates,2026-06-05T05:42:49Z,2026-06-05T07:38:15Z,merged,True,https://github.com/fossasia/voxbento/pull/119
+voxbento,120,fix: enable audio and video permissions for Jitsi monitoring feed,2026-06-05T08:49:55Z,2026-06-05T08:50:08Z,merged,True,https://github.com/fossasia/voxbento/pull/120
+voxbento,121,feat: migrate listener pages to be event-scoped,2026-06-05T13:22:15Z,2026-06-05T14:27:47Z,merged,True,https://github.com/fossasia/voxbento/pull/121
+voxbento,122,feat: room-specific Jitsi URLs and auto-join interpreter booth,2026-06-05T15:09:43Z,2026-06-05T15:23:57Z,merged,True,https://github.com/fossasia/voxbento/pull/122
+voxbento,123,fix(booth): automatically mute inactive interpreters,2026-06-05T15:29:25Z,2026-06-05T15:50:07Z,merged,True,https://github.com/fossasia/voxbento/pull/123
+voxbento,124,"fix(booth): unify join/leave button, fix ws disconnect, and set primary color",2026-06-05T16:48:51Z,2026-06-05T16:50:46Z,merged,True,https://github.com/fossasia/voxbento/pull/124
+voxbento,125,fix(booth): move mic UI to diagnostics and filter virtual devices,2026-06-05T17:07:20Z,2026-06-05T17:10:50Z,merged,True,https://github.com/fossasia/voxbento/pull/125
+voxbento,126,feat: implement relay booth functionality,2026-06-05T18:10:51Z,2026-06-05T18:12:55Z,merged,True,https://github.com/fossasia/voxbento/pull/126
+voxbento,127,feat: add live booth audio monitoring,2026-06-05T18:32:52Z,2026-06-05T19:01:07Z,merged,True,https://github.com/fossasia/voxbento/pull/127
+voxbento,128,feat: Per-booth Configurable Transcription via Faster-Whisper,2026-06-05T19:28:55Z,2026-06-07T09:42:39Z,merged,True,https://github.com/fossasia/voxbento/pull/128
+voxbento,129,fix: resolve boothWhep undefined error due to cache and const scoping,2026-06-05T19:44:35Z,2026-06-05T19:44:55Z,merged,True,https://github.com/fossasia/voxbento/pull/129
+eventyay,3788,feat(core): Optimize uploaded event logos and headers,2026-06-06T05:30:03Z,2026-06-07T08:43:04Z,merged,True,https://github.com/fossasia/eventyay/pull/3788
+eventyay,3791,fix: add CORS headers to nginx static assets,2026-06-06T06:37:00Z,2026-06-06T06:50:10Z,merged,True,https://github.com/fossasia/eventyay/pull/3791
+eventyay,3792,fix: ensure complete CORS headers for widget API endpoints,2026-06-06T07:31:25Z,2026-06-06T08:05:07Z,merged,True,https://github.com/fossasia/eventyay/pull/3792
+voxbento,130,fix: Resolve 500 Error and Allow Event Admins to Manage Events,2026-06-07T09:55:14Z,2026-06-07T09:57:24Z,merged,True,https://github.com/fossasia/voxbento/pull/130
+voxbento,131,fix: gracefully catch exceptions when cancelling transcription task,2026-06-07T10:10:28Z,2026-06-07T10:11:32Z,merged,True,https://github.com/fossasia/voxbento/pull/131
+voxbento,132,perf: prevent OOM by only caching one Whisper model in memory at a time,2026-06-07T10:38:24Z,2026-06-07T10:38:37Z,merged,True,https://github.com/fossasia/voxbento/pull/132
+voxbento,133,Fix/listener token redirect,2026-06-07T11:01:45Z,2026-06-07T11:02:01Z,merged,True,https://github.com/fossasia/voxbento/pull/133
+voxbento,134,Feat/listener captions UI,2026-06-07T11:08:50Z,2026-06-07T11:09:04Z,merged,True,https://github.com/fossasia/voxbento/pull/134
+voxbento,135,fix: preserve redirect next URL after login,2026-06-07T11:34:42Z,2026-06-07T11:40:11Z,merged,True,https://github.com/fossasia/voxbento/pull/135
+voxbento,136,Fix: Responsive UI and Jitsi Controls for mobile view,2026-06-07T12:19:39Z,2026-06-07T12:34:00Z,merged,True,https://github.com/fossasia/voxbento/pull/136
+voxbento,137,Fix css inconsistencies,2026-06-07T14:02:12Z,2026-06-07T16:10:33Z,merged,True,https://github.com/fossasia/voxbento/pull/137
+voxbento,138,chore: remove uvicorn --reload flag for production optimization,2026-06-07T14:21:22Z,2026-06-07T14:27:15Z,merged,True,https://github.com/fossasia/voxbento/pull/138
+voxbento,139,Fix model race conditions,2026-06-07T16:09:09Z,2026-06-07T16:09:41Z,merged,True,https://github.com/fossasia/voxbento/pull/139
+voxbento,140,"feat: Add OpenAI, Deepgram, NVIDIA Parakeet, and ElevenLabs APIs for Transcription",2026-06-07T17:42:47Z,2026-06-10T05:07:48Z,merged,True,https://github.com/fossasia/voxbento/pull/140
+voxbento,142,chore: introduce AI agent context system for repository navigation and development workflows,2026-06-09T04:39:06Z,2026-06-09T04:40:45Z,merged,True,https://github.com/fossasia/voxbento/pull/142
+voxbento,148,Add base documentation,2026-06-10T08:52:09Z,2026-06-10T08:54:44Z,merged,True,https://github.com/fossasia/voxbento/pull/148
+voxbento,149,Make documentation for github pages,2026-06-10T13:55:39Z,2026-06-10T13:55:51Z,merged,True,https://github.com/fossasia/voxbento/pull/149
+voxbento,150,Update booths.mdx,2026-06-10T13:58:21Z,2026-06-10T14:17:09Z,merged,True,https://github.com/fossasia/voxbento/pull/150
+voxbento,151,docs: fix docusaurus baseUrl and remove redundant mintlify config,2026-06-10T14:08:25Z,2026-06-10T14:08:35Z,merged,True,https://github.com/fossasia/voxbento/pull/151
+voxbento,152,"docs: add contribution guide, fix build errors and cleanup mintlify remenants",2026-06-10T14:35:39Z,2026-06-10T14:36:40Z,merged,True,https://github.com/fossasia/voxbento/pull/152
+voxbento,153,docs: update url and baseUrl for docs.voxbento.com,2026-06-10T15:02:12Z,2026-06-10T15:03:10Z,merged,True,https://github.com/fossasia/voxbento/pull/153
+voxbento,154,Docs/custom domain baseurl,2026-06-10T17:20:38Z,,closed,True,https://github.com/fossasia/voxbento/pull/154
+voxbento,155,docs: improve transcription documentation and align with voxbento.com,2026-06-10T17:27:22Z,2026-06-10T17:28:10Z,merged,True,https://github.com/fossasia/voxbento/pull/155
+voxbento,156,ci: add explicit permissions to workflows,2026-06-10T17:33:14Z,2026-06-10T17:34:11Z,merged,True,https://github.com/fossasia/voxbento/pull/156
+voxbento,157,ci: add explicit permissions to workflows,2026-06-10T17:33:40Z,2026-06-10T17:33:48Z,merged,True,https://github.com/fossasia/voxbento/pull/157
+voxbento,158, fix references in docs,2026-06-10T17:38:07Z,2026-06-10T17:38:14Z,merged,True,https://github.com/fossasia/voxbento/pull/158
+voxbento,159,feat: Add headless floor-bot for transcription audio extraction and multilingual translation pipeline,2026-06-11T08:39:09Z,2026-06-13T14:37:30Z,merged,True,https://github.com/fossasia/voxbento/pull/159
+voxbento,165,replace favicon.ico,2026-06-12T04:04:44Z,2026-06-12T04:05:02Z,merged,True,https://github.com/fossasia/voxbento/pull/165
+eventyay,3885,Update python.instructions.md,2026-06-12T05:48:35Z,2026-06-12T07:52:57Z,merged,True,https://github.com/fossasia/eventyay/pull/3885
+eventyay-checkin,84,UI redesign,2026-06-12T09:06:12Z,2026-06-23T10:44:44Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/84
+voxbento,169,Update Caddyfile,2026-06-12T11:41:58Z,2026-06-12T11:42:36Z,merged,True,https://github.com/fossasia/voxbento/pull/169
+voxbento,170,"Revert ""Update Caddyfile""",2026-06-12T11:47:32Z,2026-06-12T11:47:44Z,merged,True,https://github.com/fossasia/voxbento/pull/170
+eventyay,3888,Support WHEP WebRTC endpoints for audio translation,2026-06-12T11:58:45Z,2026-06-16T07:49:54Z,merged,True,https://github.com/fossasia/eventyay/pull/3888
+eventyay,3905,"Revert ""fix: remove external image URL fields for event logo and header image""",2026-06-13T09:43:36Z,2026-06-13T09:46:31Z,merged,True,https://github.com/fossasia/eventyay/pull/3905
+eventyay,3906,feat: add management command to import external images,2026-06-13T10:02:26Z,2026-06-13T10:31:06Z,merged,True,https://github.com/fossasia/eventyay/pull/3906
+voxbento,172,Restructure interprers booth,2026-06-13T14:42:53Z,2026-06-13T16:13:33Z,merged,True,https://github.com/fossasia/voxbento/pull/172
+voxbento,173,feat: Interpreter Lobby and Diagnostics,2026-06-13T17:02:12Z,2026-06-13T18:05:38Z,merged,True,https://github.com/fossasia/voxbento/pull/173
+voxbento,174,feat: add rename room  and booth language metadata in admin interface,2026-06-13T18:17:58Z,2026-06-13T18:18:11Z,merged,True,https://github.com/fossasia/voxbento/pull/174
+voxbento,175,fix: address PR review comments for booth edit,2026-06-13T18:24:33Z,2026-06-13T18:25:09Z,merged,True,https://github.com/fossasia/voxbento/pull/175
+voxbento,176,refactor(roles): Auth model refactor and added mission control for cordinators,2026-06-14T08:58:28Z,2026-06-14T09:43:58Z,merged,True,https://github.com/fossasia/voxbento/pull/176
+voxbento,177,fix(coordinator): prevent 500 by loading event rooms explicitly,2026-06-14T09:52:01Z,2026-06-14T09:52:45Z,merged,True,https://github.com/fossasia/voxbento/pull/177
+voxbento,178,Fix logout button,2026-06-14T10:11:12Z,2026-06-14T10:11:47Z,merged,True,https://github.com/fossasia/voxbento/pull/178
+voxbento,179,fix(auth): drop all cookies on logout and fix delete_cookie kwargs,2026-06-14T10:16:27Z,2026-06-14T10:17:07Z,merged,True,https://github.com/fossasia/voxbento/pull/179
+voxbento,181,refactor: update agent documentation paths by removing the .github di…,2026-06-14T13:40:24Z,2026-06-14T13:40:46Z,merged,True,https://github.com/fossasia/voxbento/pull/181
+voxbento,182,feat: implement server-side pagination for event list queries in admin and mission control dashboards,2026-06-14T14:04:16Z,2026-06-14T14:07:27Z,merged,True,https://github.com/fossasia/voxbento/pull/182
+voxbento,183,refactor: apply linting fixes and cleanup across codebase and alembic migrations,2026-06-14T14:22:32Z,2026-06-14T14:26:31Z,merged,True,https://github.com/fossasia/voxbento/pull/183
+voxbento,184,docs: add YAML frontmatter to skills for better detection,2026-06-14T14:34:53Z,2026-06-14T14:35:17Z,merged,True,https://github.com/fossasia/voxbento/pull/184
+voxbento,185,dx: fix js.instructions.md applyTo glob to match static/js/,2026-06-14T14:44:46Z,2026-06-14T14:45:10Z,merged,True,https://github.com/fossasia/voxbento/pull/185
+voxbento,186,tests: add characterization tests for transcription aggregator and providers,2026-06-14T14:51:34Z,2026-06-14T14:56:29Z,merged,True,https://github.com/fossasia/voxbento/pull/186
+voxbento,187,Performance optimisation n + 1 booth queries,2026-06-14T15:26:16Z,2026-06-14T17:53:25Z,merged,True,https://github.com/fossasia/voxbento/pull/187
+voxbento,188,Remove stray console.logs in interpreter-booth.js ,2026-06-14T18:52:05Z,2026-06-14T18:56:47Z,merged,True,https://github.com/fossasia/voxbento/pull/188
+voxbento,189,remove stray console logs in interpreter-booth.js,2026-06-15T02:53:39Z,,closed,True,https://github.com/fossasia/voxbento/pull/189
+voxbento,190,Add invalid input tests for make_mediamtx_path,2026-06-15T03:06:50Z,2026-06-15T03:08:30Z,merged,True,https://github.com/fossasia/voxbento/pull/190
+voxbento,191,Refactor Import Statements Across Entire Repository ,2026-06-15T03:20:21Z,,closed,True,https://github.com/fossasia/voxbento/pull/191
+voxbento,192,"Fix mission control: show all booths, Go Live/Stop, observer WS",2026-06-15T03:45:20Z,2026-06-15T04:21:49Z,merged,True,https://github.com/fossasia/voxbento/pull/192
+voxbento,193,Feat: Landingpage,2026-06-15T08:18:13Z,2026-06-15T11:40:15Z,merged,True,https://github.com/fossasia/voxbento/pull/193
+voxbento,194,SEO + GEO ;-),2026-06-15T13:55:27Z,2026-06-15T13:57:46Z,merged,True,https://github.com/fossasia/voxbento/pull/194
+voxbento,195,"Revert ""feat: implement research section and update site footer with …",2026-06-15T14:05:32Z,2026-06-15T14:05:44Z,merged,True,https://github.com/fossasia/voxbento/pull/195
+voxbento,196,SEO + GEO ;-),2026-06-15T14:06:07Z,2026-06-15T14:06:48Z,merged,True,https://github.com/fossasia/voxbento/pull/196
+eventyay,3965,Fix NameError: Import rooms_for_talk_assignment in submission.py,2026-06-15T18:31:48Z,2026-06-15T18:32:38Z,merged,True,https://github.com/fossasia/eventyay/pull/3965
+voxbento,197,Show elevated-role participants in Mission Control interpreter list,2026-06-16T06:16:07Z,2026-06-16T06:20:23Z,merged,True,https://github.com/fossasia/voxbento/pull/197
+voxbento,198,refactor: replace hard-coded role checks with permission-based validation for booth participants,2026-06-16T06:57:23Z,2026-06-16T06:59:05Z,merged,True,https://github.com/fossasia/voxbento/pull/198
+voxbento,199,"feat: implement language tag picker for booth and room settings, enhance audio player visibility in listener event",2026-06-16T11:55:37Z,2026-06-16T11:57:51Z,merged,True,https://github.com/fossasia/voxbento/pull/199
+eventyay,3977,fix when invoice object error ,2026-06-16T18:31:11Z,2026-06-16T19:38:18Z,merged,True,https://github.com/fossasia/eventyay/pull/3977
+voxbento,201,"Refactor: Modularize FastAPI app, websockets, and overhaul documentation",2026-06-16T19:12:24Z,2026-06-17T03:07:44Z,merged,True,https://github.com/fossasia/voxbento/pull/201
+voxbento,202,chore: Configure bandit to ignore tests directory,2026-06-17T05:10:08Z,2026-06-17T05:10:29Z,merged,True,https://github.com/fossasia/voxbento/pull/202
+voxbento,203,chore: Fix bandit action to properly support pyproject.toml,2026-06-17T05:14:49Z,2026-06-17T05:15:10Z,merged,True,https://github.com/fossasia/voxbento/pull/203
+eventyay,3978,Use SITE_URL for Google Calendar and webcal export URLs,2026-06-17T06:07:14Z,2026-06-17T06:39:14Z,merged,True,https://github.com/fossasia/eventyay/pull/3978
+voxbento,204,fix: update WHEP start logic for floor audio to bypass booth live status check,2026-06-17T10:55:01Z,2026-06-17T10:56:26Z,merged,True,https://github.com/fossasia/voxbento/pull/204
+voxbento,205,feat: Add Deepgram TTS for translated floor audio,2026-06-18T07:15:58Z,2026-06-18T08:21:59Z,merged,True,https://github.com/fossasia/voxbento/pull/205
+voxbento,206,fix: Add missing await to stop_transcription_worker,2026-06-18T08:47:33Z,2026-06-18T08:47:42Z,merged,True,https://github.com/fossasia/voxbento/pull/206
+eventyay-checkin,85,fix checkin list issue,2026-06-18T13:43:08Z,2026-06-18T14:10:23Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/85
+voxbento,208,Add room audio delay settings for listener playback,2026-06-19T10:48:44Z,2026-06-21T13:15:30Z,merged,True,https://github.com/fossasia/voxbento/pull/208
+eventyay,4056,feat(settings): add interactive image cropper for event logo and header,2026-06-23T12:12:03Z,2026-06-24T17:57:32Z,merged,True,https://github.com/fossasia/eventyay/pull/4056
+eventyay,4062,fix(cropper): align aspect ratios with usage matrix and handle cancellation,2026-06-25T08:50:37Z,2026-06-25T10:12:09Z,merged,True,https://github.com/fossasia/eventyay/pull/4062
+eventyay,4065,Fix voucher deletion for canceled orders,2026-06-26T02:59:31Z,2026-06-26T04:03:39Z,merged,True,https://github.com/fossasia/eventyay/pull/4065
+eventyay,4066,Fix ticket code button to show PDF-matching QR code,2026-06-26T03:15:21Z,2026-06-26T04:02:53Z,merged,True,https://github.com/fossasia/eventyay/pull/4066
+eventyay,4071,update exhibition plugin,2026-06-26T12:46:34Z,2026-06-26T13:16:51Z,merged,True,https://github.com/fossasia/eventyay/pull/4071
+eventyay,4079,fix: migrate speaker/user external images from profile JSON,2026-06-26T18:49:50Z,2026-06-27T16:49:56Z,merged,True,https://github.com/fossasia/eventyay/pull/4079
+eventyay,4090,fix(locale): correct python format string translation for Tamil,2026-06-27T13:06:42Z,2026-06-27T13:38:27Z,merged,True,https://github.com/fossasia/eventyay/pull/4090
+voxbento,211,feat: Add Supertonic in-process TTS provider,2026-06-28T11:45:00Z,2026-06-29T11:54:39Z,merged,True,https://github.com/fossasia/voxbento/pull/211
+voxbento,219,add more plans and skills,2026-06-29T11:58:51Z,2026-06-29T11:59:16Z,merged,True,https://github.com/fossasia/voxbento/pull/219
+voxbento,220,Fix supertonic not installed in Docker image,2026-06-29T14:13:39Z,2026-06-29T14:23:36Z,merged,True,https://github.com/fossasia/voxbento/pull/220
+voxbento,221,feat: Enhance floor bot status management and UI feedback,2026-06-29T17:36:03Z,2026-06-29T17:38:03Z,merged,True,https://github.com/fossasia/voxbento/pull/221
+voxbento,222,Extract shared translation API-key lookup and endpoint map,2026-06-29T17:51:16Z,2026-06-29T17:55:22Z,merged,True,https://github.com/fossasia/voxbento/pull/222
+voxbento,223,security: fail fast on weak default secret_key in production,2026-06-29T18:13:53Z,2026-06-29T18:14:51Z,merged,True,https://github.com/fossasia/voxbento/pull/223
+voxbento,224,docs: fix .env.example drift and add missing mediamtx_internal_base field,2026-06-29T18:30:50Z,2026-06-30T11:05:33Z,merged,True,https://github.com/fossasia/voxbento/pull/224
+voxbento,225,Default debug to False for safe prod logging,2026-06-30T13:14:39Z,2026-06-30T13:15:06Z,merged,True,https://github.com/fossasia/voxbento/pull/225
+voxbento,226,Cache TTS room config to cut per-segment DB load,2026-06-30T13:23:31Z,2026-06-30T13:27:00Z,merged,True,https://github.com/fossasia/voxbento/pull/226
+eventyay,4170,Fix featured speakers and schedule caches not clearing correctly,2026-07-01T06:06:45Z,2026-07-01T06:59:08Z,merged,True,https://github.com/fossasia/eventyay/pull/4170
+eventyay,4171,feat: add video support for interpretation channels,2026-07-01T06:52:20Z,2026-07-01T09:17:08Z,merged,True,https://github.com/fossasia/eventyay/pull/4171
+eventyay,4179,Fix Netlify Cors so that deployment preview works for access,2026-07-01T15:46:33Z,2026-07-02T07:42:38Z,merged,True,https://github.com/fossasia/eventyay/pull/4179
+eventyay-checkin,106,chore: remove server selection option from LoginForm,2026-07-01T15:54:50Z,2026-07-01T16:03:16Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/106
+eventyay-checkin,107,fix: resolve stale role and session expiry issues,2026-07-01T16:46:17Z,2026-07-02T16:34:43Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/107
+voxbento,228,Add cleanup for stale TTS room pipelines,2026-07-01T18:15:03Z,2026-07-02T06:03:50Z,merged,True,https://github.com/fossasia/voxbento/pull/228
+eventyay-checkin,108,feat: standardize check-in UI and remove leaked emails,2026-07-02T18:01:38Z,2026-07-03T06:13:32Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/108
+eventyay-checkin,109,feat: implement fully automatic kiosk silent printing for Badge Station,2026-07-03T06:33:56Z,,closed,True,https://github.com/fossasia/eventyay-checkin/pull/109
+eventyay-checkin,112,Fix edit attendee failing to fetch by using mande instance instead of raw fetch ,2026-07-04T06:10:03Z,2026-07-04T07:11:22Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/112
+eventyay,4214,Fix: Add PATCH to CORS allowed methods in Nginx,2026-07-04T06:16:37Z,2026-07-04T07:17:15Z,merged,True,https://github.com/fossasia/eventyay/pull/4214
+voxbento,229,ci: add gemini-cli issue triage and review workflows,2026-07-04T06:48:16Z,2026-07-06T05:43:48Z,merged,True,https://github.com/fossasia/voxbento/pull/229
+eventyay,4237,"Revert ""fix: unified import process ui code for tickets & talks import""",2026-07-05T07:56:05Z,2026-07-05T07:59:18Z,merged,True,https://github.com/fossasia/eventyay/pull/4237
+voxbento,230,feat(transcription): add numerals=true to Deepgram optimization,2026-07-06T05:44:26Z,2026-07-06T07:03:01Z,merged,True,https://github.com/fossasia/voxbento/pull/230
+voxbento,231,fix(ci): add required gemini cli environment variables,2026-07-06T06:00:27Z,2026-07-06T06:00:41Z,merged,True,https://github.com/fossasia/voxbento/pull/231
+voxbento,232,fix(ci): workflow triggers and output capture,2026-07-06T06:13:09Z,2026-07-06T06:13:18Z,merged,True,https://github.com/fossasia/voxbento/pull/232
+voxbento,233,feat(ci): add dynamic selection of Gemini model in workflows,2026-07-06T06:51:28Z,2026-07-06T06:51:51Z,merged,True,https://github.com/fossasia/voxbento/pull/233
+voxbento,234,Fix/workflow fallback models,2026-07-06T06:59:05Z,2026-07-06T06:59:14Z,merged,True,https://github.com/fossasia/voxbento/pull/234
+voxbento,237,"ref: feat: add AI interpretation configuration (persona, style, and vocabulary)",2026-07-06T12:34:58Z,,open,True,https://github.com/fossasia/voxbento/pull/237
+voxbento,238,chore/github models prompt,2026-07-06T12:45:12Z,2026-07-06T12:46:55Z,merged,True,https://github.com/fossasia/voxbento/pull/238
+voxbento,255,chore: remove unused Gemini GitHub workflow definitions,2026-07-06T16:35:51Z,2026-07-06T16:35:59Z,merged,True,https://github.com/fossasia/voxbento/pull/255
+voxbento,258,refactor: update header branding and remove redundant logo mark from hero section,2026-07-06T17:20:08Z,2026-07-06T17:20:18Z,merged,True,https://github.com/fossasia/voxbento/pull/258
+voxbento,267,Fix account page to show interpreter and coordinator roles,2026-07-07T16:45:55Z,2026-07-07T17:06:20Z,merged,True,https://github.com/fossasia/voxbento/pull/267
+voxbento,268,feat: Add direct event links to user roles on account page,2026-07-07T18:16:56Z,2026-07-07T18:19:07Z,merged,True,https://github.com/fossasia/voxbento/pull/268
+voxbento,269,fix: Update Event Owner links to redirect to Event Admin Dashboard,2026-07-07T18:34:07Z,2026-07-07T18:37:50Z,merged,True,https://github.com/fossasia/voxbento/pull/269
+eventyay,4306,fix: unescape markdown escaped underscores in placeholders,2026-07-09T08:32:29Z,2026-07-09T09:33:52Z,merged,True,https://github.com/fossasia/eventyay/pull/4306
+voxbento,273,feat: Modern email-first authentication (Phase 1),2026-07-10T06:24:36Z,2026-07-10T06:49:04Z,merged,True,https://github.com/fossasia/voxbento/pull/273
+voxbento,274,feat: Member Role Invitations and Interpreter Lobby Grouping,2026-07-10T07:18:35Z,2026-07-10T07:22:52Z,merged,True,https://github.com/fossasia/voxbento/pull/274
+voxbento,275,style: add horizontal scrolling container to role membership table,2026-07-10T08:24:35Z,2026-07-10T08:24:44Z,merged,True,https://github.com/fossasia/voxbento/pull/275
+voxbento,276,feat: Redesign home page,2026-07-10T08:34:17Z,2026-07-10T08:54:19Z,merged,True,https://github.com/fossasia/voxbento/pull/276
+voxbento,277,fix: CSS cache busting for home page,2026-07-10T08:58:36Z,2026-07-10T08:59:54Z,merged,True,https://github.com/fossasia/voxbento/pull/277
+voxbento,278,Feature/redesign listener,2026-07-10T09:16:17Z,2026-07-10T09:28:52Z,merged,True,https://github.com/fossasia/voxbento/pull/278
+voxbento,279,Feature/redesign booth,2026-07-10T10:01:40Z,,closed,True,https://github.com/fossasia/voxbento/pull/279
+voxbento,281,"Revert ""ci: bump actions/checkout from 4 to 7""",2026-07-11T05:22:51Z,2026-07-11T05:22:58Z,merged,True,https://github.com/fossasia/voxbento/pull/281
+voxbento,282,"Revert ""Revert ""ci: bump actions/checkout from 4 to 7""""",2026-07-11T05:34:38Z,2026-07-11T05:34:58Z,merged,True,https://github.com/fossasia/voxbento/pull/282
+voxbento,285,chore: repository documentation and context audit ,2026-07-13T08:07:11Z,2026-07-13T08:07:25Z,merged,True,https://github.com/fossasia/voxbento/pull/285
+voxbento,286,chore: synchronize documentation and AI agent context files ,2026-07-13T08:13:46Z,2026-07-13T08:15:11Z,merged,True,https://github.com/fossasia/voxbento/pull/286
+voxbento,287,docs: Fix broken markdown images and internal links (#36),2026-07-14T04:27:24Z,2026-07-14T05:27:59Z,merged,True,https://github.com/fossasia/voxbento/pull/287
+eventyay,4410,feat: Add video component sidebar color settings to design tabs,2026-07-15T02:59:25Z,2026-07-15T08:25:28Z,merged,True,https://github.com/fossasia/eventyay/pull/4410
+eventyay-checkin,116,fix: correctly display product name for staff check-ins,2026-07-18T13:14:17Z,2026-07-18T13:32:16Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/116
+eventyay,4458,"Revert ""revert(badges): remove manual cache-bust on PDF editor.js""",2026-07-18T23:13:56Z,2026-07-18T23:15:42Z,merged,True,https://github.com/fossasia/eventyay/pull/4458
+eventyay,4459,fix(badges): bump PDF editor.js cache-bust version to autofit3,2026-07-18T23:33:43Z,2026-07-18T23:35:38Z,merged,True,https://github.com/fossasia/eventyay/pull/4459
+eventyay,4460,fix(badges): fix backend cache versioning and prevent browser caching of badges,2026-07-19T00:04:48Z,2026-07-19T00:07:35Z,merged,True,https://github.com/fossasia/eventyay/pull/4460
+eventyay,4502,Fix Arabic font fallback in PDF rendering,2026-07-19T16:51:44Z,2026-07-19T16:59:23Z,merged,True,https://github.com/fossasia/eventyay/pull/4502
+eventyay-checkin,117,feat: update printing message and hide attendee info in kiosk mode,2026-07-19T22:38:10Z,2026-07-19T23:57:06Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/117
+eventyay,4518,"Revert ""fix: correct review settings layout and validation for dynamic scores""",2026-07-20T19:27:36Z,,closed,True,https://github.com/fossasia/eventyay/pull/4518
+eventyay,4519,"Revert ""fix: badge options on orders, join-video login redirect, and HTML sanitizer""",2026-07-20T19:33:48Z,2026-07-20T19:51:20Z,merged,True,https://github.com/fossasia/eventyay/pull/4519
+eventyay,4520,"Revert ""Re-introduce Tiptap editor with vendored static bundle""",2026-07-20T19:51:50Z,2026-07-20T19:52:22Z,merged,True,https://github.com/fossasia/eventyay/pull/4520
+eventyay,4521,Fix: Badge options on order pages,2026-07-20T19:58:15Z,2026-07-20T23:41:26Z,merged,True,https://github.com/fossasia/eventyay/pull/4521
+eventyay,4523,feat(video): add language streams in schedule,2026-07-20T21:46:52Z,2026-07-21T05:13:26Z,merged,True,https://github.com/fossasia/eventyay/pull/4523
+eventyay,4527,Fix mobile navigation bar sorting order,2026-07-21T06:24:16Z,2026-07-21T06:39:01Z,merged,True,https://github.com/fossasia/eventyay/pull/4527
+eventyay,4529,Fix video join access for ticket attendees,2026-07-21T07:35:33Z,2026-07-21T07:42:09Z,merged,True,https://github.com/fossasia/eventyay/pull/4529
+voxbento,291,Fix some issues,2026-07-23T22:03:15Z,,closed,True,https://github.com/fossasia/voxbento/pull/291
+eventyay,4570,Fix unauthorized video event access by removing implicit attendee trait assignment,2026-07-25T14:11:29Z,2026-07-27T22:12:58Z,merged,True,https://github.com/fossasia/eventyay/pull/4570
+voxbento,293,feat: add retry logic and stderr logging to ffmpeg capture process,2026-07-28T19:59:37Z,2026-07-28T20:06:06Z,merged,True,https://github.com/fossasia/voxbento/pull/293
+voxbento,294,Add stacked captions mode to listener page,2026-07-28T21:26:49Z,2026-07-28T22:01:44Z,merged,True,https://github.com/fossasia/voxbento/pull/294
+voxbento,295,Feature: booth UI refresh,2026-07-28T22:33:26Z,2026-07-28T22:34:22Z,merged,True,https://github.com/fossasia/voxbento/pull/295
+voxbento,296,Fix booth going live on join; drive broadcast from Mission Control,2026-07-29T08:31:01Z,2026-07-29T09:13:02Z,merged,True,https://github.com/fossasia/voxbento/pull/296
+eventyay,4613,"Revert ""feat(ci): add PR process reminder checklist workflow""",2026-07-29T10:02:35Z,2026-07-29T10:22:37Z,merged,True,https://github.com/fossasia/eventyay/pull/4613
+voxbento,301,"Admin UI overhaul: role-based nav, text brand, fix setup wizard 500",2026-07-31T20:52:30Z,2026-07-31T20:52:46Z,merged,True,https://github.com/fossasia/voxbento/pull/301
+voxbento,302,perf: Reuse shared httpx.AsyncClient instead of one per request,2026-07-31T21:45:40Z,2026-08-01T11:54:08Z,merged,True,https://github.com/fossasia/voxbento/pull/302
+eventyay,4694,Remove badge output from ticket settings download formats,2026-07-31T21:58:28Z,2026-08-01T04:10:05Z,merged,True,https://github.com/fossasia/eventyay/pull/4694
+eventyay,4695,Move cart redirect and timeline options to Ticket settings Basics tab,2026-07-31T22:06:05Z,2026-08-01T04:17:32Z,merged,True,https://github.com/fossasia/eventyay/pull/4695
+eventyay,4696,Move cart reservation time from event settings to global settings,2026-07-31T22:18:28Z,2026-08-01T19:03:35Z,merged,True,https://github.com/fossasia/eventyay/pull/4696
+eventyay,4698,Move email and phone helper text settings to Order forms,2026-07-31T22:28:38Z,2026-08-01T11:17:24Z,merged,True,https://github.com/fossasia/eventyay/pull/4698
+eventyay,4700,Use common event logo for invoices and remove separate invoice logo upload,2026-07-31T22:34:12Z,2026-08-01T04:12:39Z,merged,True,https://github.com/fossasia/eventyay/pull/4700
+eventyay,4701,Fix ticketing setup payment options,2026-07-31T22:39:03Z,2026-08-21T08:36:31Z,merged,True,https://github.com/fossasia/eventyay/pull/4701
+eventyay,4725,fix: align upcoming and past events filter logic with main start page,2026-08-01T19:42:15Z,2026-08-07T10:38:17Z,merged,True,https://github.com/fossasia/eventyay/pull/4725
+voxbento,312,Fix type annotations and missing __future__ imports,2026-08-04T09:50:30Z,2026-08-04T10:11:06Z,merged,True,https://github.com/fossasia/voxbento/pull/312
+voxbento,313,Apply exact reviewer-suggested change from PR #312 comment,2026-08-04T09:58:24Z,,closed,True,https://github.com/fossasia/voxbento/pull/313
+voxbento,316,feat: Implement transcript hallucination filter,2026-08-04T11:07:54Z,,closed,True,https://github.com/fossasia/voxbento/pull/316
+eventyay,4778,Move customer order field settings to a dedicated page,2026-08-07T06:57:37Z,2026-08-07T10:27:12Z,merged,True,https://github.com/fossasia/eventyay/pull/4778
+eventyay,4780,feat: dual-mode plugin dependency management (dev vs production),2026-08-07T07:51:18Z,2026-08-20T09:50:08Z,merged,True,https://github.com/fossasia/eventyay/pull/4780
+voxbento,329,Potential fix for code scanning alert no. 1365: Incomplete URL substring sanitization,2026-08-07T08:50:17Z,2026-08-07T08:50:42Z,merged,True,https://github.com/fossasia/voxbento/pull/329
+voxbento,330,Fix unit-tests (3.13) failure from Ruff import ordering in transcription provider tests,2026-08-07T08:54:14Z,2026-08-07T09:02:07Z,merged,True,https://github.com/fossasia/voxbento/pull/330
+eventyay,4785,perf: replace schedule-JSON speakers page with server-rendered paginated view,2026-08-07T10:46:49Z,2026-08-20T09:52:28Z,merged,True,https://github.com/fossasia/eventyay/pull/4785
+eventyay-plus-reviews,2,feat: migrate project,2026-08-07T13:05:22Z,2026-08-07T15:59:18Z,merged,True,https://github.com/fossasia/eventyay-plus-reviews/pull/2
+eventyay-interpretation,61,Pr 54 fixed,2026-08-08T08:10:53Z,,closed,True,https://github.com/fossasia/eventyay-interpretation/pull/61
+eventyay-interpretation,62,feat: integrate VoxBento backend,2026-08-08T09:13:19Z,2026-08-08T17:03:47Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/62
+eventyay,4790,Add interpretation plugin ,2026-08-08T11:44:31Z,2026-08-09T04:19:07Z,merged,True,https://github.com/fossasia/eventyay/pull/4790
+eventyay-interpretation,63,"Fix API key leak, overview i18n, and backend exceptions",2026-08-08T17:11:06Z,2026-08-08T17:12:15Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/63
+voxbento,333,feat: Eventyay API integration (Invite Tokens & Subtitle WebSocket URLs),2026-08-08T17:33:15Z,2026-08-08T17:49:30Z,merged,True,https://github.com/fossasia/voxbento/pull/333
+eventyay-interpretation,64,feat: VoxBento API orchestration and Interpretation Language support,2026-08-08T17:33:55Z,2026-08-08T17:49:45Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/64
+eventyay,4792,feat(video): add voxbento caption box and whep playback support,2026-08-08T18:02:23Z,,closed,True,https://github.com/fossasia/eventyay/pull/4792
+voxbento,334,fix: handle existing booths in eventyay integration,2026-08-08T19:48:36Z,2026-08-08T20:40:20Z,merged,True,https://github.com/fossasia/voxbento/pull/334
+eventyay-interpretation,65,fix: update VoxBento API URL to use /api/events,2026-08-08T19:49:26Z,2026-08-08T20:40:33Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/65
+voxbento,335,feat: add DELETE route for booths,2026-08-08T20:52:45Z,2026-08-08T20:58:24Z,merged,True,https://github.com/fossasia/voxbento/pull/335
+eventyay-interpretation,67,feat: delete booths that are removed from languages,2026-08-08T20:53:31Z,2026-08-08T21:04:32Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/67
+eventyay,4793,bump eventyay-interpretation version,2026-08-09T06:44:36Z,2026-08-09T14:11:04Z,merged,True,https://github.com/fossasia/eventyay/pull/4793
+voxbento,339,"Revert ""ui: Remove Tailwind CDN from home.html and listener_join.html (#244)""",2026-08-10T14:06:19Z,2026-08-10T14:06:33Z,merged,True,https://github.com/fossasia/voxbento/pull/339
+eventyay,4839,Fix: Subclass `TeamPermissionError` from Django's `PermissionDenied`,2026-08-11T16:00:20Z,2026-08-11T18:39:41Z,merged,True,https://github.com/fossasia/eventyay/pull/4839
+eventyay,4847,feat: redesign homepage and add Metadata settings,2026-08-11T18:37:35Z,2026-08-29T19:33:30Z,merged,True,https://github.com/fossasia/eventyay/pull/4847
+eventyay,4863,docs: restructure documentation for unified platform,2026-08-12T13:15:20Z,2026-08-12T19:06:11Z,merged,True,https://github.com/fossasia/eventyay/pull/4863
+eventyay,4911,Document unified platform runtime operations,2026-08-13T16:13:38Z,2026-08-14T07:39:59Z,merged,True,https://github.com/fossasia/eventyay/pull/4911
+eventyay,4913,Fix documentation build warnings and broken references,2026-08-13T16:49:15Z,2026-08-13T18:22:18Z,merged,True,https://github.com/fossasia/eventyay/pull/4913
+eventyay,4914,docs: restructure unified platform documentation,2026-08-13T18:48:38Z,2026-08-14T05:54:26Z,merged,True,https://github.com/fossasia/eventyay/pull/4914
+eventyay,4933,docs: update plugin reference to match current codebase,2026-08-14T12:57:01Z,2026-08-14T21:58:29Z,merged,True,https://github.com/fossasia/eventyay/pull/4933
+eventyay,4936,docs: Clean up legacy configuration and branding references,2026-08-14T13:50:05Z,2026-08-14T21:57:49Z,merged,True,https://github.com/fossasia/eventyay/pull/4936
+voxbento,346,fix: remember selected room when adding booths in setup wizard,2026-08-14T20:51:19Z,2026-08-14T21:12:41Z,merged,True,https://github.com/fossasia/voxbento/pull/346
+voxbento,347,fix(floor-bot): bypass insecure origin for jitsi,2026-08-14T21:18:11Z,2026-08-15T19:20:27Z,merged,True,https://github.com/fossasia/voxbento/pull/347
+eventyay,4947,Add hubspot creds placeholder to .env.dev.sample,2026-08-15T11:06:35Z,2026-08-15T20:09:39Z,merged,True,https://github.com/fossasia/eventyay/pull/4947
+voxbento,348,fix: filter /healthz from uvicorn access logs,2026-08-15T19:21:59Z,2026-08-15T19:27:31Z,merged,True,https://github.com/fossasia/voxbento/pull/348
+voxbento,349,fix: reduce jitsi log levels,2026-08-15T19:30:15Z,2026-08-15T19:30:30Z,merged,True,https://github.com/fossasia/voxbento/pull/349
+voxbento,355,fix: include room_id in booth state fetch and join,2026-08-16T09:25:49Z,2026-08-16T09:25:53Z,merged,True,https://github.com/fossasia/voxbento/pull/355
+voxbento,356,fix mission control language persistence,2026-08-16T09:34:12Z,2026-08-16T09:34:18Z,merged,True,https://github.com/fossasia/voxbento/pull/356
+voxbento,357,fix: robust room_id parsing and linting fixes,2026-08-16T09:46:32Z,2026-08-16T09:47:31Z,merged,True,https://github.com/fossasia/voxbento/pull/357
+eventyay,5000,Add code review protocol for AI agents,2026-08-17T11:49:34Z,2026-08-17T19:36:32Z,merged,True,https://github.com/fossasia/eventyay/pull/5000
+voxbento,361,feat: Add search and 2FA status to users admin page,2026-08-17T12:30:17Z,2026-08-17T12:41:03Z,merged,True,https://github.com/fossasia/voxbento/pull/361
+voxbento,362,fix: Resolve mobile navigation overlap on landing page,2026-08-17T12:44:35Z,2026-08-17T12:47:25Z,merged,True,https://github.com/fossasia/voxbento/pull/362
+voxbento,363,fix: listener audio not starting due to missing room_id in state check,2026-08-17T12:50:22Z,2026-08-17T12:51:18Z,merged,True,https://github.com/fossasia/voxbento/pull/363
+voxbento,364,fix: Mission Control websocket race condition on Go Live,2026-08-17T12:55:33Z,2026-08-17T12:56:59Z,merged,True,https://github.com/fossasia/voxbento/pull/364
+voxbento,365,fix: resolve Mission Control XSS vulnerability warning,2026-08-17T13:01:40Z,2026-08-17T13:04:52Z,merged,True,https://github.com/fossasia/voxbento/pull/365
+voxbento,366,fix: Use HTTPS for internal floor bot WebRTC connection,2026-08-17T13:12:17Z,2026-08-17T13:17:15Z,merged,True,https://github.com/fossasia/voxbento/pull/366
+voxbento,367,ci: sequence deploy workflow after tests and rebuild docker images,2026-08-17T13:29:16Z,2026-08-17T16:55:57Z,merged,True,https://github.com/fossasia/voxbento/pull/367
+eventyay,5004,Change source revision for eventyay-interpretation,2026-08-17T17:07:03Z,2026-08-17T19:38:06Z,merged,True,https://github.com/fossasia/eventyay/pull/5004
+eventyay,5009,fix(video): resolve broken stream polling loop when hidden or socket connected,2026-08-17T20:41:20Z,2026-08-17T21:31:25Z,merged,True,https://github.com/fossasia/eventyay/pull/5009
+eventyay-interpretation,75,ui: Remove SUSI from UI,2026-08-18T10:28:00Z,2026-08-18T10:32:15Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/75
+eventyay,5034,build: Update eventyay-interpretation commit hash,2026-08-18T10:36:26Z,2026-08-19T03:21:13Z,merged,True,https://github.com/fossasia/eventyay/pull/5034
+voxbento,376,feat: Phase 1 - OAuth2 Data Models,2026-08-18T11:02:43Z,2026-08-18T11:30:36Z,merged,True,https://github.com/fossasia/voxbento/pull/376
+voxbento,377,feat: Phase 1 - Developer Registration Gate,2026-08-18T11:06:01Z,2026-08-18T11:30:59Z,merged,True,https://github.com/fossasia/voxbento/pull/377
+voxbento,378,feat: Phase 1 - OAuth2 Flow Endpoints,2026-08-18T11:35:09Z,2026-08-18T11:56:10Z,merged,True,https://github.com/fossasia/voxbento/pull/378
+voxbento,379,feat: Phase 1 - OAuth2 Security & Observability,2026-08-18T11:39:16Z,2026-08-18T11:59:34Z,merged,True,https://github.com/fossasia/voxbento/pull/379
+voxbento,380,fix: resolve 500 error on developer dashboard caused by dict attribute access,2026-08-18T12:10:59Z,2026-08-18T12:12:18Z,merged,True,https://github.com/fossasia/voxbento/pull/380
+voxbento,381,fix: resolve FastAPI Dependency ContextManager crash,2026-08-18T12:18:40Z,2026-08-18T12:22:43Z,merged,True,https://github.com/fossasia/voxbento/pull/381
+voxbento,382,fix: resolve TemplateResponse signature crash,2026-08-18T12:28:23Z,2026-08-18T12:35:31Z,merged,True,https://github.com/fossasia/voxbento/pull/382
+voxbento,384,feat: polish developer dashboard UI and add navigation links,2026-08-18T12:31:02Z,2026-08-18T12:39:08Z,merged,True,https://github.com/fossasia/voxbento/pull/384
+voxbento,390,feat: enable OAuth client creation in developer dashboard,2026-08-18T15:18:55Z,2026-08-18T18:39:58Z,merged,True,https://github.com/fossasia/voxbento/pull/390
+voxbento,391,feat: Add scoped REST API endpoints (Phase 2),2026-08-18T15:25:44Z,2026-08-18T15:47:40Z,merged,True,https://github.com/fossasia/voxbento/pull/391
+eventyay-interpretation,76,feat: Phase 3 OAuth Migration Scaffold,2026-08-18T15:28:57Z,2026-08-18T16:14:23Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/76
+eventyay,5038,fix: Resolve pydantic/pydantic-core dependency conflict,2026-08-18T15:58:18Z,2026-08-18T16:27:58Z,merged,True,https://github.com/fossasia/eventyay/pull/5038
+eventyay,5039,chore: carry forward pydantic fix,2026-08-18T16:32:29Z,2026-08-18T18:36:21Z,merged,True,https://github.com/fossasia/eventyay/pull/5039
+eventyay,5051,feat: Add VoxBento tab to global settings for interpretation plugin,2026-08-19T11:16:47Z,2026-08-19T13:39:41Z,merged,True,https://github.com/fossasia/eventyay/pull/5051
+eventyay-interpretation,83,feat: Integrate OAuth with Global Settings UI,2026-08-19T11:24:27Z,2026-08-19T11:52:24Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/83
+eventyay,5052,bump eventyay-interpretation,2026-08-19T13:41:05Z,2026-08-19T13:42:15Z,merged,True,https://github.com/fossasia/eventyay/pull/5052
+voxbento,398,fix: resolve super admin rbac and make admin button 404,2026-08-20T05:15:57Z,2026-08-20T05:18:25Z,merged,True,https://github.com/fossasia/voxbento/pull/398
+voxbento,399,fix: resolve remaining rbac syncing issues and add ui indication for event owners,2026-08-20T05:32:40Z,2026-08-20T05:33:36Z,merged,True,https://github.com/fossasia/voxbento/pull/399
+eventyay,5069,ci: install gettext dependency for plugin translation compilation,2026-08-20T15:28:36Z,2026-08-21T07:08:36Z,merged,True,https://github.com/fossasia/eventyay/pull/5069
+eventyay-interpretation,89,chore(ci): fix ruff formatting,2026-08-20T15:55:56Z,2026-08-20T15:56:55Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/89
+eventyay-interpretation,90,test: allow database access in RoomConfigureForm tests,2026-08-20T16:09:46Z,2026-08-20T16:19:18Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/90
+eventyay-interpretation,91,fix(oauth): pass dynamic event slug to VoxBento instead of hardcoded testevent2,2026-08-20T18:16:35Z,2026-08-20T18:32:55Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/91
+eventyay-interpretation,95,feat: implement VoxBento webhook dispatcher and handlers,2026-08-21T05:09:29Z,2026-08-22T05:58:09Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/95
+eventyay,5089,chore: ignore legacy tests/video and tests/talk in pytest collection,2026-08-21T10:07:17Z,2026-08-21T11:19:21Z,merged,True,https://github.com/fossasia/eventyay/pull/5089
+eventyay-interpretation,96,feat: auto-detection and cross-repo triggering for plugin dependency updates,2026-08-21T12:25:44Z,2026-08-26T14:30:45Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/96
+eventyay,5095,feat: auto-detection and cross-repo triggering for plugin dependency updates,2026-08-21T12:27:41Z,2026-08-26T14:32:38Z,merged,True,https://github.com/fossasia/eventyay/pull/5095
+eventyay-interpretation,99,chore: bump version to 0.1,2026-08-22T05:52:28Z,2026-08-22T05:58:07Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/99
+eventyay-socialmedia,56,chore: bump version to 0.1.0,2026-08-22T05:54:06Z,2026-08-22T05:54:17Z,merged,True,https://github.com/fossasia/eventyay-socialmedia/pull/56
+voxbento,404,feat(admin): add sorting to registered users list,2026-08-22T19:03:47Z,2026-08-22T19:07:16Z,merged,True,https://github.com/fossasia/voxbento/pull/404
+voxbento,405,feat(ui): add hover-to-copy for developer credentials,2026-08-22T19:13:16Z,2026-08-22T19:20:13Z,merged,True,https://github.com/fossasia/voxbento/pull/405
+voxbento,406,feat(ui): add navigation links to developer dashboard and account settings,2026-08-22T19:25:19Z,2026-08-22T19:26:20Z,merged,True,https://github.com/fossasia/voxbento/pull/406
+voxbento,407,style(ui): redesign developer dashboard layout,2026-08-22T19:31:30Z,2026-08-22T19:32:11Z,merged,True,https://github.com/fossasia/voxbento/pull/407
+voxbento,408,style(ui): redesign developer accounts layout,2026-08-22T19:34:54Z,2026-08-22T19:36:31Z,merged,True,https://github.com/fossasia/voxbento/pull/408
+voxbento,409,style(ui): redesign account page layout,2026-08-22T19:46:35Z,2026-08-22T19:49:08Z,merged,True,https://github.com/fossasia/voxbento/pull/409
+eventyay,5134,fix(schedule): Fix Invalid URL error in SpeakersList pagination,2026-08-23T10:58:29Z,,closed,True,https://github.com/fossasia/eventyay/pull/5134
+eventyay,5135,fix(schedule): Fix Invalid URL error in SpeakersList pagination,2026-08-23T11:00:04Z,2026-08-23T11:14:50Z,merged,True,https://github.com/fossasia/eventyay/pull/5135
+voxbento,411,"fix: resolve TTS playback choppiness, translation timeouts, and beep sounds",2026-08-23T11:11:21Z,2026-08-24T04:59:01Z,merged,True,https://github.com/fossasia/voxbento/pull/411
+eventyay,5175,feat: smart LANCZOS-based image optimizations,2026-08-24T17:02:00Z,2026-09-05T07:37:58Z,merged,True,https://github.com/fossasia/eventyay/pull/5175
+scrum_helper,812,fix: change default display mode to popup,2026-08-25T06:53:02Z,2026-08-25T07:12:08Z,merged,True,https://github.com/fossasia/scrum_helper/pull/812
+scrum_helper,813,fix: correctly handle default display mode for Chromium browsers (Arc support),2026-08-25T07:16:01Z,2026-08-25T07:18:35Z,merged,True,https://github.com/fossasia/scrum_helper/pull/813
+voxbento,414,feat(developer): add option to delete apps and webhooks from dashboard,2026-08-25T18:31:03Z,2026-08-25T18:54:42Z,merged,True,https://github.com/fossasia/voxbento/pull/414
+eventyay-interpretation,102,fix(webhooks): log and save webhook subscription failures,2026-08-25T18:31:44Z,2026-08-25T18:54:55Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/102
+eventyay,5201,fix: Webhook accordion auto-expand and HMAC secret password prompt,2026-08-25T19:14:23Z,2026-08-26T10:42:29Z,merged,True,https://github.com/fossasia/eventyay/pull/5201
+eventyay,5206,fix(permissions): map Jitsi moderation to video moderator role,2026-08-26T11:36:57Z,2026-08-26T11:51:22Z,merged,True,https://github.com/fossasia/eventyay/pull/5206
+voxbento,416,Delete scratch_issue_report.md,2026-08-26T13:19:00Z,2026-08-26T13:19:13Z,merged,True,https://github.com/fossasia/voxbento/pull/416
+voxbento,417,fix(oauth): Redirect to login instead of 403 on authorize endpoint,2026-08-27T09:02:04Z,2026-08-27T09:06:28Z,merged,True,https://github.com/fossasia/voxbento/pull/417
+eventyay-teamshifts,122,fix(migrations): Renumber conflicting 0018 migration to 0019,2026-08-27T09:45:29Z,2026-08-27T09:52:30Z,merged,True,https://github.com/fossasia/eventyay-teamshifts/pull/122
+eventyay,5242,feat(video): add manual sync button for interpretation services,2026-08-27T13:05:05Z,,closed,True,https://github.com/fossasia/eventyay/pull/5242
+eventyay-interpretation,105,feat(api): add sync endpoint for Voxbento booths,2026-08-27T13:11:04Z,2026-08-27T13:45:41Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/105
+eventyay-interpretation,106,fix: VoxBento sync improvements and error handling,2026-08-27T14:13:27Z,2026-08-27T16:53:23Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/106
+eventyay,5251,fix(video): isolate interpretation source UI from normal language streams,2026-08-27T15:42:05Z,2026-08-27T16:02:42Z,merged,True,https://github.com/fossasia/eventyay/pull/5251
+eventyay-interpretation,107,fix: resolve ImportError on Save and WHEP URL mapping bug,2026-08-27T17:15:48Z,2026-08-27T17:22:10Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/107
+voxbento,420,fix(floor-bot): revert startWithAudioMuted to allow shared video audio,2026-08-28T18:51:27Z,2026-08-29T04:40:41Z,merged,True,https://github.com/fossasia/voxbento/pull/420
+scrum_helper,820,fix: handle default display mode for Tauri desktop app,2026-08-29T14:50:58Z,2026-08-29T15:05:06Z,merged,True,https://github.com/fossasia/scrum_helper/pull/820
+voxbento,422,chore: remove debug console logs from embed-player.js,2026-08-29T15:37:14Z,2026-08-29T15:39:41Z,merged,True,https://github.com/fossasia/voxbento/pull/422
+voxbento,423,chore: remove debug console logs from listener-event.js,2026-08-29T15:38:17Z,2026-08-29T15:40:02Z,merged,True,https://github.com/fossasia/voxbento/pull/423
+eventyay,5301,Improve performance and reliability of the admin users page,2026-08-29T18:28:47Z,2026-08-31T17:35:36Z,merged,True,https://github.com/fossasia/eventyay/pull/5301
+voxbento,424,fix(translations): increase local translation timeout to 60s,2026-08-30T06:00:08Z,2026-08-30T06:00:46Z,merged,True,https://github.com/fossasia/voxbento/pull/424
+voxbento,425,fix(translations): align client timeout with 60s inference limit,2026-08-30T06:05:26Z,2026-08-30T06:06:07Z,merged,True,https://github.com/fossasia/voxbento/pull/425
+voxbento,426,fix(client): eliminate UI lag when translations fail,2026-08-30T06:24:42Z,2026-08-30T06:28:41Z,merged,True,https://github.com/fossasia/voxbento/pull/426
+voxbento,427,Potential fix for code scanning alert no. 1392: URL redirection from remote source,2026-08-30T06:49:16Z,2026-09-02T10:17:12Z,merged,True,https://github.com/fossasia/voxbento/pull/427
+voxbento,428,fix: eliminate UI lag and update groq models,2026-08-30T06:50:39Z,2026-08-30T06:52:45Z,merged,True,https://github.com/fossasia/voxbento/pull/428
+voxbento,429,chore: optimize repository structure,2026-08-30T07:00:23Z,2026-08-30T08:31:43Z,merged,True,https://github.com/fossasia/voxbento/pull/429
+voxbento,430,refactor: consolidate templates and static into portal,2026-08-30T08:36:42Z,2026-08-30T08:49:56Z,merged,True,https://github.com/fossasia/voxbento/pull/430
+voxbento,431,chore: remove redundant .python-version file,2026-08-30T08:54:15Z,2026-08-30T08:54:39Z,merged,True,https://github.com/fossasia/voxbento/pull/431
+voxbento,432,docs: overhaul CONTRIBUTING.md for better onboarding,2026-08-30T08:58:28Z,2026-08-30T09:02:33Z,merged,True,https://github.com/fossasia/voxbento/pull/432
+voxbento,433,docs: add env secrets generation and mention forking,2026-08-30T09:05:48Z,2026-08-30T09:06:20Z,merged,True,https://github.com/fossasia/voxbento/pull/433
+eventyay,5316,Consolidate page settings into a tabbed Pages admin area,2026-08-30T10:24:16Z,2026-08-30T14:31:50Z,merged,True,https://github.com/fossasia/eventyay/pull/5316
+eventyay,5319,"Revert ""feat(admin): group platform data navigation""",2026-08-30T14:13:20Z,2026-08-30T14:15:46Z,merged,True,https://github.com/fossasia/eventyay/pull/5319
+eventyay,5320,feat(admin): group platform data in sidebar,2026-08-30T14:48:41Z,2026-08-30T15:41:55Z,merged,True,https://github.com/fossasia/eventyay/pull/5320
+eventyay,5321,feat: redesign platform fee vouchers admin UI,2026-08-30T15:25:48Z,2026-09-02T15:48:34Z,merged,True,https://github.com/fossasia/eventyay/pull/5321
+voxbento,434,feat: Add 'Request a Demo' feature,2026-08-31T10:34:45Z,2026-08-31T10:49:44Z,merged,True,https://github.com/fossasia/voxbento/pull/434
+voxbento,435,feat: automated onboarding email after 2FA verification,2026-08-31T11:01:08Z,2026-08-31T11:09:12Z,merged,True,https://github.com/fossasia/voxbento/pull/435
+voxbento,436,chore(deps): update dependabot to use uv package ecosystem,2026-08-31T11:25:11Z,2026-08-31T11:25:29Z,merged,True,https://github.com/fossasia/voxbento/pull/436
+eventyay,5355,fix: resolve guest checkout login loop and form overrides,2026-09-01T06:19:30Z,2026-09-01T06:31:56Z,merged,True,https://github.com/fossasia/eventyay/pull/5355
+eventyay,5393,Add CodeRabbit config to enforce repository instruction compliance on all PRs,2026-09-03T16:07:13Z,2026-09-03T17:14:17Z,merged,True,https://github.com/fossasia/eventyay/pull/5393
+eventyay,5421,Fix social media image path resolution in Event model,2026-09-04T16:09:41Z,2026-09-04T20:34:47Z,merged,True,https://github.com/fossasia/eventyay/pull/5421
+eventyay-paypal,8,chore: add notify-eventyay workflow,2026-09-05T10:02:27Z,2026-09-05T10:09:39Z,merged,True,https://github.com/fossasia/eventyay-paypal/pull/8
+eventyay-stripe,31,chore: add notify-eventyay workflow,2026-09-05T10:02:31Z,2026-09-05T10:09:24Z,merged,True,https://github.com/fossasia/eventyay-stripe/pull/31
+eventyay-bitpay,11,chore: add notify-eventyay workflow,2026-09-05T10:02:34Z,2026-09-05T10:09:15Z,merged,True,https://github.com/fossasia/eventyay-bitpay/pull/11
+eventyay-socialmedia,68,chore: add notify-eventyay workflow,2026-09-05T10:02:38Z,2026-09-05T10:09:01Z,merged,True,https://github.com/fossasia/eventyay-socialmedia/pull/68
+eventyay-exhibition,208,chore: add notify-eventyay workflow,2026-09-05T10:02:43Z,2026-09-05T10:08:52Z,merged,True,https://github.com/fossasia/eventyay-exhibition/pull/208
+eventyay-teamshifts,143,chore: add notify-eventyay workflow,2026-09-05T10:02:48Z,2026-09-05T10:11:07Z,merged,True,https://github.com/fossasia/eventyay-teamshifts/pull/143
+eventyay-hubspot,76,chore: add notify-eventyay workflow,2026-09-05T10:02:54Z,2026-09-05T10:08:17Z,merged,True,https://github.com/fossasia/eventyay-hubspot/pull/76
+eventyay-checkin,153,chore: add notify-eventyay workflow,2026-09-05T10:17:27Z,2026-09-05T10:18:30Z,merged,True,https://github.com/fossasia/eventyay-checkin/pull/153
+eventyay-business,2,Scaffold eventyay-business plugin from cookiecutter,2026-09-05T15:21:42Z,2026-09-05T16:07:05Z,merged,True,https://github.com/fossasia/eventyay-business/pull/2
+eventyay-business,27,Add Business -> Tiers navigation and routes,2026-09-05T16:14:15Z,2026-09-05T16:37:54Z,merged,True,https://github.com/fossasia/eventyay-business/pull/27
+eventyay,5430,feat: add eventyay-business plugin to dependencies,2026-09-05T16:15:20Z,2026-09-05T16:36:32Z,merged,True,https://github.com/fossasia/eventyay/pull/5430
+eventyay-business,28,Scaffold eventyay-business plugin from cookiecutter,2026-09-05T16:22:28Z,2026-09-05T16:27:20Z,merged,True,https://github.com/fossasia/eventyay-business/pull/28
+eventyay-business,29,"fix: plugin metadata visibility, entrypoint, and compatibility",2026-09-05T16:46:23Z,2026-09-05T16:46:39Z,merged,True,https://github.com/fossasia/eventyay-business/pull/29
+eventyay-business,30,fix(init): remove PluginApp import to prevent RuntimeError during build,2026-09-05T16:55:49Z,2026-09-05T17:03:09Z,merged,True,https://github.com/fossasia/eventyay-business/pull/30
+eventyay-business,31,"feat: implement Tier, TierVersion, TierPrice, and TierEntitlement models",2026-09-05T17:04:36Z,2026-09-06T08:44:06Z,merged,True,https://github.com/fossasia/eventyay-business/pull/31
+eventyay-business,32,fix(nav): correct namespace for plugin URL reversing,2026-09-05T17:07:11Z,2026-09-05T17:08:00Z,merged,True,https://github.com/fossasia/eventyay-business/pull/32
+eventyay-business,33,chore: add notify-eventyay workflow,2026-09-05T17:13:27Z,2026-09-05T17:13:48Z,merged,True,https://github.com/fossasia/eventyay-business/pull/33
+eventyay,5432,chore: point eventyay-business to dev and add it to update-plugin-pins workflow,2026-09-05T17:36:26Z,2026-09-05T17:57:28Z,merged,True,https://github.com/fossasia/eventyay/pull/5432
+eventyay,5440,fix: nest path_instructions under reviews in CodeRabbit config,2026-09-06T08:29:45Z,2026-09-06T08:40:11Z,merged,True,https://github.com/fossasia/eventyay/pull/5440
+eventyay,5441,feat: implement Thin Entitlement Kernel for decoupled capability checks,2026-09-06T08:47:55Z,2026-09-06T19:50:59Z,merged,True,https://github.com/fossasia/eventyay/pull/5441
+eventyay-business,34,feat: implement Tier administration UI and publication workflow,2026-09-06T18:03:02Z,2026-09-06T18:29:15Z,merged,True,https://github.com/fossasia/eventyay-business/pull/34
+eventyay-business,35,feat: implement capability registry and standard catalogue,2026-09-06T18:38:15Z,2026-09-06T18:54:24Z,merged,True,https://github.com/fossasia/eventyay-business/pull/35
+eventyay-business,37,feat: Add organizer subscriptions and free tier auto-assignment,2026-09-06T19:27:18Z,2026-09-06T19:38:24Z,merged,True,https://github.com/fossasia/eventyay-business/pull/37
+eventyay-business,38,Create CONTRIBUTING.md,2026-09-06T19:29:32Z,2026-09-06T19:29:41Z,merged,True,https://github.com/fossasia/eventyay-business/pull/38
+eventyay-business,39,fix: correct template base path for subscriptions admin,2026-09-06T19:42:08Z,2026-09-06T19:42:23Z,merged,True,https://github.com/fossasia/eventyay-business/pull/39
+eventyay,5447,feat: Add generic entitlement provider interface,2026-09-06T19:44:20Z,2026-09-06T20:11:45Z,merged,True,https://github.com/fossasia/eventyay/pull/5447
+eventyay-business,40,feat: automate free tier assignment via data migration,2026-09-06T20:11:45Z,2026-09-06T20:17:04Z,merged,True,https://github.com/fossasia/eventyay-business/pull/40
+eventyay-business,41,feat: Organizer Plan UI and Entitlement Enforcement,2026-09-06T20:21:16Z,2026-09-06T20:34:32Z,merged,True,https://github.com/fossasia/eventyay-business/pull/41
+eventyay,5495,fix: resolve plugin branch tracking conflicts between dev and main,2026-09-07T12:33:14Z,2026-09-07T12:51:32Z,merged,True,https://github.com/fossasia/eventyay/pull/5495
+eventyay-business,42,fix: resolve CI failures for formatting and tests,2026-09-07T12:53:12Z,2026-09-07T12:53:46Z,merged,True,https://github.com/fossasia/eventyay-business/pull/42
+eventyay-business,43,feat: Add usage-record infrastructure and idempotency (#11),2026-09-07T12:55:45Z,2026-09-07T16:31:10Z,merged,True,https://github.com/fossasia/eventyay-business/pull/43
+eventyay-business,44,ci: fix github action triggers for dev branch and PRs,2026-09-07T13:00:07Z,2026-09-07T16:09:27Z,merged,True,https://github.com/fossasia/eventyay-business/pull/44
+eventyay,5497,fix: correct pyproject.toml to discover all eventyay subpackages,2026-09-07T13:18:08Z,2026-09-07T21:20:03Z,merged,True,https://github.com/fossasia/eventyay/pull/5497
+eventyay,5505,feat: dispatch core signals for usage tracking and team limits,2026-09-07T16:42:34Z,2026-09-08T13:28:36Z,merged,True,https://github.com/fossasia/eventyay/pull/5505
+star-me,46,Fix script hanging and update form selectors,2026-09-08T10:15:27Z,2026-09-08T10:25:19Z,merged,True,https://github.com/fossasia/star-me/pull/46
+star-me,47,Some code Cleanup,2026-09-08T10:29:37Z,2026-09-08T12:37:12Z,merged,True,https://github.com/fossasia/star-me/pull/47
+eventyay-business,45,fix(ui): add date-time widgets for subscription date fields,2026-09-08T12:31:18Z,2026-09-08T12:39:49Z,merged,True,https://github.com/fossasia/eventyay-business/pull/45
+eventyay-business,46,fix(nav): restrict Tiers and Subscriptions to global admin area,2026-09-08T16:15:28Z,2026-09-08T16:21:06Z,merged,True,https://github.com/fossasia/eventyay-business/pull/46
+eventyay-business,47,feat: seed standard entitlements and publish Free tier by default,2026-09-08T18:52:08Z,2026-09-08T18:57:55Z,merged,True,https://github.com/fossasia/eventyay-business/pull/47
+eventyay-business,48,fix: make standard entitlement seeding concurrency-safe and conflict-tolerant,2026-09-08T19:02:26Z,2026-09-08T19:07:07Z,merged,True,https://github.com/fossasia/eventyay-business/pull/48
+eventyay-business,50,feat: option to migrate existing subscribers when publishing a new tier version,2026-09-10T05:10:50Z,2026-09-10T13:48:20Z,merged,True,https://github.com/fossasia/eventyay-business/pull/50
+eventyay-business,52,feat: add per-version detail view for tier version history,2026-09-10T06:56:29Z,2026-09-10T13:48:21Z,merged,True,https://github.com/fossasia/eventyay-business/pull/52
+eventyay-business,55,feat: split plan page capabilities into organiser and developer sections,2026-09-10T13:52:05Z,2026-09-11T05:00:33Z,merged,True,https://github.com/fossasia/eventyay-business/pull/55
+star-me,49,Add popup blocker check and permission prompt delay,2026-09-11T05:03:28Z,2026-09-11T05:37:26Z,merged,True,https://github.com/fossasia/star-me/pull/49
+eventyay-business,56,feat: Implement Legacy-tier migration,2026-09-11T05:05:01Z,,closed,True,https://github.com/fossasia/eventyay-business/pull/56
+eventyay-business,57,feat: implement tier-specific paid-order calculations,2026-09-11T05:35:35Z,2026-09-11T10:22:25Z,merged,True,https://github.com/fossasia/eventyay-business/pull/57
+eventyay-business,58,feat: implement monthly usage aggregation for integer capabilities,2026-09-11T05:41:48Z,2026-09-11T10:22:24Z,merged,True,https://github.com/fossasia/eventyay-business/pull/58
+eventyay,5571,feat: enforce email.bulk.monthly capabilities,2026-09-11T05:42:03Z,2026-09-11T10:28:46Z,merged,True,https://github.com/fossasia/eventyay/pull/5571
+eventyay-business,61,fix: use SplitDateTimeField in SubscriptionAdminForm to fix subscription edit error,2026-09-11T10:07:54Z,2026-09-11T10:09:03Z,merged,True,https://github.com/fossasia/eventyay-business/pull/61
+eventyay-business,62,feat: implement add-on definitions and assignments,2026-09-11T17:06:23Z,2026-09-12T04:33:39Z,merged,True,https://github.com/fossasia/eventyay-business/pull/62
+eventyay-business,63,feat(ui): display active add-ons on organiser plan and usage page,2026-09-12T04:49:45Z,2026-09-12T05:00:56Z,merged,True,https://github.com/fossasia/eventyay-business/pull/63
+eventyay-business,67,feat(admin): add admin UI for assigning add-ons to organizers and events,2026-09-12T05:09:01Z,2026-09-12T05:20:29Z,merged,True,https://github.com/fossasia/eventyay-business/pull/67
+eventyay-business,69,feat(addons): implement grandfathered snapshots and migration for add-ons,2026-09-12T05:31:53Z,2026-09-12T05:32:59Z,merged,True,https://github.com/fossasia/eventyay-business/pull/69
+eventyay-business,74,feat(addons): implement organizer self-service add-on catalog and purchase flow,2026-09-12T08:08:10Z,2026-09-12T08:36:08Z,merged,True,https://github.com/fossasia/eventyay-business/pull/74
+eventyay-business,75,feat(addons): implement event-level add-ons view and management in event dashboard,2026-09-12T08:53:47Z,2026-09-12T09:24:19Z,merged,True,https://github.com/fossasia/eventyay-business/pull/75
+eventyay-business,76,"feat(addons): implement cancellation, expiration, and automated lifecycle management",2026-09-12T09:43:33Z,2026-09-12T14:19:15Z,merged,True,https://github.com/fossasia/eventyay-business/pull/76
+eventyay-business,77,feat(stripe): implement checkout and webhook integration for subscriptions and add-ons,2026-09-12T17:32:47Z,2026-09-12T18:22:12Z,merged,True,https://github.com/fossasia/eventyay-business/pull/77
+eventyay-business,78,"feat(subscriptions): implement plan upgrades, scheduled downgrades, and grace periods",2026-09-12T18:57:23Z,2026-09-13T13:48:39Z,merged,True,https://github.com/fossasia/eventyay-business/pull/78
+eventyay-business,81,feat: add subscription cancellation flow and grace period configuration UI,2026-09-13T14:14:58Z,2026-09-14T16:58:39Z,merged,True,https://github.com/fossasia/eventyay-business/pull/81
+eventyay,5600,feat(control): add business subscription grace period setting in global business settings,2026-09-13T14:16:30Z,2026-09-14T17:15:27Z,merged,True,https://github.com/fossasia/eventyay/pull/5600
+star-me,50,Add GitHub user session stats and popup configuration link,2026-09-14T17:03:31Z,2026-09-16T09:13:33Z,merged,True,https://github.com/fossasia/star-me/pull/50
+eventyay-business,85,feat(invoices): implement organizer-level invoices and invoice lines,2026-09-16T10:19:00Z,2026-09-16T11:47:36Z,merged,True,https://github.com/fossasia/eventyay-business/pull/85
+eventyay-business,86,feat(ui): human-readable plan features on upgrade page with audience classification,2026-09-16T12:37:45Z,2026-09-16T12:42:57Z,merged,True,https://github.com/fossasia/eventyay-business/pull/86
+eventyay-business,88,fix(billing): fulfill Stripe checkout synchronously and generate paid BusinessInvoices,2026-09-17T18:45:40Z,2026-09-17T18:53:48Z,merged,True,https://github.com/fossasia/eventyay-business/pull/88
+eventyay,5695,fix(admin): sort business sidebar items order,2026-09-17T19:16:43Z,2026-09-17T19:26:15Z,merged,True,https://github.com/fossasia/eventyay/pull/5695
+eventyay-business,89,feat(fees): implement fee settings and country overrides ,2026-09-17T19:43:19Z,2026-09-18T09:17:55Z,merged,True,https://github.com/fossasia/eventyay-business/pull/89
+eventyay,5696,feat(control): support global maximum fee and country overrides in business settings,2026-09-17T19:43:35Z,2026-09-18T08:41:58Z,merged,True,https://github.com/fossasia/eventyay/pull/5696
+eventyay-business,91,feat(tiers): enhance tier creation and entitlements UI for intuitive human configuration ,2026-09-18T09:49:46Z,2026-09-18T11:15:01Z,merged,True,https://github.com/fossasia/eventyay-business/pull/91
+voxbento,502,fix: isolate pulseaudio runtime and remove undefined js call,2026-09-20T18:32:21Z,2026-09-20T18:48:21Z,merged,True,https://github.com/fossasia/voxbento/pull/502
+voxbento,503,fix: secure pulse_dir creation and expand try-finally cleanup coverage,2026-09-20T18:51:34Z,2026-09-20T19:06:19Z,merged,True,https://github.com/fossasia/voxbento/pull/503
+eventyay,5860,Delete CLAUDE.md,2026-09-22T12:58:29Z,2026-09-22T17:56:55Z,merged,True,https://github.com/fossasia/eventyay/pull/5860
+voxbento,517,Delete CLAUDE.md,2026-09-22T12:59:21Z,2026-09-22T12:59:31Z,merged,True,https://github.com/fossasia/voxbento/pull/517
+voxbento,518,ci: align workflows with new dev and main branch convention,2026-09-22T13:03:57Z,2026-09-22T13:06:01Z,merged,True,https://github.com/fossasia/voxbento/pull/518
+eventyay,5873,[Stripe Unification] Phase 1: Core Stripe Service & Thread Safety,2026-09-22T18:33:52Z,,closed,True,https://github.com/fossasia/eventyay/pull/5873
+eventyay,5880,[Stripe Unification] Phase 2: Build Unified Webhook Dispatcher,2026-09-23T04:53:49Z,,closed,True,https://github.com/fossasia/eventyay/pull/5880
+eventyay,5908,feat: default to WebP for image optimization,2026-09-25T08:34:54Z,2026-09-30T09:18:21Z,merged,True,https://github.com/fossasia/eventyay/pull/5908
+eventyay-interpretation,123,chore: update CI workflow to use uv,2026-09-25T10:07:09Z,2026-09-26T04:39:44Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/123
+visdom,1860,Fix broad exception swallowing in BaseHandler,2026-09-25T14:18:56Z,2026-10-04T06:28:05Z,merged,True,https://github.com/fossasia/visdom/pull/1860
+visdom,1861,Fix parallel_coordinates crash with size-1 Y inputs,2026-09-25T14:32:30Z,,closed,True,https://github.com/fossasia/visdom/pull/1861
+voxbento,586,refactor(booth_state): remove unused BoothRegistry methods,2026-09-26T07:06:00Z,2026-09-26T07:07:02Z,merged,True,https://github.com/fossasia/voxbento/pull/586
+voxbento,594,test: add comprehensive unit tests for untested edge cases,2026-09-26T08:39:16Z,2026-09-26T08:47:20Z,merged,True,https://github.com/fossasia/voxbento/pull/594
+voxbento,595,docs(api): update captions websocket feed fields,2026-09-26T08:59:22Z,2026-09-26T09:08:57Z,merged,True,https://github.com/fossasia/voxbento/pull/595
+eventyay-interpretation,125,Create CONTRIBUTING.md,2026-09-26T11:13:40Z,2026-09-26T11:13:49Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/125
+eventyay-interpretation,126,fix: include markdown files in sdist,2026-09-26T11:16:50Z,2026-09-26T11:17:08Z,merged,True,https://github.com/fossasia/eventyay-interpretation/pull/126
+eventyay,5983,chore: Add official Stripe agent skills,2026-09-28T05:14:10Z,2026-09-28T14:03:22Z,merged,True,https://github.com/fossasia/eventyay/pull/5983
+eventyay,5985,"feat: Phase 1 (Core Cleanup) - Abolish commercial settings, fallback fees, and business UI from core",2026-09-28T05:39:50Z,2026-10-05T13:49:21Z,merged,True,https://github.com/fossasia/eventyay/pull/5985
+eventyay-business,95,feat: Phase 1B - abolish global fallback fees and take ownership of billing settings,2026-09-28T06:50:31Z,2026-10-03T05:19:56Z,merged,True,https://github.com/fossasia/eventyay-business/pull/95
+voxbento,645,docs: add PR review workflow guideline,2026-09-29T09:06:47Z,2026-09-29T09:08:13Z,merged,True,https://github.com/fossasia/voxbento/pull/645
+voxbento,655,fix(ui): match the admin login page to the user login design,2026-09-30T18:09:50Z,2026-09-30T18:11:30Z,merged,True,https://github.com/fossasia/voxbento/pull/655
+eventyay,6049,Move Stripe ticketing settings ownership to plugin,2026-10-01T04:21:58Z,2026-10-11T06:24:36Z,merged,True,https://github.com/fossasia/eventyay/pull/6049
+eventyay-stripe,49,Phase 2B: collect smart platform fees in Stripe Connect,2026-10-01T04:27:50Z,2026-10-11T07:23:57Z,merged,True,https://github.com/fossasia/eventyay-stripe/pull/49
+eventyay-business,97,Phase 3: exclude Stripe-collected platform fees from monthly debt,2026-10-01T04:34:13Z,2026-10-11T08:25:07Z,merged,True,https://github.com/fossasia/eventyay-business/pull/97
+eventyay,6054,Fix 500 error on session track change,2026-10-01T06:47:53Z,,closed,True,https://github.com/fossasia/eventyay/pull/6054
+eventyay,6055,Clarify Team track limitation help text,2026-10-01T07:22:21Z,2026-10-01T07:41:30Z,merged,True,https://github.com/fossasia/eventyay/pull/6055
+eventyay-business,98,Fix broken admin sidebar parent route,2026-10-01T07:35:11Z,2026-10-04T07:08:19Z,merged,True,https://github.com/fossasia/eventyay-business/pull/98
+eventyay,6118,"Revert ""feat: Allow organizers to add standalone speakers directly from the Speakers page""",2026-10-03T05:07:01Z,2026-10-03T07:30:36Z,merged,True,https://github.com/fossasia/eventyay/pull/6118
+voxbento,668,refactor(routes): separate organizer workspace from admin,2026-10-03T12:37:11Z,2026-10-07T16:26:40Z,merged,True,https://github.com/fossasia/voxbento/pull/668
+eventyay,6130,Fix schedule print view URLs ,2026-10-03T12:52:58Z,,closed,True,https://github.com/fossasia/eventyay/pull/6130
+eventyay,6139,fix(admin): Show admin mode prompt instead of 404 for event organizers page without active session,2026-10-03T17:44:15Z,2026-10-03T20:23:16Z,merged,True,https://github.com/fossasia/eventyay/pull/6139
+voxbento,672,Create issue-scripts.yml,2026-10-05T05:35:01Z,2026-10-05T05:35:41Z,merged,True,https://github.com/fossasia/voxbento/pull/672
+voxbento,673,Create pr-process-reminder.yml,2026-10-05T05:39:02Z,2026-10-05T05:47:46Z,merged,True,https://github.com/fossasia/voxbento/pull/673
+voxbento,674,Create stale.yml,2026-10-05T05:52:24Z,2026-10-05T05:56:26Z,merged,True,https://github.com/fossasia/voxbento/pull/674
+voxbento,675,ci: add comic relief for failed pull request builds,2026-10-05T06:04:21Z,2026-10-05T06:08:06Z,merged,True,https://github.com/fossasia/voxbento/pull/675
+voxbento,676,ci: congratulate first-time contributors when their first PR is merged,2026-10-05T06:09:16Z,2026-10-05T06:10:04Z,merged,True,https://github.com/fossasia/voxbento/pull/676
+voxbento,677,fix: resolve PR process reminder syntax error,2026-10-05T08:37:27Z,2026-10-05T08:37:55Z,merged,True,https://github.com/fossasia/voxbento/pull/677
+voxbento,689,Upgrade Jitsi to stable-11248,2026-10-06T11:41:11Z,2026-10-06T11:56:17Z,merged,True,https://github.com/fossasia/voxbento/pull/689
+voxbento,693,docs(deploy): prompt for JVB public IP,2026-10-06T12:00:42Z,2026-10-06T12:13:53Z,merged,True,https://github.com/fossasia/voxbento/pull/693
+voxbento,697,feat(local): introduce voxbento local download page with platform detection and release links,2026-10-06T18:46:38Z,2026-10-06T18:52:51Z,merged,True,https://github.com/fossasia/voxbento/pull/697
+voxbento,698,revert: deps(floor-bot): bump playwright/python in /floor-bot (#691),2026-10-06T19:09:45Z,2026-10-06T19:18:51Z,merged,True,https://github.com/fossasia/voxbento/pull/698
+voxbento,699,feat(local): introduce VoxBento Local download page with platform detection,2026-10-06T19:46:40Z,,closed,True,https://github.com/fossasia/voxbento/pull/699
+voxbento,701,docs(local): add macOS first-run Gatekeeper guidance and Homebrew cask callout,2026-10-06T20:41:09Z,2026-10-07T05:41:53Z,merged,True,https://github.com/fossasia/voxbento/pull/701
+voxbento,702,style(landing): prevent navbar collisions and awkward line wrapping,2026-10-07T06:32:05Z,2026-10-07T06:32:54Z,merged,True,https://github.com/fossasia/voxbento/pull/702
+voxbento,704,style(landing): restore navbar links across tablet and desktop and add mobile menu drawer,2026-10-07T09:59:23Z,2026-10-07T10:28:53Z,merged,True,https://github.com/fossasia/voxbento/pull/704
+voxbento,706,docs(local): add macOS Gatekeeper xattr bypass command and Homebrew upgrade guidance,2026-10-07T11:04:49Z,2026-10-07T11:06:43Z,merged,True,https://github.com/fossasia/voxbento/pull/706
+voxbento,725,feat: add secure program stream ingest,2026-10-08T08:22:36Z,2026-10-12T10:28:46Z,merged,True,https://github.com/fossasia/voxbento/pull/725
+eventyay,6336,Complete image optimization coverage,2026-10-08T13:23:36Z,2026-10-11T05:15:13Z,merged,True,https://github.com/fossasia/eventyay/pull/6336
+eventyay-stripe,54,Refund Stripe Connect application fees,2026-10-11T08:42:44Z,2026-10-11T09:25:03Z,merged,True,https://github.com/fossasia/eventyay-stripe/pull/54
+voxbento,738,Create screencast-required.yml,2026-10-11T13:10:27Z,2026-10-11T13:10:46Z,merged,True,https://github.com/fossasia/voxbento/pull/738
+voxbento,743,test(ci): catch broken floor-bot dependency upgrades,2026-10-12T09:08:02Z,2026-10-12T10:11:08Z,merged,True,https://github.com/fossasia/voxbento/pull/743
+voxbento,744,fix(deploy): validate production config before rollout,2026-10-12T10:51:20Z,2026-10-12T12:55:45Z,merged,True,https://github.com/fossasia/voxbento/pull/744
+voxbento,745,fix(ui): clarify program ingest setup and status,2026-10-12T11:08:58Z,2026-10-12T12:17:30Z,merged,True,https://github.com/fossasia/voxbento/pull/745
+eventyay,6415,Add neutral platform fee policy signal,2026-10-13T05:50:45Z,2026-10-14T06:13:12Z,merged,True,https://github.com/fossasia/eventyay/pull/6415
+eventyay-business,99,Provide Business platform fee policy through Core,2026-10-13T06:02:33Z,2026-10-13T18:54:24Z,merged,True,https://github.com/fossasia/eventyay-business/pull/99
+eventyay-stripe,55,Stop collecting platform fees during ticket checkout,2026-10-13T06:02:47Z,2026-10-14T06:30:42Z,merged,True,https://github.com/fossasia/eventyay-stripe/pull/55
+eventyay-business,103,Accrue ticket fees for monthly invoicing,2026-10-13T19:35:36Z,2026-10-14T06:36:20Z,merged,True,https://github.com/fossasia/eventyay-business/pull/103
+eventyay-business,104,Show current unbilled organizer charges,2026-10-14T06:53:58Z,2026-10-14T07:05:14Z,merged,True,https://github.com/fossasia/eventyay-business/pull/104
+eventyay-business,105,Add canonical organizer billing authorization,2026-10-14T07:21:07Z,2026-10-14T07:42:08Z,merged,True,https://github.com/fossasia/eventyay-business/pull/105
+eventyay-business,106,Finalize auditable Eventyay business invoices,2026-10-14T07:53:19Z,2026-10-14T12:48:07Z,merged,True,https://github.com/fossasia/eventyay-business/pull/106
+eventyay-business,107,Make consolidated invoice calculation reproducible,2026-10-14T13:04:16Z,2026-10-14T13:24:24Z,merged,True,https://github.com/fossasia/eventyay-business/pull/107
+eventyay-business,108,Collect consolidated invoices through Stripe PaymentIntents,2026-10-14T16:07:50Z,2026-10-15T07:12:01Z,merged,True,https://github.com/fossasia/eventyay-business/pull/108
+eventyay,6499,Allow external collectors to disable legacy billing,2026-10-15T07:38:12Z,2026-10-15T12:39:11Z,merged,True,https://github.com/fossasia/eventyay/pull/6499
+eventyay-business,109,Gate consolidated billing at organizer cutover,2026-10-15T07:38:49Z,2026-10-15T12:36:27Z,merged,True,https://github.com/fossasia/eventyay-business/pull/109
+eventyay-business,110,Add consolidated billing migration preflight,2026-10-15T12:44:45Z,2026-10-15T13:43:49Z,merged,True,https://github.com/fossasia/eventyay-business/pull/110
+eventyay-business,111,Add guarded consolidated billing cutover,2026-10-15T15:18:55Z,2026-10-15T20:51:28Z,merged,True,https://github.com/fossasia/eventyay-business/pull/111
+voxbento,811,Potential fix for code scanning alert no. 1408: Workflow does not contain permissions,2026-10-15T17:05:27Z,2026-10-15T17:07:01Z,merged,True,https://github.com/fossasia/voxbento/pull/811
+eventyay-business,112,Complete guarded consolidated billing activation,2026-10-16T06:35:53Z,2026-10-16T07:01:42Z,merged,True,https://github.com/fossasia/eventyay-business/pull/112
+eventyay-business,114,Add configurable immutable invoice presentation,2026-10-16T07:17:09Z,2026-10-16T07:20:00Z,merged,True,https://github.com/fossasia/eventyay-business/pull/114
+eventyay-business,115,Fix business billing admin queries and UI,2026-10-16T12:22:55Z,2026-10-16T12:36:21Z,merged,True,https://github.com/fossasia/eventyay-business/pull/115
+eventyay,6560,Enable automatic billing consent when saving a payment method,2026-10-16T13:50:13Z,2026-10-17T10:53:13Z,merged,True,https://github.com/fossasia/eventyay/pull/6560
+eventyay-business,116,Enable automatic payments during organizer billing setup,2026-10-16T13:50:32Z,2026-10-17T11:30:23Z,merged,True,https://github.com/fossasia/eventyay-business/pull/116
+voxbento,833,Revise README with updated setup and feature notes,2026-10-17T10:04:04Z,2026-10-17T10:04:12Z,merged,True,https://github.com/fossasia/voxbento/pull/833
+voxbento,835,Refresh README branding with existing VoxBento assets and tighter project framing,2026-10-17T10:12:02Z,2026-10-17T10:59:39Z,merged,True,https://github.com/fossasia/voxbento/pull/835
+voxbento,836,fix(portal): stop mobile menu JavaScript leaking into landing page,2026-10-17T11:09:00Z,2026-10-17T11:15:25Z,merged,True,https://github.com/fossasia/voxbento/pull/836
+voxbento,840,Add badge links to README for live site and docs,2026-10-17T14:03:43Z,2026-10-17T14:03:51Z,merged,True,https://github.com/fossasia/voxbento/pull/840
+eventyay-business,120,Harden billing dunning and payment recovery,2026-10-17T16:54:10Z,2026-10-17T17:36:31Z,merged,True,https://github.com/fossasia/eventyay-business/pull/120
+eventyay-business,121,Add idempotent billing notification delivery and audit,2026-10-17T17:37:15Z,2026-10-18T12:10:45Z,merged,True,https://github.com/fossasia/eventyay-business/pull/121
+eventyay-business,122,Harden billing notification delivery with stale-send lease recovery,2026-10-17T17:57:48Z,,closed,True,https://github.com/fossasia/eventyay-business/pull/122
+eventyay-business,123,Add organizer billing lifecycle and dunning emails,2026-10-17T20:56:16Z,2026-10-18T12:10:46Z,merged,True,https://github.com/fossasia/eventyay-business/pull/123
+eventyay-business,127,Add non-collecting billing reconciliation engine,2026-10-17T21:15:48Z,2026-10-18T12:10:47Z,merged,True,https://github.com/fossasia/eventyay-business/pull/127
+eventyay-business,128,Add billing reconciliation review and acceptance,2026-10-17T21:21:41Z,2026-10-18T12:10:48Z,merged,True,https://github.com/fossasia/eventyay-business/pull/128
+eventyay-business,130,Gate controlled billing rollout on accepted reconciliation,2026-10-18T09:49:48Z,2026-10-18T12:10:49Z,merged,True,https://github.com/fossasia/eventyay-business/pull/130
+eventyay-business,131,Fix organizer plan changes and Free downgrade recovery,2026-10-19T05:21:49Z,2026-10-19T05:28:31Z,merged,True,https://github.com/fossasia/eventyay-business/pull/131
+eventyay-business,132,Fix subscription cancellation modal layering,2026-10-19T05:34:01Z,2026-10-19T05:35:32Z,merged,True,https://github.com/fossasia/eventyay-business/pull/132
+eventyay-business,133,Make billing notification emails customizable,2026-10-19T05:54:57Z,2026-10-19T06:18:20Z,merged,True,https://github.com/fossasia/eventyay-business/pull/133
+eventyay-business,134,Link invoices to email template customization,2026-10-19T06:23:10Z,2026-10-19T06:24:17Z,merged,True,https://github.com/fossasia/eventyay-business/pull/134
+eventyay-business,135,Reuse saved cards during plan checkout,2026-10-19T07:17:33Z,2026-10-19T07:51:48Z,merged,True,https://github.com/fossasia/eventyay-business/pull/135
+scrum_helper,937,fix: default display mode to popup for Arc while preserving Tauri side panel,2026-10-19T09:18:43Z,,closed,True,https://github.com/fossasia/scrum_helper/pull/937
+eventyay,6639,Allow plugins to register platform email templates,2026-10-19T14:29:22Z,2026-10-20T09:17:05Z,merged,True,https://github.com/fossasia/eventyay/pull/6639
+eventyay-business,136,Integrate billing emails with Message Center,2026-10-19T14:29:40Z,2026-10-20T09:18:00Z,merged,True,https://github.com/fossasia/eventyay-business/pull/136
+eventyay,6669,Let platform fee vouchers target plugin purchases and track budget,2026-10-20T06:55:41Z,2026-10-20T09:18:07Z,merged,True,https://github.com/fossasia/eventyay/pull/6669
+eventyay-business,138,Redeem platform fee vouchers on plans and add-ons,2026-10-20T06:56:03Z,2026-10-20T09:27:14Z,merged,True,https://github.com/fossasia/eventyay-business/pull/138
+voxbento,879,feat(hosting): let signed-in users request hosting access and Admins grant or decline it,2026-10-20T08:20:56Z,2026-10-20T08:37:09Z,merged,True,https://github.com/fossasia/voxbento/pull/879
+voxbento,882,"feat(ui): one user menu on every signed-in page, matching Eventyay",2026-10-20T10:24:44Z,2026-10-20T10:44:23Z,merged,True,https://github.com/fossasia/voxbento/pull/882
+eventyay-business,139,Remove billing notification template previews,2026-10-20T10:45:33Z,2026-10-20T10:49:48Z,merged,True,https://github.com/fossasia/eventyay-business/pull/139
+eventyay-business,140,Add translation catalogs for Business billing notifications,2026-10-20T11:02:18Z,2026-10-20T11:10:43Z,merged,True,https://github.com/fossasia/eventyay-business/pull/140
+voxbento,883,"feat(account): redesign the Account page around profile, access and sign-in",2026-10-20T11:02:32Z,2026-10-20T11:07:44Z,merged,True,https://github.com/fossasia/voxbento/pull/883
+voxbento,884,feat(admin): redesign the Users list and user page with in-place access switches,2026-10-20T11:42:10Z,2026-10-20T11:55:11Z,merged,True,https://github.com/fossasia/voxbento/pull/884
+voxbento,888,feat(translation): configure AI interpretation prompts and vocabulary ,2026-10-20T12:24:24Z,2026-10-20T12:34:54Z,merged,True,https://github.com/fossasia/voxbento/pull/888
+voxbento,889,fix(ui): prevent uneven hero CTA button wrapping and balance heading rotator spacing,2026-10-20T12:48:07Z,2026-10-20T13:05:17Z,merged,True,https://github.com/fossasia/voxbento/pull/889
+voxbento,892,fix(test): update home page download CTA assertion to match shortened label,2026-10-20T13:21:11Z,2026-10-20T13:35:06Z,merged,True,https://github.com/fossasia/voxbento/pull/892
+voxbento,893,fix(test): relax timing assertion threshold in test_large_glossary,2026-10-20T16:31:00Z,2026-10-20T16:32:22Z,merged,True,https://github.com/fossasia/voxbento/pull/893
+voxbento,894,ci: fix CI failure and first-merged workflows and require screencast on all PRs,2026-10-20T16:35:08Z,2026-10-20T16:36:36Z,merged,True,https://github.com/fossasia/voxbento/pull/894
+voxbento,895,feat(admin): add toggle for user email verification in admin section,2026-10-20T16:42:29Z,2026-10-20T16:47:03Z,merged,True,https://github.com/fossasia/voxbento/pull/895
+voxbento,896,fix(test): avoid port collisions in native media tests,2026-10-20T16:44:38Z,2026-10-20T16:45:50Z,merged,True,https://github.com/fossasia/voxbento/pull/896
+voxbento,897,ci: allow post-merge CI runs to complete without being cancelled,2026-10-20T16:52:47Z,2026-10-20T16:59:28Z,merged,True,https://github.com/fossasia/voxbento/pull/897
+voxbento,898,ci: add hourly PR merge conflict reminder workflow,2026-10-20T17:13:17Z,2026-10-20T17:21:18Z,merged,True,https://github.com/fossasia/voxbento/pull/898
+voxbento,908,docs: update and synchronize comprehensive documentation across project,2026-10-20T17:59:45Z,2026-10-20T18:32:33Z,merged,True,https://github.com/fossasia/voxbento/pull/908
+voxbento,909,ci: update issue-scripts workflow to guide external contributors requesting issue assignment,2026-10-20T18:13:48Z,2026-10-20T18:15:03Z,merged,True,https://github.com/fossasia/voxbento/pull/909
+eventyay-business,141,Add auto-prepare and activate action for consolidated billing,2026-10-20T18:41:59Z,2026-10-20T18:51:04Z,merged,True,https://github.com/fossasia/eventyay-business/pull/141
+eventyay-business,142,"Revert ""Add auto-prepare and activate action for consolidated billing""",2026-10-20T19:59:02Z,2026-10-20T19:59:11Z,merged,True,https://github.com/fossasia/eventyay-business/pull/142
+voxbento,918,ci: automatically remove needs-screencast label in real-time on comment or PR edit,2026-10-20T20:16:06Z,2026-10-20T20:17:41Z,merged,True,https://github.com/fossasia/voxbento/pull/918
+eventyay-business,143,Fix: Keep Business sidebar menu open on rollout monitor and subpages,2026-10-20T20:16:14Z,2026-10-20T20:22:15Z,merged,True,https://github.com/fossasia/eventyay-business/pull/143
+eventyay-business,144,Fix: Resolve HTTP 500 when running billing reconciliation,2026-10-20T20:45:36Z,2026-10-20T20:47:08Z,merged,True,https://github.com/fossasia/eventyay-business/pull/144
+voxbento,923,feat: define roles in one place and manage the event team from one page ,2026-10-21T06:36:23Z,2026-10-21T09:39:05Z,merged,True,https://github.com/fossasia/voxbento/pull/923
+voxbento,924,"fix(oauth): give Event ownership at the token exchange, not when Allow is clicked",2026-10-21T07:20:21Z,2026-10-21T07:22:21Z,merged,True,https://github.com/fossasia/voxbento/pull/924
+voxbento,942,docs: modernize and clean up README for new contributors,2026-10-21T12:43:25Z,2026-10-21T12:45:16Z,merged,True,https://github.com/fossasia/voxbento/pull/942
+voxbento,947,feat(program-sender): keep the browser sender running on its own page,2026-10-21T17:38:11Z,2026-10-22T06:43:54Z,merged,True,https://github.com/fossasia/voxbento/pull/947
+eventyay,6746,Make platform fee voucher scope selects searchable,2026-10-22T05:21:46Z,2026-10-22T06:34:39Z,merged,True,https://github.com/fossasia/eventyay/pull/6746
+eventyay-business,145,Make long admin dropdowns searchable,2026-10-22T05:21:51Z,2026-10-22T05:27:16Z,merged,True,https://github.com/fossasia/eventyay-business/pull/145
+eventyay,6747,Remove the built-in pricing page,2026-10-22T05:49:07Z,2026-10-22T06:36:12Z,merged,True,https://github.com/fossasia/eventyay/pull/6747
+eventyay-business,146,Add a configurable public pricing page,2026-10-22T05:49:26Z,2026-10-22T06:36:58Z,merged,True,https://github.com/fossasia/eventyay-business/pull/146
+voxbento,948,fix(test): accept valid retry reasons in program relay stall test,2026-10-22T07:13:39Z,2026-10-22T07:22:57Z,merged,True,https://github.com/fossasia/voxbento/pull/948
+eventyay-business,147,Show the pricing page visibility notice only in admin mode,2026-10-22T07:24:39Z,2026-10-22T07:25:08Z,merged,True,https://github.com/fossasia/eventyay-business/pull/147
+voxbento,965,fix(logging): log reconcile-loop outages once instead of every 2 s (#964),2026-10-23T16:00:26Z,2026-10-23T16:02:31Z,merged,True,https://github.com/fossasia/voxbento/pull/965
+voxbento,969,feat(email): consolidate transactional notifications,2026-10-23T18:20:13Z,2026-10-23T19:26:33Z,merged,True,https://github.com/fossasia/voxbento/pull/969
+voxbento,971,fix(email): use a transparent VoxBento V mark,2026-10-23T19:42:13Z,2026-10-23T19:48:44Z,merged,True,https://github.com/fossasia/voxbento/pull/971
+voxbento,973,"feat(ux): overhaul My booths, the booth bar, Mission Control and the room page",2026-10-23T20:01:35Z,2026-10-23T20:12:58Z,merged,True,https://github.com/fossasia/voxbento/pull/973
+voxbento,984,"feat(admin): unified guided room setup for languages, delivery, captions, and AI",2026-10-24T12:05:37Z,2026-10-24T12:26:16Z,merged,True,https://github.com/fossasia/voxbento/pull/984
+voxbento,996,Add automated PR review workflow with Jules,2026-10-24T18:09:04Z,2026-10-24T19:33:55Z,merged,True,https://github.com/fossasia/voxbento/pull/996
+voxbento,1002,fix(relay): keep YouTube relay across deploys and simplify its setup,2026-10-25T07:08:25Z,2026-10-25T07:55:16Z,merged,True,https://github.com/fossasia/voxbento/pull/1002
+voxbento,1006,fix(relay): preserve direct ingest hostname certificate across deploys,2026-10-25T08:25:11Z,2026-10-25T08:27:07Z,merged,True,https://github.com/fossasia/voxbento/pull/1006
+voxbento,1007,Remove YouTube relay setup instructions,2026-10-25T08:27:48Z,2026-10-25T08:27:58Z,merged,True,https://github.com/fossasia/voxbento/pull/1007
+voxbento,1008,fix: sync main relay hostname fix into dev,2026-10-25T08:29:32Z,2026-10-25T08:29:43Z,merged,True,https://github.com/fossasia/voxbento/pull/1008
+voxbento,1009,chore: sync dev into main after relay conflict resolution,2026-10-25T08:30:00Z,2026-10-25T08:30:14Z,merged,True,https://github.com/fossasia/voxbento/pull/1009
+voxbento,1010,feat(room-setup): choose one way per language and simplify the captions step,2026-10-25T11:44:11Z,2026-10-25T12:07:04Z,merged,True,https://github.com/fossasia/voxbento/pull/1010
+voxbento,1011,feat(auth): protect signup with optional Turnstile and IP rate limits,2026-10-25T13:53:50Z,2026-10-25T14:44:02Z,merged,True,https://github.com/fossasia/voxbento/pull/1011
+voxbento,1012,feat(room-setup): review room changes on a separate screen before saving,2026-10-25T14:08:44Z,2026-10-25T17:39:57Z,merged,True,https://github.com/fossasia/voxbento/pull/1012
+voxbento,1013,docs: stop requiring README updates for routine features,2026-10-25T17:59:35Z,2026-10-25T18:00:51Z,merged,True,https://github.com/fossasia/voxbento/pull/1013
+voxbento,1017,fix(oauth): let the client bind the token exchange to its event,2026-10-26T05:37:30Z,2026-10-26T05:37:40Z,merged,True,https://github.com/fossasia/voxbento/pull/1017
+voxbento,1018,feat(booth): reconnect the interpreter booth automatically,2026-10-26T05:38:36Z,2026-10-26T05:38:39Z,merged,True,https://github.com/fossasia/voxbento/pull/1018

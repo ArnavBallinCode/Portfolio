@@ -121,8 +121,8 @@ export const ecosystem = [
     },
     {
         name: 'Eventyay Business',
-        title: 'Tiers and entitlements (in progress)',
-        body: 'Versioned tiers, monthly and annual pricing, typed capability entitlements, Free-tier assignment, idempotent usage records and organizer plan visibility. Billing webhooks, charging and upgrades are not wired yet.',
+        title: 'Pricing, entitlements and billing foundations',
+        body: 'Built the plugin foundation, versioned tiers and pricing, capability entitlements, subscriptions, and idempotent usage records; extended it with invoice calculation, Stripe collection, reconciliation and guarded billing rollout. See the final-report draft for upstream evidence and remaining validation.',
         link: 'https://github.com/fossasia/eventyay-business',
     },
     {

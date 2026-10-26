@@ -1,0 +1,593 @@
+{
+  "summary": {
+    "from": "2026-05-25T00:00:00Z",
+    "asOf": "2026-10-26T08:18:00Z",
+    "authoredAllTime": 709,
+    "mergedAllTime": 645,
+    "openedDuringPeriod": 532,
+    "mergedOpenedDuringPeriod": 509,
+    "openDuringPeriod": 1,
+    "closedUnmergedDuringPeriod": 22,
+    "reviewedPRs": 1354,
+    "reviewSubmissions": 1711,
+    "reviewStates": {
+      "CHANGES_REQUESTED": 309,
+      "APPROVED": 1254,
+      "COMMENTED": 133,
+      "DISMISSED": 15
+    },
+    "reviewRepositories": [
+      {
+        "name": "fossasia/eventyay",
+        "prs": 909,
+        "submissions": 1086
+      },
+      {
+        "name": "fossasia/voxbento",
+        "prs": 310,
+        "submissions": 456
+      },
+      {
+        "name": "fossasia/eventyay-interpretation",
+        "prs": 27,
+        "submissions": 39
+      },
+      {
+        "name": "fossasia/voxbento_translator",
+        "prs": 20,
+        "submissions": 36
+      },
+      {
+        "name": "fossasia/eventyay-checkin",
+        "prs": 16,
+        "submissions": 16
+      },
+      {
+        "name": "fossasia/veditor",
+        "prs": 14,
+        "submissions": 15
+      },
+      {
+        "name": "fossasia/eventyay-exhibition",
+        "prs": 9,
+        "submissions": 9
+      },
+      {
+        "name": "fossasia/visdom",
+        "prs": 9,
+        "submissions": 9
+      },
+      {
+        "name": "fossasia/scrum_helper",
+        "prs": 8,
+        "submissions": 8
+      },
+      {
+        "name": "fossasia/magic-epaper-app",
+        "prs": 8,
+        "submissions": 9
+      },
+      {
+        "name": "fossasia/eventyay-hubspot",
+        "prs": 7,
+        "submissions": 7
+      },
+      {
+        "name": "fossasia/badgemagic-app",
+        "prs": 5,
+        "submissions": 5
+      },
+      {
+        "name": "fossasia/eventyay-stripe",
+        "prs": 4,
+        "submissions": 4
+      },
+      {
+        "name": "fossasia/eventyay-teamshifts",
+        "prs": 3,
+        "submissions": 7
+      },
+      {
+        "name": "fossasia/eventyay-paypal",
+        "prs": 2,
+        "submissions": 2
+      },
+      {
+        "name": "fossasia/eventyay-socialmedia",
+        "prs": 1,
+        "submissions": 1
+      },
+      {
+        "name": "fossasia/visdom-dev",
+        "prs": 1,
+        "submissions": 1
+      },
+      {
+        "name": "fossasia/pslab-app",
+        "prs": 1,
+        "submissions": 1
+      }
+    ],
+    "yearFrom": "2025-10-27T00:00:00Z",
+    "yearAsOf": "2026-10-26T08:20:49Z",
+    "yearReviewSubmissions": 2155,
+    "yearReviewedPRs": 1625,
+    "authoredRepositories": [
+      {
+        "name": "voxbento",
+        "opened": 272,
+        "merged": 263
+      },
+      {
+        "name": "eventyay",
+        "opened": 121,
+        "merged": 113
+      },
+      {
+        "name": "eventyay-business",
+        "opened": 84,
+        "merged": 82
+      },
+      {
+        "name": "eventyay-interpretation",
+        "opened": 22,
+        "merged": 21
+      },
+      {
+        "name": "eventyay-checkin",
+        "opened": 10,
+        "merged": 9
+      },
+      {
+        "name": "scrum_helper",
+        "opened": 4,
+        "merged": 3
+      },
+      {
+        "name": "eventyay-stripe",
+        "opened": 4,
+        "merged": 4
+      },
+      {
+        "name": "star-me",
+        "opened": 4,
+        "merged": 4
+      },
+      {
+        "name": "eventyay-socialmedia",
+        "opened": 2,
+        "merged": 2
+      },
+      {
+        "name": "eventyay-teamshifts",
+        "opened": 2,
+        "merged": 2
+      },
+      {
+        "name": "visdom",
+        "opened": 2,
+        "merged": 1
+      },
+      {
+        "name": "eventyay-plus-reviews",
+        "opened": 1,
+        "merged": 1
+      },
+      {
+        "name": "eventyay-paypal",
+        "opened": 1,
+        "merged": 1
+      },
+      {
+        "name": "eventyay-bitpay",
+        "opened": 1,
+        "merged": 1
+      },
+      {
+        "name": "eventyay-exhibition",
+        "opened": 1,
+        "merged": 1
+      },
+      {
+        "name": "eventyay-hubspot",
+        "opened": 1,
+        "merged": 1
+      }
+    ]
+  },
+  "methodology": {
+    "authored": "Public FOSSASIA PRs returned by author search, all pages. Coding-window authorship is based on PR creation time; merge status is observed at audit time.",
+    "reviews": "GitHub GraphQL pullRequestReviewContributions, paginated; then reviews filtered by author and submitted timestamp. Public fossasia/ repositories only; unique PR URLs and review URLs. Pending reviews, issue comments and inline-comment counts excluded. A review is a submitted GitHub review record, not a claim of manual-only work or a merged outcome.",
+    "coverage": "Observed public GitHub evidence, not a lifetime total. A one-year cross-check yields the same coding-window review count. Deleted/inaccessible activity is not recoverable; dismissed review state reflects the audit, not necessarily its original state.",
+    "cutoff": "2026-10-26T08:18:00Z"
+  },
+  "selectedMergedWork": [
+    {
+      "repository": "eventyay-business",
+      "number": 28,
+      "title": "Scaffold eventyay-business plugin from cookiecutter",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-05T16:27:20Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/28",
+      "mergeCommit": "a18d93d3c8dcc394855787954cea66ed8c0750a4",
+      "additions": 561,
+      "deletions": 0,
+      "changedFiles": 23
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 31,
+      "title": "feat: implement Tier, TierVersion, TierPrice, and TierEntitlement models",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-06T08:44:06Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/31",
+      "mergeCommit": "95a0483bd60d754d1ee445cdf165c0a29ef87b6f",
+      "additions": 452,
+      "deletions": 0,
+      "changedFiles": 2
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 34,
+      "title": "feat: implement Tier administration UI and publication workflow",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-06T18:29:15Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/34",
+      "mergeCommit": "5e6088e7e36eb82a9b6d6d22be80da5a7299434d",
+      "additions": 717,
+      "deletions": 6,
+      "changedFiles": 10
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 35,
+      "title": "feat: implement capability registry and standard catalogue",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-06T18:54:24Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/35",
+      "mergeCommit": "681cd41b03fd34c571aaa3f7e46e94ca73ece59f",
+      "additions": 593,
+      "deletions": 2,
+      "changedFiles": 8
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 37,
+      "title": "feat: Add organizer subscriptions and free tier auto-assignment",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-06T19:38:24Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/37",
+      "mergeCommit": "2045c3d782d16a94dd193f98a0b6857fdda8b68f",
+      "additions": 392,
+      "deletions": 2,
+      "changedFiles": 12
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 43,
+      "title": "feat: Add usage-record infrastructure and idempotency (#11)",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-07T16:31:10Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/43",
+      "mergeCommit": "a51fc02d2b444f4e7b6a6c6ea83492ee60ebc9b2",
+      "additions": 248,
+      "deletions": 1,
+      "changedFiles": 6
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 77,
+      "title": "feat(stripe): implement checkout and webhook integration for subscriptions and add-ons",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-12T18:22:12Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/77",
+      "mergeCommit": "c77e653cdac4491645c371aa7ccb3d56a128af6e",
+      "additions": 2592,
+      "deletions": 25,
+      "changedFiles": 15
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 78,
+      "title": "feat(subscriptions): implement plan upgrades, scheduled downgrades, and grace periods",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-13T13:48:39Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/78",
+      "mergeCommit": "26739296dceae999725f94766962ae6965f9b8c5",
+      "additions": 1424,
+      "deletions": 13,
+      "changedFiles": 10
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 95,
+      "title": "feat: Phase 1B - abolish global fallback fees and take ownership of billing settings",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-03T05:19:56Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/95",
+      "mergeCommit": "3e4b495387244c78cd9262f5d1c1fd655419b3b3",
+      "additions": 337,
+      "deletions": 94,
+      "changedFiles": 12
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 105,
+      "title": "Add canonical organizer billing authorization",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-14T07:42:08Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/105",
+      "mergeCommit": "b491e7541082183656c50423a77125ce0e049a80",
+      "additions": 346,
+      "deletions": 77,
+      "changedFiles": 9
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 110,
+      "title": "Add consolidated billing migration preflight",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-15T13:43:49Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/110",
+      "mergeCommit": "a45191861e34ca4f59a75eeb0663621f15c93cbd",
+      "additions": 146,
+      "deletions": 0,
+      "changedFiles": 3
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 127,
+      "title": "Add non-collecting billing reconciliation engine",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-18T12:10:47Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/127",
+      "mergeCommit": "555facbae8c4af9a2fb1a8cf97bb8fc0ddc3ec6a",
+      "additions": 865,
+      "deletions": 0,
+      "changedFiles": 5
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 128,
+      "title": "Add billing reconciliation review and acceptance",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-18T12:10:48Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/128",
+      "mergeCommit": "eb626c595d4678dcb7420099f02d1ef8f45502d0",
+      "additions": 612,
+      "deletions": 10,
+      "changedFiles": 10
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 130,
+      "title": "Gate controlled billing rollout on accepted reconciliation",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-18T12:10:49Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/130",
+      "mergeCommit": "9a9a92d93393e9dabe5ace8e629dc13861f74288",
+      "additions": 288,
+      "deletions": 10,
+      "changedFiles": 7
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 141,
+      "title": "Add auto-prepare and activate action for consolidated billing",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-20T18:51:04Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/141",
+      "mergeCommit": "26850a822de0dcdbd772ebfdce92b19bc673a025",
+      "additions": 178,
+      "deletions": 3,
+      "changedFiles": 4
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 142,
+      "title": "Revert \"Add auto-prepare and activate action for consolidated billing\"",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-20T19:59:11Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/142",
+      "mergeCommit": "1c75ac31d2cef0763c31f1a5b0d9f0b1751ebe99",
+      "additions": 3,
+      "deletions": 178,
+      "changedFiles": 4
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 146,
+      "title": "Add a configurable public pricing page",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-22T06:36:58Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/146",
+      "mergeCommit": "94088354eb7e1c5f73aa69dc53470e13acaa68f0",
+      "additions": 877,
+      "deletions": 125,
+      "changedFiles": 9
+    },
+    {
+      "repository": "voxbento",
+      "number": 56,
+      "title": "Integrate browser WHIP publishing with MediaMTX",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-05-24T05:57:24Z",
+      "url": "https://github.com/fossasia/voxbento/pull/56",
+      "mergeCommit": "dfedb2ac844bbc9526b6e4f1fee5cde3415d95c3",
+      "additions": 69,
+      "deletions": 30,
+      "changedFiles": 6
+    },
+    {
+      "repository": "voxbento",
+      "number": 78,
+      "title": "Make WHIP/MediaMTX the primary ingest path; demote aiortc to fallback",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-05-24T11:24:38Z",
+      "url": "https://github.com/fossasia/voxbento/pull/78",
+      "mergeCommit": "211c129c3ea76eb269f74ce193542f1f04f6da82",
+      "additions": 93,
+      "deletions": 34,
+      "changedFiles": 5
+    },
+    {
+      "repository": "voxbento",
+      "number": 81,
+      "title": "feat: Remove Flask/aiortc/Socket.IO, migrate to pure FastAPI + WebRTC/WHIP with seamless interpreter relay",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-05-28T15:37:33Z",
+      "url": "https://github.com/fossasia/voxbento/pull/81",
+      "mergeCommit": "22aaa36885d7ece9c45668ddcd1368a903dd4c45",
+      "additions": 1002,
+      "deletions": 1113,
+      "changedFiles": 24
+    },
+    {
+      "repository": "voxbento",
+      "number": 159,
+      "title": "feat: Add headless floor-bot for transcription audio extraction and multilingual translation pipeline",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-06-13T14:37:30Z",
+      "url": "https://github.com/fossasia/voxbento/pull/159",
+      "mergeCommit": "26ced40bd1ee165a0737d0db24bc9bb5359bd1b0",
+      "additions": 2195,
+      "deletions": 82,
+      "changedFiles": 38
+    },
+    {
+      "repository": "voxbento",
+      "number": 223,
+      "title": "security: fail fast on weak default secret_key in production",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-06-29T18:14:51Z",
+      "url": "https://github.com/fossasia/voxbento/pull/223",
+      "mergeCommit": "cf72e29852888c12f30c0e9589f1fea56cb794d6",
+      "additions": 44,
+      "deletions": 1,
+      "changedFiles": 4
+    },
+    {
+      "repository": "voxbento",
+      "number": 379,
+      "title": "feat: Phase 1 - OAuth2 Security & Observability",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-08-18T11:59:34Z",
+      "url": "https://github.com/fossasia/voxbento/pull/379",
+      "mergeCommit": "92baec05c81ac65be626090ffb9b80fc5147c31c",
+      "additions": 78,
+      "deletions": 9,
+      "changedFiles": 3
+    },
+    {
+      "repository": "voxbento",
+      "number": 411,
+      "title": "fix: resolve TTS playback choppiness, translation timeouts, and beep sounds",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-08-24T04:59:01Z",
+      "url": "https://github.com/fossasia/voxbento/pull/411",
+      "mergeCommit": "1ef168e8864bf827b54f53913717d896492d9219",
+      "additions": 646,
+      "deletions": 11,
+      "changedFiles": 9
+    },
+    {
+      "repository": "voxbento",
+      "number": 888,
+      "title": "feat(translation): configure AI interpretation prompts and vocabulary ",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-20T12:34:54Z",
+      "url": "https://github.com/fossasia/voxbento/pull/888",
+      "mergeCommit": "24ffd48154221f6dbc1e459bd82ff550f3f2587f",
+      "additions": 2249,
+      "deletions": 18,
+      "changedFiles": 21
+    },
+    {
+      "repository": "eventyay",
+      "number": 5441,
+      "title": "feat: implement Thin Entitlement Kernel for decoupled capability checks",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-06T19:50:59Z",
+      "url": "https://github.com/fossasia/eventyay/pull/5441",
+      "mergeCommit": "2beead04098bd5f7e4768b14c19a56ad6c99a261",
+      "additions": 161,
+      "deletions": 0,
+      "changedFiles": 3
+    },
+    {
+      "repository": "eventyay",
+      "number": 5447,
+      "title": "feat: Add generic entitlement provider interface",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-06T20:11:45Z",
+      "url": "https://github.com/fossasia/eventyay/pull/5447",
+      "mergeCommit": "c72540e518d7f4d04db5678f01f56d08795a2ebd",
+      "additions": 82,
+      "deletions": 17,
+      "changedFiles": 3
+    },
+    {
+      "repository": "eventyay",
+      "number": 5505,
+      "title": "feat: dispatch core signals for usage tracking and team limits",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-08T13:28:36Z",
+      "url": "https://github.com/fossasia/eventyay/pull/5505",
+      "mergeCommit": "46269236588a9bbb2560bb7e231f996c5b5d75b3",
+      "additions": 240,
+      "deletions": 113,
+      "changedFiles": 6
+    },
+    {
+      "repository": "eventyay",
+      "number": 6499,
+      "title": "Allow external collectors to disable legacy billing",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-15T12:39:11Z",
+      "url": "https://github.com/fossasia/eventyay/pull/6499",
+      "mergeCommit": "ce3f031959248f5c0ab12c13e3af3fcddf1649c6",
+      "additions": 120,
+      "deletions": 0,
+      "changedFiles": 3
+    },
+    {
+      "repository": "eventyay",
+      "number": 6560,
+      "title": "Enable automatic billing consent when saving a payment method",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-17T10:53:13Z",
+      "url": "https://github.com/fossasia/eventyay/pull/6560",
+      "mergeCommit": "f8d6fd49adba1d089d71709c32af175c535c1abe",
+      "additions": 136,
+      "deletions": 4,
+      "changedFiles": 5
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 106,
+      "title": "Finalize auditable Eventyay business invoices",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-14T12:48:07Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/106",
+      "mergeCommit": "00e5ff1a2db105131b02de0153f1558f9cb15035"
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 107,
+      "title": "Make consolidated invoice calculation reproducible",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-14T13:24:24Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/107",
+      "mergeCommit": "799519f956dd1b4fb6f2fef40cb98deaeb558863"
+    },
+    {
+      "repository": "eventyay-business",
+      "number": 108,
+      "title": "Collect consolidated invoices through Stripe PaymentIntents",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-15T07:12:01Z",
+      "url": "https://github.com/fossasia/eventyay-business/pull/108",
+      "mergeCommit": "c0eab6d4fae994951a56bd26b8f662976fb8339c"
+    }
+  ]
+}
