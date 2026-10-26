@@ -8,7 +8,7 @@ import report from '@/app/data/gsoc-report.json';
 
 export const metadata: Metadata = {
     title: 'GSoC 2026 final report · VoxBento & FOSSASIA',
-    description: 'A working report on VoxBento, the Eventyay Business foundation, and cross-repository review work, with dated upstream evidence.',
+    description: 'A working report on VoxBento, Eventyay foundations, AI coding workflows, and cross-repository reviews, with dated upstream evidence.',
     alternates: { canonical: 'https://angarkar.tech/gsoc/final-report/' },
 };
 const slug = (text: string) => text.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');

@@ -1,0 +1,1236 @@
+[
+  {
+    "author": {
+      "id": "U_kgDOCkCcFQ",
+      "is_bot": false,
+      "login": "ArnavBallinCode",
+      "name": "Arnav Angarkar"
+    },
+    "body": "## Summary by Sourcery\n\nIntroduce a unified, canonical instruction framework for AI coding agents contributing to this repository.\n\nDocumentation:\n- Document project-wide AI agent policies, architecture rules, and verified commands in a new canonical agents.md file.\n\nChores:\n- Add adapter instruction files for Copilot, Claude, and Codex that defer to the central agents.md policy and scoped instruction files.",
+    "files": [
+      {
+        "path": ".cursorrules",
+        "additions": 11,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "CLAUDE.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "CODEX.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "agents.md",
+        "additions": 63,
+        "deletions": 1,
+        "changeType": "MODIFIED"
+      }
+    ],
+    "mergeCommit": {
+      "oid": "05317ed12b4816ec5f931596605a0450c1a2b9c9"
+    },
+    "mergedAt": "2026-02-18T08:47:09Z",
+    "title": "Introduce Unified AI Policy Framework for AI Agents",
+    "url": "https://github.com/fossasia/eventyay/pull/2447"
+  },
+  {
+    "author": {
+      "id": "U_kgDOCkCcFQ",
+      "is_bot": false,
+      "login": "ArnavBallinCode",
+      "name": "Arnav Angarkar"
+    },
+    "body": "Also partial part of #2737\r\n\r\n!! Needs clarification of Deployment and Docker instructions. \r\n\r\n## Future Plan\r\n\r\nWe plan to further align with the Agent Skills specification and improve the quality, modularity, and execution capability of our skills.\r\n\r\n### 1. Standardize Skill Structure\r\n\r\nMove towards a richer, extensible structure:\r\n```\r\n\r\nskill-name/\r\n\u251c\u2500\u2500 SKILL.md          # Metadata + core instructions (kept concise)\r\n\u251c\u2500\u2500 scripts/          # Reusable executable helpers (e.g., validation, generation)\r\n\u251c\u2500\u2500 references/       # Detailed docs loaded only when needed\r\n\u251c\u2500\u2500 assets/           # Templates (API responses, serializers, etc.)\r\n\u2514\u2500\u2500 tests/ (optional) # Test cases for validating skill behavior\r\n\r\n```\r\n---\r\n\r\n### 2. Improve Skill Quality\r\n\r\n- Make all skills **atomic and composable**\r\n- Ensure each skill has:\r\n  - clear \"When to use\"\r\n  - step-by-step execution\r\n  - validation steps\r\n  - project-specific gotchas\r\n- Remove generic or redundant instructions\r\n- Optimize for **agent execution, not human readability**\r\n\r\n---\r\n\r\n### 3. Introduce Progressive Disclosure\r\n\r\n- Keep `SKILL.md` minimal (core logic only)\r\n- Move heavy or conditional details into `references/`\r\n- Explicitly guide when to load additional context\r\n\r\n---\r\n\r\n### 4. Add Execution Support via Scripts\r\n\r\n- Extract repeated logic into `scripts/`\r\n- Examples:\r\n  - migration validation scripts\r\n  - API scaffold generators\r\n  - lint/test runners\r\n\r\nThis avoids the agent re-deriving logic each time.\r\n\r\n---\r\n\r\n### 5. Expand Context Layer\r\n\r\nExtend `.agents/context/` beyond `architecture.md`:\r\n\r\n- api-patterns.md\r\n- data-modeling.md\r\n- repo-conventions.md\r\n\r\nThis improves retrieval and reduces hallucination.\r\n\r\n---\r\n\r\n### 6. Introduce Skill Composition\r\n\r\n- Enable chaining of skills for larger tasks\r\n- Add higher-level \"meta skills\" (e.g., feature implementation)\r\n- Ensure naming consistency for better triggering\r\n\r\n---\r\n\r\n### 7. Continuous Refinement Loop\r\n\r\n- Iterate skills based on real usage\r\n- Capture:\r\n  - common failures\r\n  - corrections\r\n  - edge cases\r\n- Feed these back into:\r\n  - \"Gotchas\"\r\n  - validation steps\r\n  - scripts\r\n\r\n---\r\n\r\n## Summary by Sourcery\r\n\r\nIntroduce an AI agent skills and context system and expand contributor guidance for JavaScript/Vue, Docker, and git workflows.\r\n\r\nNew Features:\r\n- Add a structured AI agent skills index under `.agents/skills/` and a context index under `.agents/context/` for repository navigation, Django workflows, Docker deployment, and documentation updates.\r\n- Define dedicated instruction files for Docker/Docker Compose usage and container-based development and production workflows.\r\n\r\nEnhancements:\r\n- Clarify AI agent policy precedence, designating `agents.md` as the single source of truth and documenting the new skills and context directories.\r\n- Extend JavaScript instructions to cover TypeScript and Vue 3 apps and document frontend code locations and Vue conventions.\r\n- Document branching, commit, and PR expectations in git commit instructions.",
+    "files": [
+      {
+        "path": ".agents/context/architecture.md",
+        "additions": 40,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-add-form/SKILL.md",
+        "additions": 23,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-create-api-endpoint/SKILL.md",
+        "additions": 23,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-create-model/SKILL.md",
+        "additions": 23,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-run-locally/SKILL.md",
+        "additions": 34,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-run-migrations/SKILL.md",
+        "additions": 35,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/docker-deployment/SKILL.md",
+        "additions": 73,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/documentation/SKILL.md",
+        "additions": 40,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/repo-navigation/SKILL.md",
+        "additions": 75,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/instructions/dockerfile.instructions.md",
+        "additions": 126,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/instructions/git-commit.instructions.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".github/instructions/js.instructions.md",
+        "additions": 15,
+        "deletions": 2,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": "README.rst",
+        "additions": 12,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": "agents.md",
+        "additions": 29,
+        "deletions": 3,
+        "changeType": "MODIFIED"
+      }
+    ],
+    "mergeCommit": {
+      "oid": "bb50c93964056684755c10416b34a4cc1a537732"
+    },
+    "mergedAt": "2026-03-31T19:28:19Z",
+    "title": "Add .agents/skills AI agent system ",
+    "url": "https://github.com/fossasia/eventyay/pull/2767"
+  },
+  {
+    "author": {
+      "id": "U_kgDOCkCcFQ",
+      "is_bot": false,
+      "login": "ArnavBallinCode",
+      "name": "Arnav Angarkar"
+    },
+    "body": "Follow up to #2767 \r\n\r\n## What This PR Does\r\n\r\n- Corrected skill index paths to use SKILL.md consistently.\r\n- Fixed production Docker compose command guidance to use deployment/docker-compose.yml.\r\n- Clarified production Nginx architecture as host-level (outside the Compose stack).\r\n- Updated architecture and repo-navigation guidance to avoid misleading \u201ccomplete map\u201d wording and included key missing modules.\r\n- Updated Docker deployment skill guidance to recommend create_admin_user by default, with createsuperuser as explicit advanced use.\r\n\r\n## What This PR Adds\r\n\r\n- New skills:\r\n  - frontend-ui\r\n  - pull-request-workflow\r\n\r\n- Standardized folder structure for all skills:\r\n  - SKILL.md\r\n  - scripts/\r\n  - references/\r\n  - assets/\r\n  - tests/\r\n\r\n- Starter content across older skills in each of the new subfolders:\r\n  - reusable helper scripts\r\n  - reference/checklist documents\r\n  - asset templates\r\n  - scenario test docs\r\n\r\n- Skill governance improvements:\r\n  - .agents/skills/README.md\r\n  - tools/validate_skill_layout.sh\r\n\r\n## Validation\r\n\r\n- Ran tools/validate_skill_layout.sh successfully.\r\n- Verified no stale lowercase skill.md references remain.\r\n- Confirmed all skill directories now include populated scripts/references/assets/tests.\r\n",
+    "files": [
+      {
+        "path": ".agents/context/architecture.md",
+        "additions": 10,
+        "deletions": 1,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/README.md",
+        "additions": 29,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-add-form/assets/form-review-template.md",
+        "additions": 19,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-add-form/references/form-validation-patterns.md",
+        "additions": 21,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-add-form/tests/form-validation-scenarios.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-create-api-endpoint/assets/api-response-template.md",
+        "additions": 22,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-create-api-endpoint/references/api-endpoint-checklist.md",
+        "additions": 21,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-create-api-endpoint/tests/api-endpoint-scenarios.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-create-model/assets/model-change-template.md",
+        "additions": 21,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-create-model/references/model-change-checklist.md",
+        "additions": 20,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-create-model/tests/model-change-scenarios.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-run-locally/assets/local-start-checklist.md",
+        "additions": 7,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-run-locally/references/local-run-troubleshooting.md",
+        "additions": 18,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-run-locally/tests/local-startup-scenarios.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-run-migrations/assets/migration-review-template.md",
+        "additions": 18,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-run-migrations/references/migration-safety-guide.md",
+        "additions": 22,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/django-run-migrations/tests/migration-scenarios.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/docker-deployment/SKILL.md",
+        "additions": 5,
+        "deletions": 2,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/docker-deployment/assets/deploy-rollback-template.md",
+        "additions": 19,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/docker-deployment/references/docker-deploy-checklist.md",
+        "additions": 19,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/docker-deployment/tests/deployment-scenarios.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/documentation/assets/doc-change-template.md",
+        "additions": 15,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/documentation/references/documentation-style-guide.md",
+        "additions": 20,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/documentation/tests/doc-update-scenarios.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/frontend-ui/SKILL.md",
+        "additions": 34,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/frontend-ui/assets/ui-pr-checklist-template.md",
+        "additions": 8,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/frontend-ui/references/ui-checklist.md",
+        "additions": 28,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/frontend-ui/tests/ui-scenarios.md",
+        "additions": 17,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/pull-request-workflow/SKILL.md",
+        "additions": 31,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/pull-request-workflow/assets/pr-description-template.md",
+        "additions": 21,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/pull-request-workflow/references/pr-readiness-guide.md",
+        "additions": 27,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/pull-request-workflow/tests/review-response-scenarios.md",
+        "additions": 16,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/repo-navigation/SKILL.md",
+        "additions": 7,
+        "deletions": 1,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/repo-navigation/assets/path-selection-template.md",
+        "additions": 18,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/repo-navigation/references/navigation-guide.md",
+        "additions": 19,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/repo-navigation/tests/navigation-scenarios.md",
+        "additions": 13,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/instructions/dockerfile.instructions.md",
+        "additions": 8,
+        "deletions": 4,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": "agents.md",
+        "additions": 13,
+        "deletions": 9,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": "tools/validate_skill_layout.sh",
+        "additions": 54,
+        "deletions": 0,
+        "changeType": "ADDED"
+      }
+    ],
+    "mergeCommit": {
+      "oid": "10cf863c776f4d7a78506229be0f6f5f2b555dd3"
+    },
+    "mergedAt": "2026-04-07T10:21:59Z",
+    "title": "Standardize skill scaffolding and fix docs references",
+    "url": "https://github.com/fossasia/eventyay/pull/3118"
+  },
+  {
+    "author": {
+      "id": "U_kgDOCkCcFQ",
+      "is_bot": false,
+      "login": "ArnavBallinCode",
+      "name": "Arnav Angarkar"
+    },
+    "body": "This document outlines the code review protocol for AI agents reviewing code in the Eventyay repository, including architecture checks, file-scoped standards, security validation, and feedback guidelines.\r\n\r\n<img width=\"971\" height=\"578\" alt=\"Screenshot 2026-08-17 at 5 17 16\u202fPM\" src=\"https://github.com/user-attachments/assets/7360dc56-4607-4e9b-a30b-8409c90f4155\" />\n\n## Summary by Sourcery\n\nDocumentation:\n- Add SKILL.md under .github/skills/code-review defining canonical code review procedures and rules for AI-based reviewers, aligned with existing AGENTS and instructions files.",
+    "files": [
+      {
+        "path": ".github/skills/code-review/SKILL.md",
+        "additions": 48,
+        "deletions": 0,
+        "changeType": "ADDED"
+      }
+    ],
+    "mergeCommit": {
+      "oid": "5aaeec3cde938668deaf14238229c4ff1f48388b"
+    },
+    "mergedAt": "2026-08-17T19:36:32Z",
+    "title": "Add code review protocol for AI agents",
+    "url": "https://github.com/fossasia/eventyay/pull/5000"
+  },
+  {
+    "author": {
+      "id": "U_kgDOCkCcFQ",
+      "is_bot": false,
+      "login": "ArnavBallinCode",
+      "name": "Arnav Angarkar"
+    },
+    "body": "## Summary\r\n\r\nThis PR introduces a repository-aware AI context system for VoxBento.\r\n\r\nThe goal is to make the codebase easier to understand, navigate, review, and modify for both human contributors and AI coding agents by generating implementation-derived documentation and workflow guidance.\r\n\r\nNo application behavior is changed.\r\n\r\n## What was added\r\n\r\n### Agent Context\r\n\r\nAdded `.github/.agents/context/` containing:\r\n\r\n* `REPOSITORY_CONTEXT.md`\r\n* `ROUTE_MAP.md`\r\n* `DATABASE_MAP.md`\r\n* `TRANSCRIPTION_MAP.md`\r\n* `CHANGE_IMPACT_MAP.md`\r\n* `AI_WORKFLOWS.md`\r\n* `TECHNICAL_DEBT_REPORT.md`\r\n\r\nThese documents provide a structured view of:\r\n\r\n* system architecture\r\n* route ownership\r\n* database relationships\r\n* transcription pipeline\r\n* component responsibilities\r\n* common development workflows\r\n* change impact analysis\r\n* known technical debt\r\n\r\n### Repository-Specific Skills\r\n\r\nAdded `.github/.agents/skills/` to provide reusable engineering playbooks for:\r\n\r\n* architecture review\r\n* route analysis\r\n* database analysis\r\n* deployment review\r\n* security review\r\n* incident investigation\r\n* production readiness\r\n* test generation\r\n* repository navigation\r\n\r\nThese skills are tailored to VoxBento's actual architecture rather than generic templates.\r\n\r\n## Why\r\n\r\nAs VoxBento grows, contributors and coding agents spend increasing amounts of time rediscovering architecture, request flows, database relationships, and transcription subsystem behavior.\r\n\r\nThis change creates a centralized knowledge layer that:\r\n\r\n* reduces onboarding time\r\n* improves PR review quality\r\n* improves architectural consistency\r\n* reduces accidental regressions\r\n* improves AI-assisted development workflows\r\n\r\n## Scope\r\n\r\nThis PR is documentation and workflow infrastructure only.\r\n\r\nThere are:\r\n\r\n* no runtime changes\r\n* no API changes\r\n* no database changes\r\n* no deployment changes\r\n* no user-facing changes\r\n\r\n## Follow-up Work\r\n\r\nFuture improvements may include:\r\n\r\n* automated context regeneration\r\n* route-to-model ownership mapping\r\n* repository index generation\r\n* expanded PR review workflows\r\n* architecture drift detection\r\n* documentation freshness validation\r\n",
+    "files": [
+      {
+        "path": ".github/.agents/context/AI_WORKFLOWS.md",
+        "additions": 157,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/context/CHANGE_IMPACT_MAP.md",
+        "additions": 150,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/context/DATABASE_MAP.md",
+        "additions": 179,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/context/REPOSITORY_CONTEXT.md",
+        "additions": 159,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/context/ROUTE_MAP.md",
+        "additions": 107,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/context/TECHNICAL_DEBT_REPORT.md",
+        "additions": 114,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/context/TRANSCRIPTION_MAP.md",
+        "additions": 142,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/context/architecutre.md",
+        "additions": 0,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/architecture-review/SKILL.md",
+        "additions": 85,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/database-analysis/SKILL.md",
+        "additions": 150,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/deployment-review/SKILL.md",
+        "additions": 118,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/docker-review/SKILL.md",
+        "additions": 123,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/incident-investigation/SKILL.md",
+        "additions": 159,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/pr-review/SKILL.md",
+        "additions": 96,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/production-readiness-review/SKILL.md",
+        "additions": 85,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/provider-analysis/SKILL.md",
+        "additions": 120,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/repo-navigation/SKILL.md",
+        "additions": 106,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/route-analysis/SKILL.md",
+        "additions": 113,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/security-audit/SKILL.md",
+        "additions": 118,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/test-generation/SKILL.md",
+        "additions": 165,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/.agents/skills/transcription-analysis/SKILL.md",
+        "additions": 124,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/instructions/README.txt",
+        "additions": 1,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/instructions/jinja.instructions.md",
+        "additions": 0,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/instructions/js.instructions.md",
+        "additions": 0,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".github/instructions/python.instructions.md",
+        "additions": 0,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "agents.md",
+        "additions": 158,
+        "deletions": 111,
+        "changeType": "MODIFIED"
+      }
+    ],
+    "mergeCommit": {
+      "oid": "b4f48b0739cd1711553e9a24ec678dad2f4f8de7"
+    },
+    "mergedAt": "2026-06-09T04:40:45Z",
+    "title": "chore: introduce AI agent context system for repository navigation and development workflows",
+    "url": "https://github.com/fossasia/voxbento/pull/142"
+  },
+  {
+    "author": {
+      "id": "U_kgDOCkCcFQ",
+      "is_bot": false,
+      "login": "ArnavBallinCode",
+      "name": "Arnav Angarkar"
+    },
+    "body": "",
+    "files": [
+      {
+        "path": ".agents/skills/architecture-review/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/database-analysis/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/deployment-review/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/docker-review/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/floor-bot-analysis/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/incident-investigation/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/pr-review/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/production-readiness-review/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/provider-analysis/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/repo-navigation/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/route-analysis/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/security-audit/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/test-generation/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/transcription-analysis/SKILL.md",
+        "additions": 5,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      }
+    ],
+    "mergeCommit": {
+      "oid": "7fc70f45a74644f0f1e9273bd54e431ab57099a1"
+    },
+    "mergedAt": "2026-06-14T14:35:17Z",
+    "title": "docs: add YAML frontmatter to skills for better detection",
+    "url": "https://github.com/fossasia/voxbento/pull/184"
+  },
+  {
+    "author": {
+      "id": "U_kgDOCkCcFQ",
+      "is_bot": false,
+      "login": "ArnavBallinCode",
+      "name": "Arnav Angarkar"
+    },
+    "body": "add more plans and skills\r\n",
+    "files": [
+      {
+        "path": ".agents/skills/ask-me/SKILL.md",
+        "additions": 60,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/codebase-design/DEEPENING.md",
+        "additions": 37,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/codebase-design/DESIGN-IT-TWICE.md",
+        "additions": 44,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/codebase-design/SKILL.md",
+        "additions": 114,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/decision-mapping/SKILL.md",
+        "additions": 84,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/design-an-interface/SKILL.md",
+        "additions": 94,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/diagnosing-bugs/SKILL.md",
+        "additions": 134,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/diagnosing-bugs/scripts/hitl-loop.template.sh",
+        "additions": 41,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/domain-modeling/ADR-FORMAT.md",
+        "additions": 47,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/domain-modeling/CONTEXT-FORMAT.md",
+        "additions": 60,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/domain-modeling/SKILL.md",
+        "additions": 74,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/edit-article/SKILL.md",
+        "additions": 15,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/git-guardrails-claude-code/SKILL.md",
+        "additions": 95,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/git-guardrails-claude-code/scripts/block-dangerous-git.sh",
+        "additions": 25,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/grill-me/SKILL.md",
+        "additions": 7,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/grill-with-docs/SKILL.md",
+        "additions": 7,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/grilling/SKILL.md",
+        "additions": 10,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/handoff/SKILL.md",
+        "additions": 16,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/implement/SKILL.md",
+        "additions": 15,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/improve-codebase-architecture/HTML-REPORT.md",
+        "additions": 123,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/improve-codebase-architecture/SKILL.md",
+        "additions": 66,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/loop-me/SKILL.md",
+        "additions": 32,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/migrate-to-shoehorn/SKILL.md",
+        "additions": 118,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/obsidian-vault/SKILL.md",
+        "additions": 59,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/prototype/LOGIC.md",
+        "additions": 79,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/prototype/SKILL.md",
+        "additions": 31,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/prototype/UI.md",
+        "additions": 112,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/qa/SKILL.md",
+        "additions": 130,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/request-refactor-plan/SKILL.md",
+        "additions": 68,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/resolving-merge-conflicts/SKILL.md",
+        "additions": 14,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/review/SKILL.md",
+        "additions": 69,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/scaffold-exercises/SKILL.md",
+        "additions": 106,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/setup-pre-commit/SKILL.md",
+        "additions": 91,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/tdd/SKILL.md",
+        "additions": 108,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/tdd/mocking.md",
+        "additions": 59,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/tdd/refactoring.md",
+        "additions": 10,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/tdd/tests.md",
+        "additions": 61,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/teach/GLOSSARY-FORMAT.md",
+        "additions": 35,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/teach/LEARNING-RECORD-FORMAT.md",
+        "additions": 46,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/teach/MISSION-FORMAT.md",
+        "additions": 31,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/teach/RESOURCES-FORMAT.md",
+        "additions": 32,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/teach/SKILL.md",
+        "additions": 140,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/to-issues/SKILL.md",
+        "additions": 84,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/to-prd/SKILL.md",
+        "additions": 75,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/triage/AGENT-BRIEF.md",
+        "additions": 207,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/triage/OUT-OF-SCOPE.md",
+        "additions": 105,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/triage/SKILL.md",
+        "additions": 112,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/ubiquitous-language/SKILL.md",
+        "additions": 93,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/writing-beats/SKILL.md",
+        "additions": 67,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/writing-fragments/SKILL.md",
+        "additions": 79,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/writing-great-skills/GLOSSARY.md",
+        "additions": 195,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/writing-great-skills/SKILL.md",
+        "additions": 82,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/writing-shape/SKILL.md",
+        "additions": 79,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "plans/010-tts-config-cache.md",
+        "additions": 130,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "plans/011-tts-pipeline-cleanup.md",
+        "additions": 101,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "plans/012-demo-generation-race.md",
+        "additions": 103,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "plans/013-dedupe-translation-key.md",
+        "additions": 88,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "plans/014-route-tests.md",
+        "additions": 74,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "plans/015-debug-default-false.md",
+        "additions": 79,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "plans/016-listener-rate-limit.md",
+        "additions": 84,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "plans/README.md",
+        "additions": 12,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": "skills-lock.json",
+        "additions": 210,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      }
+    ],
+    "mergeCommit": {
+      "oid": "20ace2e4af8e00d15c048ca973c5410c1841646d"
+    },
+    "mergedAt": "2026-06-29T11:59:16Z",
+    "title": "add more plans and skills",
+    "url": "https://github.com/fossasia/voxbento/pull/219"
+  },
+  {
+    "author": {
+      "id": "U_kgDOCkCcFQ",
+      "is_bot": false,
+      "login": "ArnavBallinCode",
+      "name": "Arnav Angarkar"
+    },
+    "body": "## Description\r\n This PR expands and standardizes the agent skill system for Visdom.\r\n \r\n ### What was added\r\n - Added multiple new skills for common workflows:\r\n   - `auth-login`\r\n   - `callback-events`\r\n   - `ci-workflow-debug`\r\n   - `docs-sync`\r\n   - `env-persistence`\r\n   - `environment-views`\r\n   - `frontend-pane-lifecycle`\r\n   - `handler-auth-flow`\r\n   - `offline-replay`\r\n   - `performance-streaming`\r\n   - `polling-parity`\r\n   - `python-client-api`\r\n   - `update-patching`\r\n - Added AI instruction entry files pointing to single source of truth (`AGENTS.md`):\r\n   - `CLAUDE.md`\r\n   - `CODEX.md`\r\n   - `GEMINI.md`\r\n   - `.github/copilot-instructions.md`\r\n \r\n ### What was changed\r\n - Standardized all skills with a consistent scaffold:\r\n   - `SKILL.md` with clear sections (`When to Use`, `Core Workflow`, `Guardrails`, `Documentation`, \r\n`Assets`, `Tests`)\r\n - Added `_defaults/` templates and propagated them across skill directories.\r\n - Updated `.agents/skills/README.md` with the new directory structure and complete skill index.\r\n \r\n ## Motivation and Context\r\n The skill ecosystem was inconsistent across folders and lacked a shared format for \r\nreferences/assets/testing guidance.\r\n This PR creates a clean, repeatable structure so future skills are easier to author, review, and use \r\nreliably across AI assistants.\r\n \r\n ## How Has This Been Tested?\r\n - Validated skill frontmatter format and naming constraints (`name` matches folder, valid slug format, \r\nrequired fields present).\r\n - Verified scaffold files exist for every skill:\r\n   - `references/REFERENCE.md`\r\n   - `references/TESTS.md`\r\n   - `assets/README.md`\r\n - Confirmed no references to `VISDOM_USER_GUIDE.md` or `VISDOM_INTERNALS.md` remain in skill files.\r\n \r\n No runtime product code paths were changed in this PR (docs/skill/instruction structure only).\r\n \r\n ## Screenshots (if appropriate):\r\n N/A\r\n \r\n ## Types of changes\r\n - [ ] Bug fix (non-breaking change which fixes an issue)\r\n - [x] New feature (non-breaking change which adds functionality)\r\n - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)\r\n - [x] Code refactor or cleanup (changes to existing code for improved readability or performance)\r\n \r\n ## Checklist:\r\n - [ ] I adapted the version number under `py/visdom/VERSION` according to [Semantic \r\nVersioning](https://semver.org/)\r\n - [x] My code follows the code style of this project.\r\n - [x] My change requires a change to the documentation.\r\n - [x] I have updated the documentation accordingly.\r\n",
+    "files": [
+      {
+        "path": ".agents/skills/README.md",
+        "additions": 31,
+        "deletions": 1,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/adding-pane/SKILL.md",
+        "additions": 18,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/auth-login/SKILL.md",
+        "additions": 42,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/callback-events/SKILL.md",
+        "additions": 42,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/ci-workflow-debug/SKILL.md",
+        "additions": 44,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/cypress-testing/SKILL.md",
+        "additions": 17,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/docs-sync/SKILL.md",
+        "additions": 39,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/env-persistence/SKILL.md",
+        "additions": 44,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/environment-views/SKILL.md",
+        "additions": 44,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/frontend-pane-lifecycle/SKILL.md",
+        "additions": 45,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/handler-auth-flow/SKILL.md",
+        "additions": 43,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/offline-replay/SKILL.md",
+        "additions": 40,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/performance-streaming/SKILL.md",
+        "additions": 42,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/polling-parity/SKILL.md",
+        "additions": 44,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/python-client-api/SKILL.md",
+        "additions": 43,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/release-process/SKILL.md",
+        "additions": 18,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".agents/skills/update-patching/SKILL.md",
+        "additions": 41,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": ".agents/skills/websocket-flow/SKILL.md",
+        "additions": 18,
+        "deletions": 0,
+        "changeType": "MODIFIED"
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "additions": 8,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "CLAUDE.md",
+        "additions": 8,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "CODEX.md",
+        "additions": 8,
+        "deletions": 0,
+        "changeType": "ADDED"
+      },
+      {
+        "path": "GEMINI.md",
+        "additions": 8,
+        "deletions": 0,
+        "changeType": "ADDED"
+      }
+    ],
+    "mergeCommit": {
+      "oid": "f465a1946076af7f48e8022e7558c5ae49f4a14f"
+    },
+    "mergedAt": "2026-06-20T13:48:08Z",
+    "title": "Add standardized agent skills scaffold",
+    "url": "https://github.com/fossasia/visdom/pull/1301"
+  }
+]
