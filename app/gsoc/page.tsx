@@ -82,6 +82,33 @@ export default function GsocOverview() {
                 </div>
             </header>
 
+            <section id="fossasia-journey" className="scroll-mt-24 border-t border-border/60 py-12">
+                <h2 className="section-title">My FOSSASIA journey</h2>
+                <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+                    I started contributing in October 2025, before GSoC. My work grew from
+                    Eventyay checkout, permissions, and organizer workflows into live
+                    interpretation with VoxBento, the Eventyay Business pricing and billing
+                    foundation, and maintenance across FOSSASIA repositories.
+                </p>
+                <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+                    Along the way, I opened issues and architecture proposals, reviewed
+                    contributions, and built shared instructions and skills for AI-assisted
+                    coding in Eventyay, VoxBento, and Visdom. Working with mentors and
+                    contributors at FOSSASIA Summit brought those collaborations beyond GitHub.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm">
+                    <Link className="link inline-flex items-center gap-1" href="/gsoc/final-report/">
+                        Explore what I built <ArrowRight className="size-3.5" />
+                    </Link>
+                    <a className="link inline-flex items-center gap-1" href="https://github.com/pulls/search?q=is:pr+org:fossasia+state:closed+author:ArnavBallinCode+sort:updated-desc+is:merged" target="_blank" rel="noopener noreferrer">
+                        Browse merged contributions <ArrowUpRight className="size-3.5" />
+                    </a>
+                    <Link className="link inline-flex items-center gap-1" href="/blog/fossasia-summit-bangkok/">
+                        FOSSASIA Summit story <ArrowRight className="size-3.5" />
+                    </Link>
+                </div>
+            </section>
+
             <section className="border-t border-border/60 py-12">
                 <h2 className="section-title">Contribution ledger</h2>
                 <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-4">

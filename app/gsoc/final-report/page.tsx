@@ -33,7 +33,7 @@ export default async function FinalReport() {
     ];
     const searches = [
         { title: 'All authored pull requests', detail: 'Explore implementations and integration work.', query: 'is:pr org:fossasia author:ArnavBallinCode', kind: 'pulls' },
-        { title: 'Merged contributions', detail: 'Changes accepted upstream.', query: 'is:pr org:fossasia author:ArnavBallinCode is:merged', kind: 'pulls' },
+        { title: 'Merged contributions', detail: 'Changes accepted upstream.', query: 'is:pr org:fossasia state:closed author:ArnavBallinCode sort:updated-desc is:merged', kind: 'pulls/search' },
         { title: 'Issues and architecture plans', detail: 'Problem reports, RFCs, and implementation roadmaps.', query: 'is:issue org:fossasia author:ArnavBallinCode', kind: 'issues' },
         { title: 'Pull requests I reviewed', detail: 'Open the discussions and review history.', query: 'is:pr org:fossasia reviewed-by:ArnavBallinCode', kind: 'pulls' },
         { title: 'Eventyay core contributions', detail: 'The shared platform and its foundations.', query: 'is:pr repo:fossasia/eventyay author:ArnavBallinCode', kind: 'pulls' },
@@ -52,6 +52,7 @@ export default async function FinalReport() {
                 <p className="mt-5 text-sm">Arnav Angarkar <span className="text-muted-foreground">· FOSSASIA · October 2025–October 2026 contribution journey</span></p>
                 <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm">
                     <a className="link inline-flex items-center gap-1" href="https://summerofcode.withgoogle.com/programs/2026/projects/DdK1Ocuw">Official project <ArrowUpRight className="size-3.5" /></a>
+                    <a className="link inline-flex items-center gap-1" href="/gsoc/#fossasia-journey">My FOSSASIA journey <ArrowUpRight className="size-3.5" /></a>
                     <a className="link inline-flex items-center gap-1" href="#evidence">Explore the evidence <ArrowUpRight className="size-3.5" /></a>
                 </div>
             </header>
