@@ -5,7 +5,9 @@ from collections import Counter
 ROOT=Path(__file__).resolve().parents[1]; SOURCE=ROOT/'research/gsoc-2026'; PUBLIC=ROOT/'public/reports/gsoc-2026'; PUBLIC.mkdir(parents=True,exist_ok=True)
 audit=json.loads((SOURCE/'summary.json').read_text()); year=json.loads((SOURCE/'year-audit/summary.json').read_text())
 prs=json.loads((SOURCE/'authored-prs.json').read_text())['items'];reviews=json.loads((SOURCE/'reviews.json').read_text())['items']
-selected=json.loads((SOURCE/'selected-prs.json').read_text())
+selected=json.loads((SOURCE/'selected-prs.json').read_text()) + json.loads((SOURCE/'core-foundations.json').read_text())
+selected=list({p['url']:p for p in selected}.values())
+issues=json.loads((SOURCE/'authored-issues.json').read_text())
 period=[p for p in prs if audit['from']<=p['created_at']<=audit['asOf']]
 repos=Counter(p['repository_url'].split('/')[-1] for p in period)
 merged=Counter(p['repository_url'].split('/')[-1] for p in period if p['pull_request'].get('merged_at') and p['pull_request']['merged_at']<=audit['asOf'])
@@ -14,6 +16,7 @@ assert len({p['url'] for p in reviews})==len(reviews)
 assert sum(len(p['reviews']) for p in reviews)==audit['reviewSubmissions']
 assert audit['openedDuringPeriod']==audit['mergedOpenedDuringPeriod']+audit['openDuringPeriod']+audit['closedUnmergedDuringPeriod']
 summary={**audit,'yearFrom':year['from'],'yearAsOf':year['asOf'],'yearReviewSubmissions':year['reviewSubmissions'],'yearReviewedPRs':year['reviewedPRs'],'authoredRepositories':[{'name':r,'opened':n,'merged':merged[r]} for r,n in repos.most_common()]}
+summary['journey']={'authoredPRs':len(prs),'mergedPRs':sum(bool(p['pull_request'].get('merged_at')) for p in prs),'issuesOpened':len(issues),'reviewSubmissions':year['reviewSubmissions'],'reviewedPRs':year['reviewedPRs'],'reviewRepositories':year['reviewRepositories']}
 (ROOT/'app/data/gsoc-report.json').write_text(json.dumps(summary,indent=2)+'\n')
 def safe(value):
  text=str(value or '')

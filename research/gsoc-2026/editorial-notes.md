@@ -3,7 +3,7 @@
 ## Structure and research
 
 - Google work-product guidance: https://developers.google.com/open-source/gsoc/help/work-product — stable URL; clear personal contribution, merged/unmerged code, current state, remaining work, and handoff. Share the final draft with mentors before submission.
-- Official project: https://summerofcode.withgoogle.com/programs/2026/projects/DdK1Ocuw — title and listed mentors verified in the live page. Original scope centers on browser-first real-time interpretation and asynchronous NLP; Business is presented as expanded ecosystem work.
+- Official project: https://summerofcode.withgoogle.com/programs/2026/projects/DdK1Ocuw — title and listed mentors verified in the live page. Original scope centers on browser-first real-time interpretation and asynchronous NLP. Per the contributor’s follow-up, the narrative now covers the full FOSSASIA journey, including pre-GSoC core work, without separate program-period panels.
 - Gagan Ram, FOSSASIA 2025: https://gist.github.com/Gagan-Ram/cbbc2bd0faaaace45156d7b544c17101 — useful ecosystem framing and contribution links; avoid making the main narrative an undifferentiated PR list.
 - Suhail Nadaf, Eventyay 2025: https://gist.github.com/suhailnadaf509/897eeb8a4d9a4eb44808e73901711de7 — useful project identity and integration story.
 - Zeno 2025: https://blog.save-web.org/blog/2025/09/01/gsoc-2025-final-report-en/ — particularly useful concrete failure → decision → implementation explanations, and explicit unshipped work.
@@ -20,10 +20,14 @@ A restrained editorial page using existing portfolio light/dark tokens: project 
 - Read selected PR descriptions and merge state; inspect representative patches for entitlement checks, initial models, idempotent usage, reconciliation, activation guards, and FastAPI migration.
 - PR authorship does not imply sole code authorship: VoxBento #888 explicitly preserves @thisisanubhav's original implementation.
 - Business #141 was reverted by #142. Do not count the shortcut as a retained feature.
-- Existing profile references name other community mentors. The official project specifically lists Soong Chee Gi and Nils Magnus; use those as official mentors.
+- Existing profile references name other community mentors. The official project metadata lists Soong Chee Gi and Nils Magnus. The contributor clarified the actual mentorship team: Mario Behling (main mentor), Srivatsav Auswin, Hong Phuc Dang, Nils Magnus, Norbert Preining, and Hong Quan. Use the contributor-confirmed team in the acknowledgments; do not substitute the project listing for the lived collaboration history.
 - The report's old promise of November completion was a placeholder. Replace it with a dated draft and an honest completion checklist.
 - Business epics can have stale progress text even when linked PRs are merged. Prefer individual PR merge state over old issue-body checklists.
 
 ## Before final submission
 
 Confirm actual program work window with contributor/mentors, resolve #237's disposition, capture final upstream SHAs and final tests, establish production rollout status, and ask the contributor for personal reflection and any missing demos or foundation work. Do not submit an evaluation on the contributor's behalf.
+
+## Follow-up scope and attribution
+
+The contributor confirmed that work began before GSoC, that relationships developed through working together at FOSSASIA Summit, and that Saksham Sirohi, Nirupon Pal, and Rachit Makwana were close coding-period collaborators. GitHub profiles and authored PRs in the review snapshot confirm @Saksham-Sirohi, @Nirupon123, and @Rachit7168. Nils Magnus’s profile is @Nils-Magnus, corroborated by his OpenStack community profile; the similarly named @NielsMagnus was not used. Issue search returned 333 authored FOSSASIA issues. Added direct GitHub search cards instead of CSV download controls. Saved historical audit files remain for reproducibility.

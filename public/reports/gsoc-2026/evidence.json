@@ -193,7 +193,106 @@
         "opened": 1,
         "merged": 1
       }
-    ]
+    ],
+    "journey": {
+      "authoredPRs": 709,
+      "mergedPRs": 645,
+      "issuesOpened": 333,
+      "reviewSubmissions": 2155,
+      "reviewedPRs": 1625,
+      "reviewRepositories": [
+        {
+          "name": "fossasia/eventyay",
+          "prs": 1135,
+          "submissions": 1479
+        },
+        {
+          "name": "fossasia/voxbento",
+          "prs": 312,
+          "submissions": 458
+        },
+        {
+          "name": "fossasia/visdom",
+          "prs": 42,
+          "submissions": 48
+        },
+        {
+          "name": "fossasia/voxbento_translator",
+          "prs": 30,
+          "submissions": 46
+        },
+        {
+          "name": "fossasia/eventyay-interpretation",
+          "prs": 27,
+          "submissions": 39
+        },
+        {
+          "name": "fossasia/eventyay-checkin",
+          "prs": 16,
+          "submissions": 16
+        },
+        {
+          "name": "fossasia/veditor",
+          "prs": 14,
+          "submissions": 15
+        },
+        {
+          "name": "fossasia/eventyay-exhibition",
+          "prs": 9,
+          "submissions": 9
+        },
+        {
+          "name": "fossasia/scrum_helper",
+          "prs": 8,
+          "submissions": 8
+        },
+        {
+          "name": "fossasia/magic-epaper-app",
+          "prs": 8,
+          "submissions": 9
+        },
+        {
+          "name": "fossasia/eventyay-hubspot",
+          "prs": 7,
+          "submissions": 7
+        },
+        {
+          "name": "fossasia/badgemagic-app",
+          "prs": 5,
+          "submissions": 5
+        },
+        {
+          "name": "fossasia/eventyay-stripe",
+          "prs": 4,
+          "submissions": 4
+        },
+        {
+          "name": "fossasia/eventyay-teamshifts",
+          "prs": 3,
+          "submissions": 7
+        },
+        {
+          "name": "fossasia/eventyay-paypal",
+          "prs": 2,
+          "submissions": 2
+        },
+        {
+          "name": "fossasia/eventyay-socialmedia",
+          "prs": 1,
+          "submissions": 1
+        },
+        {
+          "name": "fossasia/visdom-dev",
+          "prs": 1,
+          "submissions": 1
+        },
+        {
+          "name": "fossasia/pslab-app",
+          "prs": 1,
+          "submissions": 1
+        }
+      ]
+    }
   },
   "methodology": {
     "authored": "Public FOSSASIA PRs returned by author search, all pages. Coding-window authorship is based on PR creation time; merge status is observed at audit time.",
@@ -588,6 +687,159 @@
       "mergedAt": "2026-10-15T07:12:01Z",
       "url": "https://github.com/fossasia/eventyay-business/pull/108",
       "mergeCommit": "c0eab6d4fae994951a56bd26b8f662976fb8339c"
+    },
+    {
+      "repository": "eventyay",
+      "number": 1399,
+      "title": "Fix voucher redemption race condition using pessimistic locking",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2025-12-09T11:00:27Z",
+      "url": "https://github.com/fossasia/eventyay/pull/1399",
+      "mergeCommit": "13481a12f832ff515fd77cac29cdacd741d4bcd0"
+    },
+    {
+      "repository": "eventyay",
+      "number": 1975,
+      "title": "Integrate custom fields into order forms",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-01-23T17:07:02Z",
+      "url": "https://github.com/fossasia/eventyay/pull/1975",
+      "mergeCommit": "382b055ea5e5f29560873bc82be009d0e8ce568f"
+    },
+    {
+      "repository": "eventyay",
+      "number": 1996,
+      "title": "Feature telemetry system",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-02-14T10:33:24Z",
+      "url": "https://github.com/fossasia/eventyay/pull/1996",
+      "mergeCommit": "608535e71e3fe35037145eb68a945a8b04c44520"
+    },
+    {
+      "repository": "eventyay",
+      "number": 2447,
+      "title": "Introduce Unified AI Policy Framework for AI Agents",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-02-18T08:47:09Z",
+      "url": "https://github.com/fossasia/eventyay/pull/2447",
+      "mergeCommit": "05317ed12b4816ec5f931596605a0450c1a2b9c9"
+    },
+    {
+      "repository": "eventyay",
+      "number": 2481,
+      "title": "feat: add event-scoped track selection for team Permissions",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-02-22T22:37:32Z",
+      "url": "https://github.com/fossasia/eventyay/pull/2481",
+      "mergeCommit": "c4dee77a1d02dcfe3920fcc238b521c0ed9b8433"
+    },
+    {
+      "repository": "eventyay",
+      "number": 2629,
+      "title": "Feat: Import schedule and speakers  ",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-04-01T16:04:26Z",
+      "url": "https://github.com/fossasia/eventyay/pull/2629",
+      "mergeCommit": "9b85cdc6ff4a177f4cf48989133722fed460e53c"
+    },
+    {
+      "repository": "eventyay",
+      "number": 2767,
+      "title": "Add .agents/skills AI agent system ",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-03-31T19:28:19Z",
+      "url": "https://github.com/fossasia/eventyay/pull/2767",
+      "mergeCommit": "bb50c93964056684755c10416b34a4cc1a537732"
+    },
+    {
+      "repository": "eventyay",
+      "number": 3440,
+      "title": "implement order import view with csv matching",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-05-05T12:37:13Z",
+      "url": "https://github.com/fossasia/eventyay/pull/3440",
+      "mergeCommit": "9aa6894b2c05d272c4fc5cfa16b8bba1bab956b3"
+    },
+    {
+      "repository": "eventyay",
+      "number": 3442,
+      "title": "Normalize CFP field ordering and centralize built-in field definitions",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-05-04T16:34:56Z",
+      "url": "https://github.com/fossasia/eventyay/pull/3442",
+      "mergeCommit": "6523d79ef7f72a45d983b91fec7198e698a5ef8a"
+    },
+    {
+      "repository": "eventyay",
+      "number": 3444,
+      "title": "Use Django-allauth native social login flow ",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-05-08T07:17:34Z",
+      "url": "https://github.com/fossasia/eventyay/pull/3444",
+      "mergeCommit": "891e8d438330c6dffc1de8e970ec3cf9fa2839b8"
+    },
+    {
+      "repository": "eventyay",
+      "number": 4780,
+      "title": "feat: dual-mode plugin dependency management (dev vs production)",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-08-20T09:50:08Z",
+      "url": "https://github.com/fossasia/eventyay/pull/4780",
+      "mergeCommit": "1d6bd018a52c76f7914fb202bb314e98c8c919ae"
+    },
+    {
+      "repository": "eventyay",
+      "number": 4785,
+      "title": "perf: replace schedule-JSON speakers page with server-rendered paginated view",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-08-20T09:52:28Z",
+      "url": "https://github.com/fossasia/eventyay/pull/4785",
+      "mergeCommit": "25a12cad5ab4967da0a980db4e79432710d0d691"
+    },
+    {
+      "repository": "eventyay",
+      "number": 4863,
+      "title": "docs: restructure documentation for unified platform",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-08-12T19:06:11Z",
+      "url": "https://github.com/fossasia/eventyay/pull/4863",
+      "mergeCommit": "ee526ef86d84894ff12ff4f17bbbed116f8a95e4"
+    },
+    {
+      "repository": "eventyay",
+      "number": 5095,
+      "title": "feat: auto-detection and cross-repo triggering for plugin dependency updates",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-08-26T14:32:38Z",
+      "url": "https://github.com/fossasia/eventyay/pull/5095",
+      "mergeCommit": "511d5669596b7b3860011bffede25b8b88cfc862"
+    },
+    {
+      "repository": "eventyay",
+      "number": 5175,
+      "title": "feat: smart LANCZOS-based image optimizations",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-09-05T07:37:58Z",
+      "url": "https://github.com/fossasia/eventyay/pull/5175",
+      "mergeCommit": "ab80953fb05dc7f7d23a798dba2a600c7dd90952"
+    },
+    {
+      "repository": "eventyay",
+      "number": 5985,
+      "title": "feat: Phase 1 (Core Cleanup) - Abolish commercial settings, fallback fees, and business UI from core",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-05T13:49:21Z",
+      "url": "https://github.com/fossasia/eventyay/pull/5985",
+      "mergeCommit": "0745c4a1b315cf9e0ce09deec66e9dca2247451d"
+    },
+    {
+      "repository": "eventyay",
+      "number": 6415,
+      "title": "Add neutral platform fee policy signal",
+      "author": "ArnavBallinCode",
+      "mergedAt": "2026-10-14T06:13:12Z",
+      "url": "https://github.com/fossasia/eventyay/pull/6415",
+      "mergeCommit": "1735002182dfe6aaff4c63c4598bb47027db6dfa"
     }
   ]
 }

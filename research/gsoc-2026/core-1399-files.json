@@ -1,0 +1,14 @@
+[
+  {
+    "sha": "6383ce6b7a260d3325e4129a20b44100d4d745ea",
+    "filename": "app/eventyay/base/services/cart.py",
+    "status": "modified",
+    "additions": 8,
+    "deletions": 1,
+    "changes": 9,
+    "blob_url": "https://github.com/fossasia/eventyay/blob/971d38fef45e5a4407df564c134058d8c5d3388b/app%2Feventyay%2Fbase%2Fservices%2Fcart.py",
+    "raw_url": "https://github.com/fossasia/eventyay/raw/971d38fef45e5a4407df564c134058d8c5d3388b/app%2Feventyay%2Fbase%2Fservices%2Fcart.py",
+    "contents_url": "https://api.github.com/repos/fossasia/eventyay/contents/app%2Feventyay%2Fbase%2Fservices%2Fcart.py?ref=971d38fef45e5a4407df564c134058d8c5d3388b",
+    "patch": "@@ -1000,7 +1000,9 @@ def _get_voucher_availability(self):\n         vouchers_ok = {}\n         self._voucher_depend_on_cart = set()\n         for voucher, count in self._voucher_use_diff.items():\n-            voucher.refresh_from_db()\n+            # Use pessimistic locking to prevent race conditions\n+            # This ensures only one thread can check and modify voucher availability at a time\n+            voucher = Voucher.objects.select_for_update().get(pk=voucher.pk)\n \n             if voucher.valid_until is not None and voucher.valid_until < self.now_dt:\n                 raise CartError(error_messages['voucher_expired'])\n@@ -1010,6 +1012,11 @@ def _get_voucher_availability(self):\n             ).exclude(pk__in=[op.position.id for op in self._operations if isinstance(op, self.ExtendOperation)])\n             cart_count = redeemed_in_carts.count()\n             v_avail = voucher.max_usages - voucher.redeemed - cart_count\n+            \n+            # Validate availability after acquiring lock to prevent over-redemption\n+            if v_avail < count:\n+                raise CartError(error_messages['voucher_redeemed'])\n+            \n             if cart_count > 0:\n                 self._voucher_depend_on_cart.add(voucher)\n             vouchers_ok[voucher] = v_avail"
+  }
+]

@@ -28,6 +28,8 @@ def search(q):
   if len(items)>=d['total_count']:break
  return items
 prs=search('org:fossasia author:ArnavBallinCode is:pr')
+issues=search('org:fossasia author:ArnavBallinCode is:issue')
+(OUT/'authored-issues.json').write_text(json.dumps(issues,indent=2)+'\n')
 # Keep reproducible public metadata, rather than copying PR discussions into the report.
 authored=[{k:p.get(k) for k in ['number','title','html_url','repository_url','created_at','state','pull_request']} for p in prs]
 (OUT/'authored-prs.json').write_text(json.dumps({'asOf':end,'items':authored},indent=2)+'\n')

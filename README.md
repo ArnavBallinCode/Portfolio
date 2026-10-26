@@ -55,7 +55,7 @@ MIT – see [LICENSE](./LICENSE) for details.
 
 - Narrative: `content/reports/gsoc-2026.md`.
 - Page: `app/gsoc/final-report/page.tsx` at the stable `/gsoc/final-report/` URL.
-- Frozen statistics: `app/data/gsoc-report.json`; public CSV/JSON evidence: `public/reports/gsoc-2026/`.
+- Frozen statistics: `app/data/gsoc-report.json`. The page links directly to filtered GitHub searches; previous CSV/JSON snapshots remain at their original URLs for reproducibility.
 - Research, inspected patches, official-project snapshot and editorial checklist: `research/gsoc-2026/`.
 
 The report stays a dated working draft until scope, outstanding work, upstream
