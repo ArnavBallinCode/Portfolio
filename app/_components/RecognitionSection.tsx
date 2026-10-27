@@ -20,7 +20,24 @@ const RecognitionSection = () => (
                             )}
                         </p>
                         <div>
-                            <h3 className="font-medium">{ev.event}</h3>
+                            <h3 className="flex flex-wrap items-baseline gap-x-2 gap-y-1 font-medium">
+                                {ev.link ? (
+                                    <a
+                                        href={ev.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="transition-colors hover:text-primary"
+                                    >
+                                        {ev.event}
+                                        <ArrowUpRight className="ml-0.5 inline size-3.5 align-baseline" />
+                                    </a>
+                                ) : ev.event}
+                                {ev.label && (
+                                    <span className="font-mono text-[10px] font-normal text-muted-foreground">
+                                        {ev.label}
+                                    </span>
+                                )}
+                            </h3>
                             <p className="text-sm text-muted-foreground">
                                 {ev.place} · {ev.role}
                             </p>
@@ -40,6 +57,11 @@ const RecognitionSection = () => (
                                         ) : (
                                             <span className="text-muted-foreground">
                                                 “{talk.title}”
+                                            </span>
+                                        )}
+                                        {talk.note && (
+                                            <span className="font-mono text-[10px] text-muted-foreground">
+                                                {talk.note}
                                             </span>
                                         )}
                                         {talk.slides && (

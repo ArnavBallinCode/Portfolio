@@ -127,13 +127,16 @@ export interface Talk {
     link?: string;
     slides?: string;
     code?: string;
+    note?: string;
 }
 
 export interface EventEntry {
     event: string;
+    label?: string;
     place: string;
     date: string;
     role: string;
+    link?: string;
     upcoming?: boolean;
     talks: Talk[];
 }
@@ -141,26 +144,51 @@ export interface EventEntry {
 /** Newest first. */
 export const events: EventEntry[] = [
     {
-        event: 'OpenTechSummit India 2026',
-        place: 'Mumbai · at Devcon 8',
-        date: 'Nov 2026',
-        role: 'Speaker · 3 sessions',
+        event: 'Devcon 8 India 2026',
+        label: 'Open Tech Summit',
+        place: 'Mumbai',
+        date: '3–5 Nov 2026',
+        role: 'Speaker · 7 sessions',
+        link: 'https://app.devcon.org/speakers/arnav-angarkar',
         upcoming: true,
         talks: [
             {
-                title: 'Let the Agent Cook: Building AI-Native Developer Workflows',
-                link: 'https://eventyay.com/fossasia/ots2026/talk/CWBR9P/',
+                title: 'Workshop: Set up Eventyay: Docker Up, PR Out - Get Ready for Your First Contribution to a Real Django + Vue Platform Used by Thousands',
+                link: 'https://app.devcon.org/schedule/open-source-s06',
+            },
+            {
+                title: 'Workshop: Let the Agent Cook: Teach Your AI Agent to Contribute',
+                link: 'https://app.devcon.org/schedule/open-source-s13',
                 slides: 'https://arnavballincode.github.io/Talks/LetTheAgentCook/',
                 code: 'https://github.com/ArnavBallinCode/let-the-agent-cook',
             },
             {
-                title: 'VoxBento — When 2 Seconds Matter: Building Real-Time AI Captions and Live Interpretation',
-                link: 'https://eventyay.com/fossasia/ots2026/talk/8BTAYL/',
+                title: 'Voxbento: When 2 Seconds Matter — Building Real-Time AI Captions and Live Interpretations',
+                link: 'https://cfp.devcon.org/devcon8/talk/HWKQHS/',
                 slides: 'https://arnavballincode.github.io/Talks/OpenTechSummit2026/',
+                note: 'OTS',
             },
             {
-                title: 'Set up Eventyay: Docker Up, PR Out — your first contribution to a real Django + Vue platform',
-                link: 'https://eventyay.com/fossasia/ots2026/talk/AKCCWQ/',
+                title: 'Set up Eventyay: Docker Up, PR Out - Get Ready for Your First Contribution to a Real Django + Vue Platform Used by Thousands (1/2)',
+                link: 'https://cfp.devcon.org/devcon8/talk/SMQYXM/',
+                note: 'OTS',
+            },
+            {
+                title: 'Set up Eventyay: Docker Up, PR Out - Get Ready for Your First Contribution to a Real Django + Vue Platform Used by Thousands (2/2)',
+                link: 'https://cfp.devcon.org/devcon8/talk/ZNGJGK/',
+                note: 'OTS',
+            },
+            {
+                title: 'Let the Agent Cook: Building AI-Native Developer Workflows',
+                link: 'https://cfp.devcon.org/devcon8/talk/GJKMVD/',
+                slides: 'https://arnavballincode.github.io/Talks/LetTheAgentCook/',
+                code: 'https://github.com/ArnavBallinCode/let-the-agent-cook',
+                note: 'OTS',
+            },
+            {
+                title: 'What FOSSASIA Maintainers Wish Contributors Knew: Ask Us Anything',
+                link: 'https://cfp.devcon.org/devcon8/talk/LAFSE7/',
+                note: 'OTS',
             },
         ],
     },
