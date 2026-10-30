@@ -43,7 +43,6 @@ export default async function FinalReport() {
         <article className="report-page pt-12 pb-8">
             <header className="border-b border-border/60 pb-10">
                 <div className="flex flex-wrap items-center gap-3 font-mono text-xs uppercase tracking-wider">
-                    <span className="rounded-full border border-primary/25 bg-primary/5 px-3 py-1 text-primary">Working draft</span>
                     <span className="text-muted-foreground">Evidence · 26 Oct 2026</span>
                 </div>
                 <p className="mt-8 text-sm font-medium text-muted-foreground">GSoC 2026 · Final report</p>
