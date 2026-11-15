@@ -26,28 +26,31 @@
         --input: 240 6% 90%;
         --ring: 221 83% 53%;
         --radius: 0.75rem;
+        --grid-dot: 240 10% 4% / 0.09;
     }
 
     .dark {
         color-scheme: dark;
-        --background: 240 10% 4%;
-        --background-light: 240 6% 8%;
-        --foreground: 0 0% 96%;
-        --card: 240 6% 7%;
-        --card-foreground: 0 0% 96%;
-        --popover: 240 6% 7%;
-        --popover-foreground: 0 0% 96%;
+        /* Warm charcoal instead of near-black: easier on the eyes for long reads. */
+        --background: 40 6% 9%;
+        --background-light: 40 5% 11%;
+        --foreground: 40 12% 91%;
+        --card: 40 5% 11%;
+        --card-foreground: 40 12% 91%;
+        --popover: 40 5% 11%;
+        --popover-foreground: 40 12% 91%;
         --primary: 213 94% 68%;
-        --primary-foreground: 240 10% 4%;
-        --secondary: 240 4% 14%;
-        --secondary-foreground: 0 0% 96%;
-        --muted: 240 4% 14%;
-        --muted-foreground: 240 5% 65%;
-        --accent: 240 4% 14%;
-        --accent-foreground: 0 0% 96%;
-        --border: 240 4% 16%;
-        --input: 240 4% 16%;
+        --primary-foreground: 40 6% 9%;
+        --secondary: 40 4% 15%;
+        --secondary-foreground: 40 12% 91%;
+        --muted: 40 4% 15%;
+        --muted-foreground: 40 5% 63%;
+        --accent: 40 4% 15%;
+        --accent-foreground: 40 12% 91%;
+        --border: 40 4% 18%;
+        --input: 40 4% 18%;
         --ring: 213 94% 68%;
+        --grid-dot: 40 10% 100% / 0.07;
     }
 
     * {
@@ -62,6 +65,10 @@
     body {
         @apply bg-background text-foreground antialiased transition-colors duration-200;
         text-rendering: optimizeLegibility;
+        /* Faint dot grid behind the page. */
+        background-image: radial-gradient(hsl(var(--grid-dot)) 1px, transparent 1px);
+        background-size: 24px 24px;
+        background-attachment: fixed;
     }
 
     ::selection {
@@ -141,6 +148,7 @@
 .report-body strong { color: hsl(var(--foreground)); font-weight: 600; }
 @media print {
     .report-page nav { display: none; }
+    body { background-image: none; }
     .report-page { color: #111; background: white; }
     .report-page h2, .report-page h3 { break-after: avoid; }
     .report-page a { text-decoration: underline; }
