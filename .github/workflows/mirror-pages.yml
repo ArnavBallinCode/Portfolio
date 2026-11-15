@@ -1,0 +1,32 @@
+name: Mirror to angarkar.tech
+
+# Portfolio/main is the source of truth. Netlify builds angarkar.is-a.dev from it;
+# this copies it to ArnavBallinCode.github.io, whose Pages workflow builds angarkar.tech.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: mirror-pages
+  cancel-in-progress: true
+
+jobs:
+  mirror:
+    if: github.repository == 'ArnavBallinCode/Portfolio'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Push main to github.io repo
+        env:
+          DEPLOY_KEY: ${{ secrets.PAGES_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null
+          git push --force git@github.com:ArnavBallinCode/ArnavBallinCode.github.io.git HEAD:main
