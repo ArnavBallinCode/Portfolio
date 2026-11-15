@@ -1,0 +1,43 @@
+name: Sync repos
+
+# Portfolio and ArnavBallinCode.github.io keep identical main branches.
+# A push to either one is copied to the other:
+#   Portfolio main  -> Netlify  -> angarkar.is-a.dev
+#   github.io main  -> Pages    -> angarkar.tech (arnavballincode.github.io redirects there)
+# Fast-forward only: if the two ever diverge this fails instead of overwriting work.
+# The echo push of an identical commit is a no-op, so this never loops.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: sync-repos
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'ArnavBallinCode/Portfolio' || github.repository == 'ArnavBallinCode/ArnavBallinCode.github.io'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Push main to the other repo
+        env:
+          # Portfolio holds PAGES_DEPLOY_KEY (writes github.io); github.io holds SYNC_DEPLOY_KEY (writes Portfolio).
+          DEPLOY_KEY: ${{ secrets.SYNC_DEPLOY_KEY || secrets.PAGES_DEPLOY_KEY }}
+          SELF: ${{ github.repository }}
+        run: |
+          if [ "$SELF" = "ArnavBallinCode/Portfolio" ]; then
+            TARGET=ArnavBallinCode/ArnavBallinCode.github.io
+          else
+            TARGET=ArnavBallinCode/Portfolio
+          fi
+          mkdir -p ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null
+          git push "git@github.com:${TARGET}.git" HEAD:main
